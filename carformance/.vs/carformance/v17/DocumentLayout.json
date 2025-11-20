@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\salek\\carformance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4CEA784-2F58-1D4D-3CE5-64DF2CB5A8AE}|Assembly-CSharp-Editor.csproj|c:\\users\\salek\\carformance\\assets\\prometeo - car controller\\editor\\prometeoeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4CEA784-2F58-1D4D-3CE5-64DF2CB5A8AE}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\prometeo - car controller\\editor\\prometeoeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\salek\\carformance\\assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrometeoEditor.cs",
+              "DocumentMoniker": "C:\\Users\\salek\\carformance\\Assets\\PROMETEO - Car Controller\\Editor\\PrometeoEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Editor\\PrometeoEditor.cs",
+              "ToolTip": "C:\\Users\\salek\\carformance\\Assets\\PROMETEO - Car Controller\\Editor\\PrometeoEditor.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Editor\\PrometeoEditor.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAYwIwAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:59:17.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrometeoCarController.cs",
+              "DocumentMoniker": "C:\\Users\\salek\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ToolTip": "C:\\Users\\salek\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T12:17:21.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
