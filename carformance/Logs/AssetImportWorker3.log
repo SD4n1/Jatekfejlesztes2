@@ -1,0 +1,277 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-salek" at "2025-11-21T22:25:51.8715555Z"
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'hu' Physical Memory: 16226 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-11-21T22:25:51Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.2.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+54002
+-licensingIpc
+LicenseClient-salek
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
+D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14456]  Target information:
+
+Player connection [14456]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2161187329 [EditorId] 2161187329 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UIR5A7Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14456]  * "[IP] 192.168.100.8 [Port] 0 [Flags] 2 [Guid] 2161187329 [EditorId] 2161187329 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UIR5A7Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14456] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14456] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9564, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.3+a4e98f1
+  Session Id:              1a1fa4ba458742b791e8d3d7c188a752
+  Correlation Id:          5954719b6b9b725c89faccadb33934a3
+  External correlation Id: 2873129198120272188
+  Machine Id:              Vf3uOEd9RA54eCxFq9M0AQju0g8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-salek" (connect: 0.00s, validation: 0.00s, handshake: 0.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-salek-notifications" at "2025-11-21T22:25:52.003192Z"
+[Licensing::Module] Licensing Background thread has ended after 0.13s
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 5.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.2.8f1 (c9992ac36c34)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4004 MB
+    Driver:   32.0.15.8157
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006312 seconds.
+- Loaded All Assemblies, in  0.915 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.753 seconds
+Domain Reload Profiling: 1658ms
+	BeginReloadAssembly (322ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (118ms)
+	LoadAllAssembliesAndSetupDomain (350ms)
+		LoadAssemblies (310ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (344ms)
+			TypeCache.Refresh (341ms)
+				TypeCache.ScanAssembly (312ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (754ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (662ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (110ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (150ms)
+			ProcessInitializeOnLoadAttributes (271ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972506169033-unity_a441709a25b9d6da51a3-UnityProStuXXXX
+  Product: Unity Student
+  Type: Assigned
+  Expiration: 2026-10-09T15:31:33Z
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.008 seconds
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.315 seconds
+Domain Reload Profiling: 3311ms
+	BeginReloadAssembly (424ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (1359ms)
+		LoadAssemblies (875ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (725ms)
+			TypeCache.Refresh (627ms)
+				TypeCache.ScanAssembly (591ms)
+			BuildScriptInfoCaches (79ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1316ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1047ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (273ms)
+			ProcessInitializeOnLoadAttributes (636ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4202 unused Assets / (1.2 MB). Loaded Objects now: 4695.
+Memory consumption went from 90.1 MB to 88.8 MB.
+Total: 11.384100 ms (FindLiveObjects: 0.706000 ms CreateObjectMapping: 0.761600 ms MarkObjects: 7.717100 ms  DeleteObjects: 2.194500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 85868.254377 seconds.
+  path: Assets/Cars/Ferrari/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png
+  artifactKey: Guid(3f792264f650f464485dc443100f8040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Ferrari/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png using Guid(3f792264f650f464485dc443100f8040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4498491633f45e3746d0b6c8fa4ac5ab') in 0.163592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Cars/Ferrari/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
+  artifactKey: Guid(5794bf4bfd9ce0d4d8aabdafabbab9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Ferrari/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png using Guid(5794bf4bfd9ce0d4d8aabdafabbab9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f99377660d9a41ec7879f49d7533ff9d') in 0.0319368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.208228 seconds.
+  path: Assets/Cars/Aston Martin/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png
+  artifactKey: Guid(4e243966e0fd20042adf91eac9a051de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Aston Martin/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png using Guid(4e243966e0fd20042adf91eac9a051de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1db0c5972a45d231bb3463ab118aea3b') in 0.0110221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Cars/Aston Martin/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png
+  artifactKey: Guid(b1206447abfd54d439020d6a2f3fc683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Aston Martin/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png using Guid(b1206447abfd54d439020d6a2f3fc683) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '873b084ccc8e3b6843d1ba8d77ff8b16') in 0.0719574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Cars/Aston Martin/AstonMartin.gltf
+  artifactKey: Guid(837d2e31de5b5c940a9c793268b90e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Aston Martin/AstonMartin.gltf using Guid(837d2e31de5b5c940a9c793268b90e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0143f85ffc8ac4aec20785b29df1690') in 0.9152695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 660
+
+========================================================================
+Received Import Request.
+  Time since last request: 314.474573 seconds.
+  path: Assets/Cars/Ferrari Variant.prefab
+  artifactKey: Guid(ed3022b66d69a4c4e8f414985cca8f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Ferrari Variant.prefab using Guid(ed3022b66d69a4c4e8f414985cca8f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c9dd55b194134640fa2e297428afd3a') in 0.2154649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2539
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Cars/Mercedes Variant.prefab
+  artifactKey: Guid(4bed59296ba5d0347a6f900511c21111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Mercedes Variant.prefab using Guid(4bed59296ba5d0347a6f900511c21111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae34f46a0f2b5e4d14846c4e093547ea') in 0.1309001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1321
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
