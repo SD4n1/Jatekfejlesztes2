@@ -423,3 +423,71 @@ Received Import Request.
 Start importing Assets/Cars/McLaren Variant.prefab using Guid(4863f81cbeb30ed4e97443d555fe2fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8e284ba105b9dbdc23cc2b2bfbb0950') in 0.1659392 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1930
 
+========================================================================
+Received Import Request.
+  Time since last request: 602.634107 seconds.
+  path: Assets/Cars/Red Bull 1/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png
+  artifactKey: Guid(703811c9454636b42b5b7c01729f1d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull 1/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png using Guid(703811c9454636b42b5b7c01729f1d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea79e3911b6be0d9b169f311f1f67291') in 0.0225487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Cars/Red Bull 1/488_WHEELS_metallicRoughness.png
+  artifactKey: Guid(92c26f18870a74844b87237338838410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull 1/488_WHEELS_metallicRoughness.png using Guid(92c26f18870a74844b87237338838410) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c73985a5c75784c095719c3a8fc121a') in 0.0359176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Cars/Red Bull 1/Red Bull.gltf
+  artifactKey: Guid(3676b5b3297961848a66ffb2fc05f926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull 1/Red Bull.gltf using Guid(3676b5b3297961848a66ffb2fc05f926) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4945aa6eb99dbd250123f850553ed4c') in 1.0830519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 657
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.136317 seconds.
+  path: Assets/Cars/Red Bull/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png
+  artifactKey: Guid(9c3149893bd1b614fa008e6add60732e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png using Guid(9c3149893bd1b614fa008e6add60732e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f498b329166078ec62b0fd1e030be9d') in 0.0162616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Cars/Red Bull/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png
+  artifactKey: Guid(75607b16ceb1ee14db035b87f5281ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png using Guid(75607b16ceb1ee14db035b87f5281ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c69f5f68abe1c880fe966ece5c244705') in 0.0353801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Cars/Red Bull/488_WHEELS_specularf0.png
+  artifactKey: Guid(91494ed12c3b2634bac2d3d856c772b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull/488_WHEELS_specularf0.png using Guid(91494ed12c3b2634bac2d3d856c772b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42e6548aa9db68567e2f96b4415db3bf') in 0.0159361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Cars/Red Bull/488_WHEELS_metallicRoughness.png
+  artifactKey: Guid(b0bc9dcd4c316b24ea1d5ca7bf6ee9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull/488_WHEELS_metallicRoughness.png using Guid(b0bc9dcd4c316b24ea1d5ca7bf6ee9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3772130488360518c188a9b30f417f69') in 0.0352996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Cars/Red Bull/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
+  artifactKey: Guid(7de06e9b56114b5448120ebeb759a2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Red Bull/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(7de06e9b56114b5448120ebeb759a2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd05a0022d0ff1aaf9ff0a2b07cb26fa4') in 0.0317449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
