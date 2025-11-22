@@ -422,10 +422,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3114897177721273482, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: -2191049995465245108, guid: 837d2e31de5b5c940a9c793268b90e10, type: 3}
+    - target: {fileID: 116612473953336556, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
+      propertyPath: asphaltGrip
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 116612473953336556, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
+      propertyPath: grassCoastingMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116612473953336556, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
+      propertyPath: grassMaxSpeedMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 116612473953336556, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
+      propertyPath: gravelCoastingMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 116612473953336556, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
+      propertyPath: gravelMaxSpeedMultiplier
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4384251128472398935, guid: 8430cfde13edb0f46ba4c4edb51f50e0, type: 3}
       propertyPath: m_Name
       value: Aston Martin
@@ -526,6 +542,10 @@ PrefabInstance:
     - target: {fileID: 4103546747178593537, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_Name
       value: Hungaroring
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091320535744816798, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: m_TagString
+      value: Gravel
       objectReference: {fileID: 0}
     - target: {fileID: 8691356090733809914, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_TagString

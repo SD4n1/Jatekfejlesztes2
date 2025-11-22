@@ -37,14 +37,20 @@ public class PrometeoCarController : MonoBehaviour
     [Tooltip("A tag neve, amit a fű objektumokra raksz")]
     public string slipperySurfaceTag = "Grass";
 
+    [Tooltip("Hányszorosára növeljük a coastingDrag-ot fűvön")]
+    [Range(1f, 5f)] public float grassCoastingMultiplier = 1.0f;
+
+    [Tooltip("Hány százalékát használjuk a maxSpeed-nek fűvön (0.0-1.0)")]
+    [Range(0.1f, 1f)] public float grassMaxSpeedMultiplier = 0.5f;
+
     [Tooltip("A tag neve, amit a kavicsos objektumokra raksz")]
     public string gravelSurfaceTag = "Gravel";
 
     [Tooltip("Hányszorosára növeljük a coastingDrag-ot kavicson")]
-    [Range(1f, 5f)] public float gravelCoastingMultiplier = 2.5f;
+    [Range(1f, 5f)] public float gravelCoastingMultiplier = 4f;
 
     [Tooltip("Hány százalékát használjuk a maxSpeed-nek kavicson (0.0-1.0)")]
-    [Range(0.1f, 1f)] public float gravelMaxSpeedMultiplier = 0.6f;
+    [Range(0.1f, 1f)] public float gravelMaxSpeedMultiplier = 0.1f;
 
     // --- WHEELS ---
     public GameObject frontLeftMesh; public WheelCollider frontLeftCollider;
@@ -169,6 +175,7 @@ public class PrometeoCarController : MonoBehaviour
         WheelHit hit;
         float currentGripMultiplier = asphaltGrip; // Alapból aszfalt tapadás (magas)
         bool onGravel = false;
+        bool onGrass = false;
 
         if (rearLeftCollider.GetGroundHit(out hit))
         {
@@ -176,6 +183,7 @@ public class PrometeoCarController : MonoBehaviour
             if (hit.collider.CompareTag(slipperySurfaceTag))
             {
                 currentGripMultiplier = grassGrip; // Leesik a tapadás
+                onGrass = true;
             }
 
             // Ha a talaj Tag-je "Gravel"
@@ -196,11 +204,16 @@ public class PrometeoCarController : MonoBehaviour
             // Normál vezetés (Aszfalt, Fű vagy Kavics)
             ApplyFrictionToWheels(currentGripMultiplier);
 
-            // Kavicson módosítjuk a coastingDrag-ot és a maxSpeed-et
+            // Ha kavicson vagy füvön vagyunk, módosítjuk a coastingDrag-ot és a maxSpeed-et
             if (onGravel)
             {
                 coastingDrag = defaultCoastingDrag * gravelCoastingMultiplier;
                 maxSpeed = Mathf.RoundToInt(defaultMaxSpeed * gravelMaxSpeedMultiplier);
+            }
+            else if (onGrass)
+            {
+                coastingDrag = defaultCoastingDrag * grassCoastingMultiplier;
+                maxSpeed = Mathf.RoundToInt(defaultMaxSpeed * grassMaxSpeedMultiplier);
             }
             else
             {

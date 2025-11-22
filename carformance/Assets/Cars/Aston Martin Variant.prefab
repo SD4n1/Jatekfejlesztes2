@@ -64,6 +64,22 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: -2191049995465245108, guid: 837d2e31de5b5c940a9c793268b90e10, type: 3}
+    - target: {fileID: 9098118244637073157, guid: ed3022b66d69a4c4e8f414985cca8f21, type: 3}
+      propertyPath: grassCoastingMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098118244637073157, guid: ed3022b66d69a4c4e8f414985cca8f21, type: 3}
+      propertyPath: grassMaxSpeedMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098118244637073157, guid: ed3022b66d69a4c4e8f414985cca8f21, type: 3}
+      propertyPath: gravelCoastingMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098118244637073157, guid: ed3022b66d69a4c4e8f414985cca8f21, type: 3}
+      propertyPath: gravelMaxSpeedMultiplier
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
