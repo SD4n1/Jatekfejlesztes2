@@ -37,6 +37,15 @@ public class PrometeoCarController : MonoBehaviour
     [Tooltip("A tag neve, amit a fű objektumokra raksz")]
     public string slipperySurfaceTag = "Grass";
 
+    [Tooltip("A tag neve, amit a kavicsos objektumokra raksz")]
+    public string gravelSurfaceTag = "Gravel";
+
+    [Tooltip("Hányszorosára növeljük a coastingDrag-ot kavicson")]
+    [Range(1f, 5f)] public float gravelCoastingMultiplier = 2.5f;
+
+    [Tooltip("Hány százalékát használjuk a maxSpeed-nek kavicson (0.0-1.0)")]
+    [Range(0.1f, 1f)] public float gravelMaxSpeedMultiplier = 0.6f;
+
     // --- WHEELS ---
     public GameObject frontLeftMesh; public WheelCollider frontLeftCollider;
     public GameObject frontRightMesh; public WheelCollider frontRightCollider;
@@ -96,6 +105,9 @@ public class PrometeoCarController : MonoBehaviour
     // Súrlódási görbék tárolása
     WheelFrictionCurve FL_Sideways, FR_Sideways, RL_Sideways, RR_Sideways;
     float defaultSlip; // Az eredeti csúszási érték (referencia)
+    // Eredeti beállítások visszaállításához
+    float defaultCoastingDrag;
+    int defaultMaxSpeed;
 
     void Start()
     {
@@ -105,6 +117,10 @@ public class PrometeoCarController : MonoBehaviour
         // Elmentjük az eredeti beállításokat
         SaveDefaultFriction();
         CalculateGearRatios();
+
+        // Mentjük a coastingDrag és maxSpeed alapértékeit, hogy kavicson felülírhassuk, majd visszaállíthassuk
+        defaultCoastingDrag = coastingDrag;
+        defaultMaxSpeed = maxSpeed;
 
         if (useSounds && AudioManager.Instance != null)
         {
@@ -152,6 +168,7 @@ public class PrometeoCarController : MonoBehaviour
         // Megnézzük, min áll a bal hátsó kerék (elég egyet vizsgálni általában)
         WheelHit hit;
         float currentGripMultiplier = asphaltGrip; // Alapból aszfalt tapadás (magas)
+        bool onGravel = false;
 
         if (rearLeftCollider.GetGroundHit(out hit))
         {
@@ -159,6 +176,12 @@ public class PrometeoCarController : MonoBehaviour
             if (hit.collider.CompareTag(slipperySurfaceTag))
             {
                 currentGripMultiplier = grassGrip; // Leesik a tapadás
+            }
+
+            // Ha a talaj Tag-je "Gravel"
+            if (hit.collider.CompareTag(gravelSurfaceTag))
+            {
+                onGravel = true;
             }
         }
 
@@ -170,8 +193,21 @@ public class PrometeoCarController : MonoBehaviour
         }
         else
         {
-            // Normál vezetés (Aszfalt vagy Fű)
+            // Normál vezetés (Aszfalt, Fű vagy Kavics)
             ApplyFrictionToWheels(currentGripMultiplier);
+
+            // Kavicson módosítjuk a coastingDrag-ot és a maxSpeed-et
+            if (onGravel)
+            {
+                coastingDrag = defaultCoastingDrag * gravelCoastingMultiplier;
+                maxSpeed = Mathf.RoundToInt(defaultMaxSpeed * gravelMaxSpeedMultiplier);
+            }
+            else
+            {
+                // Visszaállítjuk az alapértékeket, ha nem kavicson vagy füvön vagyunk
+                coastingDrag = defaultCoastingDrag;
+                maxSpeed = defaultMaxSpeed;
+            }
         }
     }
 
