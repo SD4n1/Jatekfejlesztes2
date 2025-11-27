@@ -76,6 +76,9 @@ public class PrometeoCarController : MonoBehaviour
     public bool useSounds = false;
     public AudioClip[] engineClips;
     public AudioClip tireScreechClip;
+    [Tooltip("Collision sound that plays when car touches an object tagged 'Border'.")]
+    public AudioClip collisionClip;
+    [Range(0f, 1f)] public float collisionVolume = 1f;
 
     [Range(4, 8)] public int numberOfGears = 8;
     [Range(1f, 20f)] public float revUpSpeed = 5f;
@@ -227,7 +230,7 @@ public class PrometeoCarController : MonoBehaviour
     void ApplyFrictionToWheels(float stiffnessMultiplier)
     {
         // Mind a 4 kerékre alkalmazzuk a keménységet (Stiffness)
-        // A Stiffness növelése = jobb tapadás = kevesebb drift
+        // A Stiffness növelése =jobb tapadás = kevesebb drift
 
         ModifyWheelStiffness(frontLeftCollider, ref FL_Sideways, stiffnessMultiplier);
         ModifyWheelStiffness(frontRightCollider, ref FR_Sideways, stiffnessMultiplier);
@@ -362,8 +365,34 @@ public class PrometeoCarController : MonoBehaviour
     }
 
     // --- FIZIKA ÉS MOZGÁS (Javított Deceleration) ---
-    public void GoForward() { UpdateDriftState(); throttleAxis = Mathf.MoveTowards(throttleAxis, 1f, Time.deltaTime * 3f); if (localVelocityZ < -1f) Brakes(); else ApplyDrive(1f); }
-    public void GoReverse() { UpdateDriftState(); throttleAxis = Mathf.MoveTowards(throttleAxis, -1f, Time.deltaTime * 3f); if (localVelocityZ > 1f) Brakes(); else ApplyDrive(-1f); }
+    public void GoForward() { UpdateDriftState(); 
+    // If we're moving backwards, apply brakes first (don't immediately set forward throttle)
+    if (localVelocityZ < -1f) 
+    { 
+        throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f); 
+        Brakes(); 
+    } 
+    else 
+    { 
+        ReleaseBrakes();
+        throttleAxis = Mathf.MoveTowards(throttleAxis, 1f, Time.deltaTime * 3f); 
+        ApplyDrive(1f); 
+    } 
+}
+    public void GoReverse() { UpdateDriftState(); 
+    // If we're moving forward, apply brakes first (don't immediately set reverse throttle)
+    if (localVelocityZ > 1f) 
+    { 
+        throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f); 
+        Brakes(); 
+    } 
+    else 
+    { 
+        ReleaseBrakes();
+        throttleAxis = Mathf.MoveTowards(throttleAxis, -1f, Time.deltaTime * 3f); 
+        ApplyDrive(-1f); 
+    } 
+}
 
     public void DecelerateCar()
     {
@@ -378,10 +407,22 @@ public class PrometeoCarController : MonoBehaviour
         if (carRigidbody.linearVelocity.magnitude < 0.25f) { carRigidbody.linearVelocity = Vector3.zero; CancelInvoke("DecelerateCar"); }
     }
 
-    public void Brakes() { frontLeftCollider.brakeTorque = brakeForce; frontRightCollider.brakeTorque = brakeForce; rearLeftCollider.brakeTorque = brakeForce; rearRightCollider.brakeTorque = brakeForce; }
+    public void Brakes() 
+    { 
+        // Ensure motor torque is zeroed and brake torque is applied to all wheels
+        frontLeftCollider.motorTorque = 0f; frontLeftCollider.brakeTorque = brakeForce; 
+        frontRightCollider.motorTorque = 0f; frontRightCollider.brakeTorque = brakeForce; 
+        rearLeftCollider.motorTorque = 0f; rearLeftCollider.brakeTorque = brakeForce; 
+        rearRightCollider.motorTorque = 0f; rearRightCollider.brakeTorque = brakeForce; 
+    }
+    void ReleaseBrakes()
+    {
+        frontLeftCollider.brakeTorque = 0f; frontRightCollider.brakeTorque = 0f; 
+        rearLeftCollider.brakeTorque = 0f; rearRightCollider.brakeTorque = 0f;
+    }
     public void ThrottleOff() { ApplyTorque(0); }
-    void ApplyDrive(float direction) { float currentMax = direction > 0 ? maxSpeed : maxReverseSpeed; if (Mathf.Abs(carSpeed) < currentMax) ApplyTorque((accelerationMultiplier * 50f) * throttleAxis); else ApplyTorque(0); }
-    void ApplyTorque(float torque) { frontLeftCollider.motorTorque = torque; frontRightCollider.motorTorque = torque; rearLeftCollider.motorTorque = torque; rearRightCollider.motorTorque = torque; frontLeftCollider.brakeTorque = 0; frontRightCollider.brakeTorque = 0; rearLeftCollider.brakeTorque = 0; rearRightCollider.brakeTorque = 0; }
+    void ApplyDrive(float direction) { float currentMax = direction > 0 ? maxSpeed : maxReverseSpeed; if (Mathf.Abs(carSpeed) < currentMax) { ReleaseBrakes(); ApplyTorque((accelerationMultiplier * 50f) * throttleAxis); } else ApplyTorque(0); }
+    void ApplyTorque(float torque) { frontLeftCollider.motorTorque = torque; frontRightCollider.motorTorque = torque; rearLeftCollider.motorTorque = torque; rearRightCollider.motorTorque = torque; }
     void UpdateDriftState() { isDrifting = Mathf.Abs(localVelocityX) > 2.5f; DriftCarPS(); }
     public void TurnLeft() { AdjustSteering(-1f); }
     public void TurnRight() { AdjustSteering(1f); }
@@ -393,6 +434,25 @@ public class PrometeoCarController : MonoBehaviour
         float angle = steeringAxis * maxSteeringAngle;
         frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, angle, steeringSpeed);
         frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, angle, steeringSpeed);
+    }
+
+    // collision sound when touching objects tagged "Border"
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider == null) return;
+        if (!collision.collider.CompareTag("Border")) return;
+        if (collisionClip == null) return;
+
+        Vector3 hitPoint = collision.contacts != null && collision.contacts.Length > 0 ? collision.contacts[0].point : transform.position;
+
+        if (useSounds && AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySound3D(collisionClip, hitPoint, null, collisionVolume);
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(collisionClip, hitPoint, collisionVolume);
+        }
     }
 
     // --- KÉZIFÉK LOGIKA (Egyszerűsítve a felületkezeléshez) ---
