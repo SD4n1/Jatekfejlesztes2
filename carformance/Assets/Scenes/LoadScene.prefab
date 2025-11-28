@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6802734958579801453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7401261663804049974}
+  - component: {fileID: 1688264209982087279}
+  m_Layer: 0
+  m_Name: LoadScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7401261663804049974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802734958579801453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 730.5, y: 411, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1688264209982087279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802734958579801453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44bacc352ecd4b40bc73c7423d37f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoadScene
+  currentPageType: 0
+  nextSceneName: TrackSelection
+  allTracks:
+  - {fileID: 11400000, guid: e51fd19ea45cd0c42b26362bdbc5b20b, type: 2}
+  - {fileID: 11400000, guid: 3e61d7f871423e642a137b95a3e7a0d1, type: 2}
+  allCars:
+  - {fileID: 11400000, guid: 82f95f4bcdf88604487f1a8543934fec, type: 2}
+  - {fileID: 11400000, guid: da5ba52dce9645d44874ddfc6c330fdf, type: 2}
+  - {fileID: 11400000, guid: fdfa5964dd22e0d44acfd340b8b00f26, type: 2}
+  - {fileID: 11400000, guid: 697ddcf0de4c7bc45a4738ceb80a04a2, type: 2}
+  - {fileID: 11400000, guid: 74f5a0a8e38ec604b8d38d5328bcbbfe, type: 2}

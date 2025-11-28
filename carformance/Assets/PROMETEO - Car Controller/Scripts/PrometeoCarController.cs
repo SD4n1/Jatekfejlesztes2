@@ -502,10 +502,9 @@ public class PrometeoCarController : MonoBehaviour
         if (useUI && carSpeedText)
             carSpeedText.text = Mathf.RoundToInt(Mathf.Abs(carSpeed)).ToString();
 
-        // NEW: update gear UI text if assigned
         if (useUI && gearText != null)
         {
-            // Display current gear number. You can change formatting (e.g. "Gear: " + currentGear) if desired.
+
             gearText.text = currentGear.ToString();
         }
     }

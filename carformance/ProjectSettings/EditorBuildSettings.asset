@@ -4,5 +4,24 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 57ec1cefa8358354c9ca3f4981d68bea
+  - enabled: 1
+    path: Assets/Scenes/TrackSelection.unity
+    guid: ed74334b18d93d94c93862c416f12293
+  - enabled: 1
+    path: Assets/Scenes/Spielberg.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Hungaroring.unity
+    guid: 98ccc901fc3183249af0cab076570493
+  - enabled: 1
+    path: Assets/Scenes/CarSelection.unity
+    guid: 1b7820e004f3e1a468d883cbd4f6d7d8
+  - enabled: 1
+    path: Assets/Scenes/LiverySelection.unity
+    guid: 8c12d9dca70af9f48b380a85c0cdcd75
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
