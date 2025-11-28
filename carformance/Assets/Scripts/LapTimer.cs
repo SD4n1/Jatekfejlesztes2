@@ -11,9 +11,7 @@ public class LapTimer : MonoBehaviour
     private float currentLapTime = 0f;
     private bool isRacing = false;
 
-    // -1: Boxutca
-    //  0: Kivezetõ kör (Out Lap)
-    //  1+: Éles körök
+
     private int lapCounter = -1;
 
     private List<string> lapRecords = new List<string>();
@@ -32,8 +30,6 @@ public class LapTimer : MonoBehaviour
     {
         if (isRacing)
         {
-            // CSAK AKKOR számoljuk az idõt, ha már az 1. körben (vagy késõbb) vagyunk
-            // A -1 (Box) és 0 (Out Lap) alatt az idõ állni fog 0-n.
             if (lapCounter >= 1)
             {
                 currentLapTime += Time.deltaTime;
@@ -53,11 +49,10 @@ public class LapTimer : MonoBehaviour
 
     void FinishLap()
     {
-        // Ha még nem éles kör (-1 vagy 0)
         if (lapCounter < 1)
         {
-            lapCounter++; // Léptetjük a fázist
-            currentLapTime = 0f; // Biztos ami biztos, nullázzuk
+            lapCounter++;
+            currentLapTime = 0f;
 
             if (lapCounter == 0) Debug.Log("Box elhagyva -> Out Lap (idõmérés áll)");
             if (lapCounter == 1) Debug.Log("Célvonal átlépve -> IDÕMÉRÉS INDUL!");
@@ -65,7 +60,6 @@ public class LapTimer : MonoBehaviour
             return;
         }
 
-        // --- ÉLES KÖRÖK MENTÉSE ---
 
         float minutes = Mathf.FloorToInt(currentLapTime / 60);
         float seconds = Mathf.FloorToInt(currentLapTime % 60);
@@ -83,24 +77,21 @@ public class LapTimer : MonoBehaviour
         UpdateHistoryUI();
 
         lapCounter++;
-        currentLapTime = 0f; // Nullázzuk a következõ körhöz
+        currentLapTime = 0f;
     }
 
     void UpdateTimerUI()
     {
-        // Külön szöveg a különbözõ fázisokhoz
         if (lapCounter == -1)
         {
             timerDisplay.text = "PIT LANE";
         }
         else if (lapCounter == 0)
         {
-            // Itt most csak kiírjuk a szöveget, idõ nélkül, hiszen az nem számolódik
             timerDisplay.text = "OUT LAP";
         }
         else
         {
-            // Éles kör: mutatjuk az idõt
             float minutes = Mathf.FloorToInt(currentLapTime / 60);
             float seconds = Mathf.FloorToInt(currentLapTime % 60);
             float milliseconds = (currentLapTime % 1) * 1000;

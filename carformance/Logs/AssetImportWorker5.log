@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-11-27T21:53:06.1227852Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-11-27T21:53:06Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-11-28T12:32:32.248323Z"
+Date: 2025-11-28T12:32:32Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-54888
+62023
 -licensingIpc
 LicenseClient-gyorf
 -job-worker-count
@@ -65,27 +65,18 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [240496]  Target information:
+Player connection [264960]  Target information:
 
-Player connection [240496]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1121923868 [EditorId] 1121923868 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [264960]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3483119566 [EditorId] 3483119566 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [240496] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [240496] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [264960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [264960] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 240828, path: "D:/Programs/UnityHub/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 200996, path: "D:/Programs/UnityHub/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.3+a4e98f1
-  Session Id:              bae8bfb8546d49f3b1c92184b45b6f5b
-  Correlation Id:          c7bd27bf5efb9b68c3a04b56d0466c50
-  External correlation Id: 8756895013469238021
-  Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.13s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-11-27T21:53:06.2651793Z"
-[Licensing::Module] Licensing Background thread has ended after 0.14s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -93,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 16.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
@@ -109,43 +100,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.3+a4e98f1
+  Session Id:              8c2bf95578914e5a82987713c3dfeb60
+  Correlation Id:          da2eab92360fa43ca2c03e396beda6b2
+  External correlation Id: 4620884247385687115
+  Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 1.39s, handshake: 0.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-11-28T12:32:33.7636019Z"
+[Licensing::Module] Licensing Background thread has ended after 1.52s
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002569 seconds.
-- Loaded All Assemblies, in  0.730 seconds
+Registered in 0.003423 seconds.
+- Loaded All Assemblies, in  0.923 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.591 seconds
-Domain Reload Profiling: 1316ms
-	BeginReloadAssembly (229ms)
+Domain Reload Profiling: 1509ms
+	BeginReloadAssembly (402ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (82ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (87ms)
-	LoadAllAssembliesAndSetupDomain (303ms)
-		LoadAssemblies (225ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (122ms)
+	LoadAllAssembliesAndSetupDomain (286ms)
+		LoadAssemblies (394ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (298ms)
-			TypeCache.Refresh (294ms)
-				TypeCache.ScanAssembly (267ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (279ms)
+				TypeCache.ScanAssembly (258ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (592ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (591ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (519ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (93ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (110ms)
-			ProcessInitializeOnLoadAttributes (203ms)
-			ProcessInitializeOnLoadMethodAttributes (105ms)
+			InitializePlatformSupportModulesInManaged (87ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -161,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.546 seconds
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.894 seconds
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -172,55 +172,65 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.913 seconds
-Domain Reload Profiling: 2453ms
-	BeginReloadAssembly (292ms)
+- Finished resetting the current domain, in  1.202 seconds
+Domain Reload Profiling: 3090ms
+	BeginReloadAssembly (496ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (57ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (1108ms)
-		LoadAssemblies (670ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (1232ms)
+		LoadAssemblies (682ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (588ms)
-			TypeCache.Refresh (510ms)
-				TypeCache.ScanAssembly (480ms)
-			BuildScriptInfoCaches (63ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (914ms)
+		AnalyzeDomain (741ms)
+			TypeCache.Refresh (650ms)
+				TypeCache.ScanAssembly (604ms)
+			BuildScriptInfoCaches (73ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1203ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (737ms)
+		SetupLoadedEditorAssemblies (964ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (455ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (242ms)
+			ProcessInitializeOnLoadAttributes (605ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
 			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.91 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4203 unused Assets / (1.3 MB). Loaded Objects now: 4697.
-Memory consumption went from 90.5 MB to 89.2 MB.
-Total: 9.147900 ms (FindLiveObjects: 0.543100 ms CreateObjectMapping: 0.695700 ms MarkObjects: 6.159300 ms  DeleteObjects: 1.746600 ms)
+Unloading 4243 unused Assets / (1.2 MB). Loaded Objects now: 4736.
+Memory consumption went from 90.1 MB to 88.9 MB.
+Total: 10.517700 ms (FindLiveObjects: 0.692200 ms CreateObjectMapping: 0.779000 ms MarkObjects: 6.500300 ms  DeleteObjects: 2.542600 ms)
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4194 unused Assets / (1.0 MB). Loaded Objects now: 4697.
-Memory consumption went from 89.1 MB to 88.1 MB.
-Total: 11.719600 ms (FindLiveObjects: 0.622400 ms CreateObjectMapping: 0.657300 ms MarkObjects: 8.854100 ms  DeleteObjects: 1.584400 ms)
+Unloading 4234 unused Assets / (1.7 MB). Loaded Objects now: 4736.
+Memory consumption went from 88.7 MB to 87.0 MB.
+Total: 13.742900 ms (FindLiveObjects: 0.664200 ms CreateObjectMapping: 0.877000 ms MarkObjects: 9.712200 ms  DeleteObjects: 2.487800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4234 unused Assets / (131.0 KB). Loaded Objects now: 4736.
+Memory consumption went from 88.7 MB to 88.6 MB.
+Total: 22.066100 ms (FindLiveObjects: 0.573700 ms CreateObjectMapping: 1.055900 ms MarkObjects: 16.934100 ms  DeleteObjects: 3.500700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -228,8 +238,8 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.518 seconds
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.657 seconds
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -238,86 +248,238 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.004 seconds
-Domain Reload Profiling: 2516ms
-	BeginReloadAssembly (366ms)
+- Finished resetting the current domain, in  1.158 seconds
+Domain Reload Profiling: 2811ms
+	BeginReloadAssembly (449ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
+		DisableScriptedObjects (26ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (92ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (1015ms)
-		LoadAssemblies (745ms)
+		CreateAndSetChildDomain (105ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (1053ms)
+		LoadAssemblies (796ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (447ms)
-			TypeCache.Refresh (16ms)
+		AnalyzeDomain (463ms)
+			TypeCache.Refresh (20ms)
 				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (414ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1005ms)
+			BuildScriptInfoCaches (425ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1159ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (788ms)
+		SetupLoadedEditorAssemblies (951ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (217ms)
-			ProcessInitializeOnLoadAttributes (454ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (230ms)
+			ProcessInitializeOnLoadAttributes (606ms)
+			ProcessInitializeOnLoadMethodAttributes (94ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4201 unused Assets / (1.2 MB). Loaded Objects now: 4699.
-Memory consumption went from 90.5 MB to 89.3 MB.
-Total: 12.977700 ms (FindLiveObjects: 0.619500 ms CreateObjectMapping: 1.157600 ms MarkObjects: 9.487800 ms  DeleteObjects: 1.711600 ms)
+Unloading 4241 unused Assets / (2.3 MB). Loaded Objects now: 4738.
+Memory consumption went from 90.1 MB to 87.8 MB.
+Total: 12.093700 ms (FindLiveObjects: 0.599300 ms CreateObjectMapping: 0.731700 ms MarkObjects: 7.968500 ms  DeleteObjects: 2.793000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 878876.009281 seconds.
-  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Opening_Interior_02.wav
-  artifactKey: Guid(7c3c9d1c233dc2342bda2f523def2204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Opening_Interior_02.wav using Guid(7c3c9d1c233dc2342bda2f523def2204) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e38a48aa937f260b10b28e10590bb199') in 0.235003 seconds
+  Time since last request: 931923.740226 seconds.
+  path: Assets/Scenes/Credits.unity
+  artifactKey: Guid(f57123ca852e89f49ae5969b2a3564e9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/Credits.unity using Guid(f57123ca852e89f49ae5969b2a3564e9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7209e976e734f52fa639efac2a99f1e5') in 0.1519806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Scenes/TrackSelection.unity
+  artifactKey: Guid(ed74334b18d93d94c93862c416f12293) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/TrackSelection.unity using Guid(ed74334b18d93d94c93862c416f12293) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4cd1de9da7e3a4d02322a0c6710e63f4') in 0.0362152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1029.524449 seconds.
+  path: Assets/Map/a046d02dba18489a9cd0dbf4e0683b43.jpg
+  artifactKey: Guid(eec09844e727e9e488f00625d636f498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map/a046d02dba18489a9cd0dbf4e0683b43.jpg using Guid(eec09844e727e9e488f00625d636f498) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90e911d5a2fa1714979e3a16f1133f0e') in 0.1881444 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Opening_Interior_03.wav
-  artifactKey: Guid(e419e7a93b1531e4bbe5f007b6a18dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Opening_Interior_03.wav using Guid(e419e7a93b1531e4bbe5f007b6a18dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a66db886ee22299807fe29d0cf2a9fb') in 0.0360457 seconds
+  Time since last request: 0.762945 seconds.
+  path: Assets/Map/a046d02dba18489a9cd0dbf4e0683b43.jpg
+  artifactKey: Guid(eec09844e727e9e488f00625d636f498) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Map/a046d02dba18489a9cd0dbf4e0683b43.jpg using Guid(eec09844e727e9e488f00625d636f498) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '35f579954925aac7336888440b3ae5ba') in 0.1563296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.967508 seconds.
+  path: Assets/PROMETEO - Car Controller/Textures/Mobile Devices/Button_Tex.png
+  artifactKey: Guid(edbdf29c69394334796f7fd1fef82d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PROMETEO - Car Controller/Textures/Mobile Devices/Button_Tex.png using Guid(edbdf29c69394334796f7fd1fef82d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7191f02108552812461bbed761452923') in 0.1389475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 513.967664 seconds.
+  path: Assets/Scenes/TrackSelection.unity
+  artifactKey: Guid(ed74334b18d93d94c93862c416f12293) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/TrackSelection.unity using Guid(ed74334b18d93d94c93862c416f12293) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1cb1835dc41e48eec444d6788fe3b9e') in 0.0327925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.489583 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
+  artifactKey: Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ebb19761fd650b818a65e4f259e885f') in 0.3079801 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Exterior_Loop.wav
-  artifactKey: Guid(33d5f05eb46a3e345928831e0d00b15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Exterior_Loop.wav using Guid(33d5f05eb46a3e345928831e0d00b15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '732dc8ca6c877e735a4804ad2f9987c9') in 0.080459 seconds
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
+  artifactKey: Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat using Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c5192a735ed9ae93567d08876f236db') in 0.0897781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b8eb5a3dd543e9eae9fe8046e3a1423') in 0.2328456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.635190 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat
+  artifactKey: Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat using Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a3ece3e0d1d64a47d71f70f04afb0c2') in 0.0165571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042170 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
+  artifactKey: Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6477b5762d72c2510fd699453afb06ad') in 0.0144447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070076 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09efa7adb5290a69716a9a95a62a48b0') in 0.1622632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050600 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat
+  artifactKey: Guid(6751ce1a4611b3940812c13a6847d94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat using Guid(6751ce1a4611b3940812c13a6847d94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8f4c8433403b97c88e969ff2319ff43') in 0.0311676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fb5a69117cad81bc323667e2bf4549b') in 0.0795546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.379981 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat
+  artifactKey: Guid(3b5cc91c3bf8cf74391252247f52fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat using Guid(3b5cc91c3bf8cf74391252247f52fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7d4b1cbc0f7a31fab400782907dc70b') in 0.016822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.427363 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'babdfd769e78a0bdfccf2ce0223fc1ae') in 0.0526451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '021f21b7c117cf0a44aedb9b39247dee') in 0.0219462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/PROMETEO - Car Controller/Fonts/Teko-Bold.ttf
+  artifactKey: Guid(eda16a574f5cf654b832867016f588f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PROMETEO - Car Controller/Fonts/Teko-Bold.ttf using Guid(eda16a574f5cf654b832867016f588f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eda82b980973b65d0609c1979e195562') in 0.0204065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.754831 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17ec52d9176082c729341256c700cce5') in 0.2995829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbba559789997710ff18671b37686cf8') in 0.0544857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/PROMETEO - Car Controller/Materials/PCC_ParkingZone_Mat.mat
+  artifactKey: Guid(6c7e85d89b2e5e34a93e7f83facefcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PROMETEO - Car Controller/Materials/PCC_ParkingZone_Mat.mat using Guid(6c7e85d89b2e5e34a93e7f83facefcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a671707de251a858c6c1cf09ab674b3') in 0.2623899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PROMETEO - Car Controller/Materials/PCC_Light_Mat.mat
+  artifactKey: Guid(975b4d94cd15da34d833f64957a8479a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PROMETEO - Car Controller/Materials/PCC_Light_Mat.mat using Guid(975b4d94cd15da34d833f64957a8479a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8858e4a423425c9418d45d1ee77fded9') in 0.030354 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000039 seconds.
-  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_04.wav
-  artifactKey: Guid(594c96bc024374641bdf1660a2622236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_04.wav using Guid(594c96bc024374641bdf1660a2622236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97e8836fa0e9bce2120a334506ff571a') in 0.09016 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa569c6ae8cedd8fd51cfbc128020991') in 0.0457437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Electric_Window/Vehicle_Car_ElectricWindow_Closing.wav
-  artifactKey: Guid(96fc32f667a183e44b32f8c3dae5fe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Electric_Window/Vehicle_Car_ElectricWindow_Closing.wav using Guid(96fc32f667a183e44b32f8c3dae5fe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f92981d0eddaabb56be491e497b0147') in 0.0597991 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
+  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18d02c428bda16715d38d0b62c6935c0') in 0.2933902 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

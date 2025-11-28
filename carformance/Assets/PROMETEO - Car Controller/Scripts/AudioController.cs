@@ -39,24 +39,19 @@ namespace AudioController
 
         private void CleanAudioListeners()
         {
-            // JAVÍTVA: FindObjectsOfType helyett FindObjectsByType(FindObjectsSortMode.None)
-            // Ez sokkal gyorsabb és eltünteti a warningot.
             var listeners = FindObjectsByType<AudioListener>(FindObjectsSortMode.None);
 
             if (listeners.Length > 1)
             {
                 foreach (var listener in listeners)
                 {
-                    // Ha az adott listeneren van AudioManager, azt hagyjuk békén
                     if (listener.gameObject.GetComponent<AudioManager>() != null) continue;
 
-                    // A többi felesleges listenert töröljük
                     DestroyImmediate(listener);
                 }
             }
         }
 
-        // --- ONE SHOT METHODS ---
 
         public void PlaySound2D(AudioClip audioClip, float volume = 1f)
         {
@@ -79,7 +74,6 @@ namespace AudioController
             Destroy(soundObj, audioClip.length + 0.1f);
         }
 
-        // --- PERSISTENT SOURCE METHODS ---
 
         public AudioSource CreateLoopingSource(Transform parent, AudioClip clip, float startVolume = 0f, bool is3D = true)
         {
@@ -108,7 +102,6 @@ namespace AudioController
             source.playOnAwake = false;
         }
 
-        // --- MUSIC METHODS ---
 
         public void PlayMusic(AudioClip audioClip, float volume = 1f)
         {

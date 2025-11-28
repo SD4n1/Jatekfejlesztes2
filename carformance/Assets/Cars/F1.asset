@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e9330940a580f43aa713c79a87ebc9, type: 3}
+  m_Name: F1
+  m_EditorClassIdentifier: Assembly-CSharp::CarData
+  categoryName: F1
+  categoryImage: {fileID: 0}
+  carOptions:
+  - teamName: Aston Martin
+    prefab: {fileID: 5427178599615479775, guid: 1393895e5638a0c468386a6426f409aa, type: 3}
+  - teamName: Ferrari
+    prefab: {fileID: 1102799551692337919, guid: c5ae7744e0815774baa1e0b4457ae179, type: 3}
+  - teamName: McLaren
+    prefab: {fileID: 8999823947385793933, guid: 7d4512a2fdf0bf348874c21b390cd0c3, type: 3}
+  - teamName: Mercedes
+    prefab: {fileID: 7942878873430571139, guid: 700e47bb6e8b06b419c3aece56035bd5, type: 3}
+  - teamName: Red Bull
+    prefab: {fileID: 2533747606407199827, guid: 76b1cbb11ad98b54ea27a89a5e49f761, type: 3}

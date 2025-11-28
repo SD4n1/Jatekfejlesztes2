@@ -7221,6 +7221,7 @@ GameObject:
   - component: {fileID: 3577168610071917748}
   - component: {fileID: 2060668749808591239}
   - component: {fileID: 8596563573763614591}
+  - component: {fileID: 4913248978760678105}
   m_Layer: 0
   m_Name: Red Bull (1)
   m_TagString: Untagged
@@ -7339,6 +7340,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 84b7b71755cc5b449b364aa1380ba45c, type: 3}
   - {fileID: 8300000, guid: 6999d71871fc4214590aab6b0e594947, type: 3}
   tireScreechClip: {fileID: 0}
+  collisionClip: {fileID: 0}
+  collisionVolume: 1
   numberOfGears: 8
   revUpSpeed: 2
   revDownSpeed: 4
@@ -7351,6 +7354,20 @@ MonoBehaviour:
   carSpeed: 0
   isDrifting: 0
   isTractionLocked: 0
+--- !u!114 &4913248978760678105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333553092142299076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de80807eef9e894889f2bc88e0f0bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LapTimer
+  timerDisplay: {fileID: 0}
+  historyText: {fileID: 0}
 --- !u!1 &5343764275170712500
 GameObject:
   m_ObjectHideFlags: 0
