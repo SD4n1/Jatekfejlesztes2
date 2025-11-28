@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Grass
   - Gravel
+  - FinishLine
+  - Border
   layers:
   - Default
   - TransparentFX
