@@ -29,17 +29,14 @@ ScriptedImporter:
     originalUri: Assets\Cars\Mercedes\mercedes.bin
     assetPath: Assets\Cars\Mercedes\mercedes.bin
   - type: 1
-    originalUri: Assets\Cars\Mercedes\488_WHEELS_specularf0.png
-    assetPath: Assets\Cars\Mercedes\488_WHEELS_specularf0.png
+    originalUri: Assets\Cars\Mercedes\3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png
+    assetPath: Assets\Cars\Mercedes\3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png
   - type: 1
     originalUri: Assets\Cars\Mercedes\19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
     assetPath: Assets\Cars\Mercedes\19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
   - type: 1
     originalUri: Assets\Cars\Mercedes\442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png
     assetPath: Assets\Cars\Mercedes\442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png
-  - type: 1
-    originalUri: Assets\Cars\Mercedes\488_WHEELS_metallicRoughness.png
-    assetPath: Assets\Cars\Mercedes\488_WHEELS_metallicRoughness.png
   - type: 1
     originalUri: Assets\Cars\Mercedes\124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png
     assetPath: Assets\Cars\Mercedes\124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png
@@ -49,6 +46,9 @@ ScriptedImporter:
   - type: 1
     originalUri: Assets\Cars\Mercedes\ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
     assetPath: Assets\Cars\Mercedes\ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
+  - type: 1
+    originalUri: Assets\Cars\Mercedes\27d902b2a2b2465792f9e47a9d669dda_RGB_F2021_PAINT_NonColor.png
+    assetPath: Assets\Cars\Mercedes\27d902b2a2b2465792f9e47a9d669dda_RGB_F2021_PAINT_NonColor.png
   - type: 1
     originalUri: Assets\Cars\Mercedes\27d902b2a2b2465792f9e47a9d669dda_RGB_F2021_PAINT_OMG.png
     assetPath: Assets\Cars\Mercedes\27d902b2a2b2465792f9e47a9d669dda_RGB_F2021_PAINT_OMG.png
