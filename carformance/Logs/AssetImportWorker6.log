@@ -366,3 +366,95 @@ Received Import Request.
 Start importing Assets/Scenes/LoadScene.prefab using Guid(0d0fbfd4d397dde48b82718a070d8910) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0ddfdd1aefbb2fc6b31426a55532dc0') in 0.1938855 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 729
 
+========================================================================
+Received Import Request.
+  Time since last request: 318.338711 seconds.
+  path: Assets/Cars/ferrari_old/6a982a2567e54cc991abe8342a2d36c8_N_FW26_DETAILS_NORMAL.png
+  artifactKey: Guid(98df6f7efb7ef4b45be8ed126872dbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/6a982a2567e54cc991abe8342a2d36c8_N_FW26_DETAILS_NORMAL.png using Guid(98df6f7efb7ef4b45be8ed126872dbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0281d09eeb362388a0ae1fe9416dbb5e') in 0.0417948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Cars/ferrari_old/dbc01957227e4ddc894afa557193bd1b_A_FW26_ST_WHEEL.png
+  artifactKey: Guid(370ca367401bd6a49a7b68ee4c0cf829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/dbc01957227e4ddc894afa557193bd1b_A_FW26_ST_WHEEL.png using Guid(370ca367401bd6a49a7b68ee4c0cf829) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11dfbeb9e741db6163beb42c7a81d08d') in 0.0332675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Cars/ferrari_old/a65176127ea8497ebfa780228317174e_A_FW26_DETAILS.png
+  artifactKey: Guid(ca29d45eebf293b4297fc187d032de09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/a65176127ea8497ebfa780228317174e_A_FW26_DETAILS.png using Guid(ca29d45eebf293b4297fc187d032de09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '159e05e69dd07da938535b3f0743a36c') in 0.034444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Cars/ferrari_old/f98495b97c5a49e5b4a2ff879839e732_N_FW26_COCKPIT_NORMAL.png
+  artifactKey: Guid(e1c51292bd2c408409fda3fe4c313725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/f98495b97c5a49e5b4a2ff879839e732_N_FW26_COCKPIT_NORMAL.png using Guid(e1c51292bd2c408409fda3fe4c313725) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a67ec1bc7cc1699a5344fe94e0551bbf') in 0.0302407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Cars/ferrari_old/852d91b854634814932edfdcdaff381b_RGB_FW26_COCKPIT.png
+  artifactKey: Guid(e0375c8450e9eca4baf0fe3e589a12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/852d91b854634814932edfdcdaff381b_RGB_FW26_COCKPIT.png using Guid(e0375c8450e9eca4baf0fe3e589a12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '442f9ae7cff02a3577e72a22b30eeacc') in 0.0302247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Cars/ferrari_old/bd95003e233c4b309a09bfef0211bf19_R_FW26_ST_WHEEL_SMOOTH.png
+  artifactKey: Guid(90dbe6efee6971f44a5c311d77c93540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/bd95003e233c4b309a09bfef0211bf19_R_FW26_ST_WHEEL_SMOOTH.png using Guid(90dbe6efee6971f44a5c311d77c93540) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a8b3d579b8008e13d9c204a4f14fa2e') in 0.031619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Cars/ferrari_old/488_SHADOW_baseColor.png
+  artifactKey: Guid(f6b67179d331d90488b5541260bd0aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/488_SHADOW_baseColor.png using Guid(f6b67179d331d90488b5541260bd0aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cca23348caf1c5088a5eee570b629024') in 0.0146223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Cars/ferrari_old/ferrero_old.png
+  artifactKey: Guid(56c9b40bf047af9488b2bf3cd0a85811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/ferrero_old.png using Guid(56c9b40bf047af9488b2bf3cd0a85811) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c683a4017d3875bb335fb2dc20298062') in 0.0337393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Cars/ferrari_old/07f4e95458f949ea96d56b9d624b8ab7_RGB_FW26_CARBON.png
+  artifactKey: Guid(e6811aab33960084987b402823b0809c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/07f4e95458f949ea96d56b9d624b8ab7_RGB_FW26_CARBON.png using Guid(e6811aab33960084987b402823b0809c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8554d13ad04c30b134624a4f9bcbefe4') in 0.0162538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Cars/ferrari_old/3274b77644b346c8be5c59022eb5ad9f_N_FW26_SEAT_NORMAL.png
+  artifactKey: Guid(ee0bef660c012654aacfef58b5cbdc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/3274b77644b346c8be5c59022eb5ad9f_N_FW26_SEAT_NORMAL.png using Guid(ee0bef660c012654aacfef58b5cbdc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dec3c9b042458d0087cbe0cc81b848b') in 0.0367983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Cars/ferrari_old/b707870558be4e33a5d224de2508d93a_R_FW26_DETAILS_SMOOTH.png
+  artifactKey: Guid(d26aa0fa6f4da7b4b9d02a72fae1fb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old/b707870558be4e33a5d224de2508d93a_R_FW26_DETAILS_SMOOTH.png using Guid(d26aa0fa6f4da7b4b9d02a72fae1fb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bb68bdeffd22a0fdcc93cc1ac68ef34') in 0.0335505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
