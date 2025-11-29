@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\gyorf\\documents\\jatekfejlesztes2\\carformance\\assets\\scripts\\loadscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\gyorf\\documents\\jatekfejlesztes2\\carformance\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\gyorf\\documents\\jatekfejlesztes2\\carformance\\assets\\scripts\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\Exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +35,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MusicManager.cs",
+              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\MusicManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MusicManager.cs",
+              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\MusicManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MusicManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:15:06.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoadScene.cs",
+              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\LoadScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadScene.cs",
+              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\LoadScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadScene.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAawCUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:15:06.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PrometeoCarController.cs",
+              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ViewState": "AgIAAGsCAAAAAAAAAAAAADUCAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:15:06.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Exit.cs",
+              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\Exit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Exit.cs",
+              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\Exit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Exit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:15:06.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController.cs",
@@ -31,19 +95,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T12:46:02.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PrometeoCarController.cs",
-              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
-              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
-              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
-              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T12:47:10.77Z",
               "EditorCaption": ""
             }
           ]

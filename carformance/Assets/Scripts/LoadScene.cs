@@ -10,6 +10,7 @@ public class LoadScene : MonoBehaviour
     [Header("MÛKÖDÉS")]
     public PageType currentPageType;
     public string nextSceneName;
+    public string previousSceneName;
 
     [Header("UI Elemek (Csak Livery választónál kell)")]
     public TextMeshProUGUI nameText;
@@ -28,7 +29,35 @@ public class LoadScene : MonoBehaviour
         }
     }
 
-    // --- NYILAK KEZELÉSE ---
+    // --- ÚJ RÉSZ: CREDITS ÉS EXIT GOMBOK ---
+
+    // Ezt húzd a "Készítõk" gombra
+    public void OpenCredits()
+    {
+        // FONTOS: A scene nevének pontosan "Credits"-nek kell lennie a Projectben!
+        SceneManager.LoadScene("Credits");
+    }
+
+    // Ezt húzd az "Exit" / "Kilépés" gombra
+    public void QuitGame()
+    {
+        Debug.Log("Kilépés a játékból..."); // Ez csak az editorban látszik
+        Application.Quit();
+    }
+    // ---------------------------------------
+
+    public void GoBack()
+    {
+        if (!string.IsNullOrEmpty(previousSceneName))
+        {
+            SceneManager.LoadScene(previousSceneName);
+        }
+        else
+        {
+            Debug.LogError("HIBA: Nincs megadva, hova kell visszalépni (previousSceneName)!");
+        }
+    }
+
     public void NextLivery()
     {
         CarData category = RaceManager.Instance.selectedCar;
@@ -65,18 +94,14 @@ public class LoadScene : MonoBehaviour
             return;
         }
 
-      
         if (nameText == null) Debug.LogError("HIBA: Nincs behúzva a Szöveg az Inspectorban!");
 
         if (category != null && nameText != null)
         {
             var options = category.carOptions;
-            Debug.Log("Siker! Csapatok száma: " + options.Count + ". Jelenlegi index: " + currentLiveryIndex);
-
             if (options.Count > currentLiveryIndex)
             {
                 nameText.text = options[currentLiveryIndex].teamName;
-
             }
         }
     }
