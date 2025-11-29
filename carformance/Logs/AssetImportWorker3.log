@@ -1,35 +1,35 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-salek" at "2025-11-28T17:41:00.7026897Z"
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'hu' Physical Memory: 16226 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-11-29T13:37:11.1810149Z"
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-11-28T17:41:00Z
+Date: 2025-11-29T13:37:11Z
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.2.8f1\Editor\Unity.exe
+C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker3
 -projectPath
-D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
+C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-49816
+58258
 -licensingIpc
-LicenseClient-salek
+LicenseClient-gyorf
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
-D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
+Successfully changed project path to: C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
+C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -65,29 +65,18 @@ D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6976]  Target information:
+Player connection [283912]  Target information:
 
-Player connection [6976]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 84422783 [EditorId] 84422783 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UIR5A7Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [283912]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 2098917611 [EditorId] 2098917611 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6976]  * "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 84422783 [EditorId] 84422783 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UIR5A7Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [6976] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [6976] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [283912] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [283912] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 14144, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 239512, path: "D:/Programs/UnityHub/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.3+a4e98f1
-  Session Id:              14110609ccba4ba3ae3078c1e08fe388
-  Correlation Id:          fe16ac78f70f491ea79fb311cc40b1df
-  External correlation Id: 7150205889470511430
-  Machine Id:              Vf3uOEd9RA54eCxFq9M0AQju0g8=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-salek" (connect: 0.00s, validation: 0.00s, handshake: 0.13s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-salek-notifications" at "2025-11-28T17:41:00.8390753Z"
-[Licensing::Module] Licensing Background thread has ended after 0.14s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -95,59 +84,68 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/EKKE/Jatekfejlesztes/Jatekfejlesztes2/carformance/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.3+a4e98f1
+  Session Id:              db6669d35f1740069be658af6398944d
+  Correlation Id:          400910d556e7ad18c7b2e82db117dda7
+  External correlation Id: 3214283295682664836
+  Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.40s, handshake: 0.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-11-29T13:37:11.7027911Z"
+[Licensing::Module] Licensing Background thread has ended after 0.53s
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
-    Vendor:   NVIDIA
-    VRAM:     4004 MB
-    Driver:   32.0.15.8157
+    Renderer: AMD Radeon(TM) RX 560 (ID=0x67ef)
+    Vendor:   ATI
+    VRAM:     4074 MB
+    Driver:   31.0.21923.11000
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006255 seconds.
-- Loaded All Assemblies, in  0.914 seconds
+Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003208 seconds.
+- Loaded All Assemblies, in  0.710 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.750 seconds
-Domain Reload Profiling: 1653ms
-	BeginReloadAssembly (312ms)
+- Finished resetting the current domain, in  0.570 seconds
+Domain Reload Profiling: 1276ms
+	BeginReloadAssembly (230ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (85ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (120ms)
-	LoadAllAssembliesAndSetupDomain (356ms)
-		LoadAssemblies (301ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (290ms)
+		LoadAssemblies (220ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (350ms)
-			TypeCache.Refresh (347ms)
-				TypeCache.ScanAssembly (318ms)
+		AnalyzeDomain (285ms)
+			TypeCache.Refresh (282ms)
+				TypeCache.ScanAssembly (262ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (751ms)
+	FinalizeReload (571ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (662ms)
+		SetupLoadedEditorAssemblies (503ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (107ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (149ms)
-			ProcessInitializeOnLoadAttributes (273ms)
-			ProcessInitializeOnLoadMethodAttributes (125ms)
+			InitializePlatformSupportModulesInManaged (78ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (210ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -158,12 +156,12 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 7972506169033-unity_a441709a25b9d6da51a3-UnityProStuXXXX
-  Product: Unity Student
+  Id: 7971647008574-UnityPersXXXX
+  Product: Unity Personal
   Type: Assigned
-  Expiration: 2026-10-09T15:31:33Z
+  Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.004 seconds
+- Loaded All Assemblies, in  1.438 seconds
 Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -174,150 +172,46 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.253 seconds
-Domain Reload Profiling: 3246ms
-	BeginReloadAssembly (430ms)
+- Finished resetting the current domain, in  1.484 seconds
+Domain Reload Profiling: 2916ms
+	BeginReloadAssembly (293ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (57ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (104ms)
-	LoadAllAssembliesAndSetupDomain (1345ms)
-		LoadAssemblies (882ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (992ms)
+		LoadAssemblies (599ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (716ms)
-			TypeCache.Refresh (616ms)
-				TypeCache.ScanAssembly (581ms)
-			BuildScriptInfoCaches (79ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1254ms)
+		AnalyzeDomain (544ms)
+			TypeCache.Refresh (466ms)
+				TypeCache.ScanAssembly (438ms)
+			BuildScriptInfoCaches (60ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1485ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1009ms)
+		SetupLoadedEditorAssemblies (1272ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
+			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (249ms)
-			ProcessInitializeOnLoadAttributes (619ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (24ms)
+			BeforeProcessingInitializeOnLoad (251ms)
+			ProcessInitializeOnLoadAttributes (860ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (24ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4242 unused Assets / (1.3 MB). Loaded Objects now: 4735.
-Memory consumption went from 90.3 MB to 89.0 MB.
-Total: 13.935900 ms (FindLiveObjects: 0.732400 ms CreateObjectMapping: 1.033800 ms MarkObjects: 9.289700 ms  DeleteObjects: 2.874600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 673621.571916 seconds.
-  path: Assets/Cars/Haas/3f8613c413f5404b8ea09627743998df_N_F2021_STEERING_WHEEL_NORMAL.png
-  artifactKey: Guid(dbf9f71d86659b3489025b2b5f897df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/3f8613c413f5404b8ea09627743998df_N_F2021_STEERING_WHEEL_NORMAL.png using Guid(dbf9f71d86659b3489025b2b5f897df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c975d9188445ec56e4be3c28e00ee7b2') in 0.1998476 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Cars/Haas/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png
-  artifactKey: Guid(e74aed70650ca8447942c42a53384b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png using Guid(e74aed70650ca8447942c42a53384b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf74c0a10084e4aa46826d0bbcc3ad84') in 0.054022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Cars/Haas/442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png
-  artifactKey: Guid(40fd625e9c061da4ba3f0833cfd3da55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png using Guid(40fd625e9c061da4ba3f0833cfd3da55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '111ac482df15238f1ad15a01922ea1b8') in 0.0395187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Cars/Haas/haas_nonColor.png
-  artifactKey: Guid(d23dd82bd32fc0944855c9531c94ec4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/haas_nonColor.png using Guid(d23dd82bd32fc0944855c9531c94ec4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdd8825672a3c38eda0bcead0e0987fb') in 0.0318657 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Cars/Haas/488_WHEELS_metallicRoughness.png
-  artifactKey: Guid(03a10b41b5111404b92f9af0e6fa5c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/488_WHEELS_metallicRoughness.png using Guid(03a10b41b5111404b92f9af0e6fa5c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3318332894463676c98ec3741c48ff3e') in 0.0359043 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Cars/Haas/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png
-  artifactKey: Guid(22cde718afebb1a4c8ba9532739a4c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/93cea486f1b54bc6a37ea1b00b1c5da3_N_F2021_DETAILS_NORMAL.png using Guid(22cde718afebb1a4c8ba9532739a4c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ffab8a89906f42d1efa0cac4478e23d') in 0.013181 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Cars/Haas/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
-  artifactKey: Guid(0275d8c3653d4bd46a241481fa065e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(0275d8c3653d4bd46a241481fa065e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff7519fc69c1becbaa5bf6e702edaf58') in 0.0347015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Cars/Haas/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png
-  artifactKey: Guid(49ad43bf04101724d82d463a19df103f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/124de97404674d838fff5427f8a7a0bc_RGB_F2021_CARBON.png using Guid(49ad43bf04101724d82d463a19df103f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecb2338c5be07640b2e41e8ae5a8735e') in 0.0265159 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Cars/Haas/haas.png
-  artifactKey: Guid(19f1becc107a41d418eef0eedda07b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/haas.png using Guid(19f1becc107a41d418eef0eedda07b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '851edec843811390238b742a53356b89') in 0.0312623 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Cars/Haas/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
-  artifactKey: Guid(30b9ad86b7f501e419d5bbb456274bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(30b9ad86b7f501e419d5bbb456274bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '925d5e49aba5400e9098e17c2aadffb9') in 0.0296289 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/Cars/Haas/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png
-  artifactKey: Guid(4d7de5b30fe4f8849b1a3de95dd848f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png using Guid(4d7de5b30fe4f8849b1a3de95dd848f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '414af28930b01b5c2e06d5c08df8a2fb') in 0.0326059 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Cars/Haas/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
-  artifactKey: Guid(65d5bfe3d823f8945a66e0eb8cb000e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png using Guid(65d5bfe3d823f8945a66e0eb8cb000e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e87e0525c9c95291608019960ec2f095') in 0.0132241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Cars/Haas/488_WHEELS_specularf0.png
-  artifactKey: Guid(aa1a685b41134c643b865434b5409634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas/488_WHEELS_specularf0.png using Guid(aa1a685b41134c643b865434b5409634) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53a2a1960bb7f7f5cc7a5474a7339bd0') in 0.0703996 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Unloading 4242 unused Assets / (1.8 MB). Loaded Objects now: 4735.
+Memory consumption went from 90.5 MB to 88.6 MB.
+Total: 13.652700 ms (FindLiveObjects: 0.584200 ms CreateObjectMapping: 0.711100 ms MarkObjects: 9.930500 ms  DeleteObjects: 2.423400 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

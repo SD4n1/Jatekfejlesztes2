@@ -25,3 +25,9 @@ MonoBehaviour:
     prefab: {fileID: 7942878873430571139, guid: 700e47bb6e8b06b419c3aece56035bd5, type: 3}
   - teamName: Red Bull
     prefab: {fileID: 2533747606407199827, guid: 76b1cbb11ad98b54ea27a89a5e49f761, type: 3}
+  - teamName: Haas
+    prefab: {fileID: 5086405087701463135, guid: f0e710c66b4141047a76ac1f04ee5a75, type: 3}
+  - teamName: Racing Bulls
+    prefab: {fileID: 5636885075600707867, guid: d60d3a8c5a4bf5d47ae681b9f285fef8, type: 3}
+  - teamName: Williams
+    prefab: {fileID: 4559660132500046611, guid: 680097894f6c17f4db57da9de713796e, type: 3}

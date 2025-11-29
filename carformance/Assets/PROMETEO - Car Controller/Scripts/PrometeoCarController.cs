@@ -15,7 +15,7 @@ public class PrometeoCarController : MonoBehaviour
     [Range(10, 50)] public int maxSteeringAngle = 27;
     [Range(0.1f, 1f)] public float steeringSpeed = 0.5f;
     [Space(10)]
-    [Range(100, 700)] public int brakeForce = 350;
+    [Range(100, 1000)] public int brakeForce = 350;
 
     // EZT KIVETTEM/ÁTÍRTAM: A Deceleration most már finomabb
     // [Range(1, 10)] public int decelerationMultiplier = 2; 
@@ -86,7 +86,7 @@ public class PrometeoCarController : MonoBehaviour
 
     private AudioSource[] engineSources;
     private AudioSource tireSource;
-    private float engineRPM = 0f;
+    private float engineRPM = 0.1f;
     private float targetRPM = 0f;
     private int currentGear = 1;
     private float[] gearSpeeds;
@@ -123,11 +123,15 @@ public class PrometeoCarController : MonoBehaviour
         carRigidbody = gameObject.GetComponent<Rigidbody>();
         carRigidbody.centerOfMass = bodyMassCenter;
 
+        // NE használj linearDamping-et, az zavarja a sebességet!
+        carRigidbody.linearDamping = 0f;
+        carRigidbody.angularDamping = 0.1f;
+
         // Elmentjük az eredeti beállításokat
         SaveDefaultFriction();
         CalculateGearRatios();
 
-        // Mentjük a coastingDrag és maxSpeed alapértékeit, hogy kavicson felülírhassuk, majd visszaállíthassuk
+        // Mentjük a coastingDrag és maxSpeed alapértékeit
         defaultCoastingDrag = coastingDrag;
         defaultMaxSpeed = maxSpeed;
 
@@ -149,6 +153,25 @@ public class PrometeoCarController : MonoBehaviour
         if (useUI) InvokeRepeating("CarSpeedUI", 0f, 0.1f);
         if (!useEffects) StopEffects();
         SetupTouchControls();
+
+        // Forward Friction növelése a jobb fékezéshez
+        WheelFrictionCurve forwardFriction;
+
+        forwardFriction = frontLeftCollider.forwardFriction;
+        forwardFriction.stiffness = 2f;
+        frontLeftCollider.forwardFriction = forwardFriction;
+
+        forwardFriction = frontRightCollider.forwardFriction;
+        forwardFriction.stiffness = 2f;
+        frontRightCollider.forwardFriction = forwardFriction;
+
+        forwardFriction = rearLeftCollider.forwardFriction;
+        forwardFriction.stiffness = 2f;
+        rearLeftCollider.forwardFriction = forwardFriction;
+
+        forwardFriction = rearRightCollider.forwardFriction;
+        forwardFriction.stiffness = 2f;
+        rearRightCollider.forwardFriction = forwardFriction;
     }
 
     void SetupSource(AudioSource s)
@@ -334,34 +357,103 @@ public class PrometeoCarController : MonoBehaviour
     }
 
     // --- INPUT KEZELÉS ---
+    // --- INPUT KEZELÉS: Billentyűzet VS Kontroller szétválasztva ---
     void HandleInput()
     {
-        bool forward = false, reverse = false, left = false, right = false, handbrake = false;
-        if (useTouchControls && touchControlsSetup)
+        // 1. Megnézzük, hogy a játékos a billentyűzetet használja-e kormányzásra
+        bool isKeyboardSteering = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow);
+
+        float rawSteeringInput = 0f;
+
+        if (isKeyboardSteering)
         {
-            forward = throttlePTI.buttonPressed; reverse = reversePTI.buttonPressed;
-            left = turnLeftPTI.buttonPressed; right = turnRightPTI.buttonPressed; handbrake = handbrakePTI.buttonPressed;
+            // Billentyűzetnél a "Raw" értéket kérjük el (azonnal 1 vagy -1), nincs Unity-s simítás
+            rawSteeringInput = Input.GetAxisRaw("Horizontal");
         }
         else
         {
-            forward = Input.GetKey(KeyCode.W); reverse = Input.GetKey(KeyCode.S);
-            left = Input.GetKey(KeyCode.A); right = Input.GetKey(KeyCode.D); handbrake = Input.GetKey(KeyCode.Space);
+            // Kontrollernél a sima GetAxis-t használjuk (ez a joystick analóg értéke)
+            rawSteeringInput = Input.GetAxis("Horizontal");
         }
 
-        // GURULÁS LOGIKA MÓDOSÍTVA (Lassabb lassulás)
-        if (forward) { CancelInvoke("DecelerateCar"); deceleratingCar = false; GoForward(); }
-        else if (reverse) { CancelInvoke("DecelerateCar"); deceleratingCar = false; GoReverse(); }
-        else if (!handbrake && !deceleratingCar)
+        // Átadjuk az adatot a kormányzásnak + azt is, hogy kontroller-e (ha NEM billentyűzet)
+        ApplySteering(rawSteeringInput, !isKeyboardSteering);
+
+
+        // --- INNEN A GÁZ/FÉK RÉSZ (Ez maradt a régi, RT/LT-vel) ---
+        float gasTrigger = Input.GetAxis("RT_Gas");
+        float brakeTrigger = Input.GetAxis("LT_Brake");
+        float keyboardThrottle = Input.GetAxis("Vertical");
+        float combinedControllerThrottle = gasTrigger - brakeTrigger;
+        float finalThrottleInput = 0f;
+
+        if (Mathf.Abs(combinedControllerThrottle) > 0.05f) finalThrottleInput = combinedControllerThrottle;
+        else finalThrottleInput = keyboardThrottle;
+
+        if (useTouchControls && touchControlsSetup) // Touch logika...
         {
-            // Itt hívjuk meg a lassítást, ami most már sokkal finomabb
-            InvokeRepeating("DecelerateCar", 0f, 0.1f);
-            deceleratingCar = true;
+            if (throttlePTI.buttonPressed) finalThrottleInput = 1f;
+            else if (reversePTI.buttonPressed) finalThrottleInput = -1f;
+            if (turnRightPTI.buttonPressed) { rawSteeringInput = 1f; ApplySteering(1f, false); } // Touch mint billentyűzet
+            else if (turnLeftPTI.buttonPressed) { rawSteeringInput = -1f; ApplySteering(-1f, false); }
         }
-        else if (!forward && !reverse) ThrottleOff();
 
-        if (left) TurnLeft(); else if (right) TurnRight(); else if (steeringAxis != 0f) ResetSteeringAngle();
-        if (handbrake) { CancelInvoke("DecelerateCar"); deceleratingCar = false; Handbrake(); }
-        else if ((useTouchControls && !handbrakePTI.buttonPressed) || (!useTouchControls && Input.GetKeyUp(KeyCode.Space))) RecoverTraction();
+        // Mozgás logika
+        if (finalThrottleInput > 0.1f)
+        {
+            CancelInvoke("DecelerateCar"); deceleratingCar = false; GoForward();
+            throttleAxis = finalThrottleInput;
+        }
+        else if (finalThrottleInput < -0.1f)
+        {
+            CancelInvoke("DecelerateCar"); deceleratingCar = false; GoReverse();
+            throttleAxis = finalThrottleInput;
+        }
+        else if (!Input.GetButton("Jump") && !deceleratingCar)
+        {
+            InvokeRepeating("DecelerateCar", 0f, 0.1f); deceleratingCar = true;
+        }
+        else if (Mathf.Abs(finalThrottleInput) <= 0.1f) ThrottleOff();
+
+        if (Input.GetButton("Jump")) { CancelInvoke("DecelerateCar"); deceleratingCar = false; Handbrake(); }
+        else if (Input.GetButtonUp("Jump")) RecoverTraction();
+    }
+
+
+    // --- KORMÁNYZÁS: Külön logika a Kontrollernek és a Billentyűzetnek ---
+    void ApplySteering(float input, bool isGamepad)
+    {
+        float targetInput = input;
+        float currentSpeed = steeringSpeed; // Ez az alap beállítás az Inspectorból
+
+        if (isGamepad)
+        {
+            // --- CSAK KONTROLLER LOGIKA ---
+            // 1. Görbítjük az inputot (kicsi mozdulat = alig fordul, nagy mozdulat = nagyon fordul)
+            targetInput = Mathf.Pow(Mathf.Abs(input), 1.5f) * Mathf.Sign(input);
+
+            // 2. Lassítjuk a kormányzást a precizitásért (pl. felére vesszük az alap sebességet)
+            currentSpeed = steeringSpeed * 0.5f;
+
+            // 3. (Opccionális) Sebességfüggő korlátozás csak kontrollerre
+            float speedFactor = Mathf.InverseLerp(10f, 150f, Mathf.Abs(carSpeed));
+            float maxAngleMultiplier = Mathf.Lerp(1f, 0.5f, speedFactor); // Gyorsan max 50%-ig fordulhat
+            targetInput *= maxAngleMultiplier;
+        }
+        else
+        {
+            // --- CSAK BILLENTYŰZET LOGIKA ---
+            // Billentyűzetnél gyorsabb reakció kell, különben lomha lesz
+            currentSpeed = steeringSpeed * 2.0f;
+        }
+
+        // Közös végrehajtó rész
+        steeringAxis = Mathf.MoveTowards(steeringAxis, targetInput, Time.deltaTime * 10f * currentSpeed);
+        steeringAxis = Mathf.Clamp(steeringAxis, -1f, 1f);
+
+        float angle = steeringAxis * maxSteeringAngle;
+        frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, angle, currentSpeed);
+        frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, angle, currentSpeed);
     }
 
     // --- FIZIKA ÉS MOZGÁS (Javított Deceleration) ---
@@ -407,14 +499,76 @@ public class PrometeoCarController : MonoBehaviour
         if (carRigidbody.linearVelocity.magnitude < 0.25f) { carRigidbody.linearVelocity = Vector3.zero; CancelInvoke("DecelerateCar"); }
     }
 
-    public void Brakes() 
-    { 
-        // Ensure motor torque is zeroed and brake torque is applied to all wheels
-        frontLeftCollider.motorTorque = 0f; frontLeftCollider.brakeTorque = brakeForce; 
-        frontRightCollider.motorTorque = 0f; frontRightCollider.brakeTorque = brakeForce; 
-        rearLeftCollider.motorTorque = 0f; rearLeftCollider.brakeTorque = brakeForce; 
-        rearRightCollider.motorTorque = 0f; rearRightCollider.brakeTorque = brakeForce; 
+    public void Brakes()
+    {
+        // Motor nyomaték nullázása MINDEN kerékre
+        frontLeftCollider.motorTorque = 0f;
+        frontRightCollider.motorTorque = 0f;
+        rearLeftCollider.motorTorque = 0f;
+        rearRightCollider.motorTorque = 0f;
+
+        // Sebességfüggő fékhatás számítása
+        float currentSpeed = Mathf.Abs(carSpeed);
+        float dynamicBrakeForce;
+
+        if (currentSpeed > 120f)
+        {
+            // Nagyon nagy sebesség (120+ km/h): Mérsékelt fékhatás
+            dynamicBrakeForce = brakeForce * 0.8f;
+        }
+        else if (currentSpeed > 80f)
+        {
+            // Nagy sebesség (80-120 km/h): Normál fékhatás
+            dynamicBrakeForce = brakeForce * 1.0f;
+        }
+        else if (currentSpeed > 40f)
+        {
+            // Közepes sebesség (40-80 km/h): Kicsit erősebb
+            dynamicBrakeForce = brakeForce * 1.2f;
+        }
+        else if (currentSpeed > 10f)
+        {
+            // Lassú (10-40 km/h): Erősebb fékhatás
+            dynamicBrakeForce = brakeForce * 1.5f;
+        }
+        else if (currentSpeed > 2f)
+        {
+            // Nagyon lassú (2-10 km/h): Még erősebb
+            dynamicBrakeForce = brakeForce * 2f;
+        }
+        else
+        {
+            // Majdnem áll (< 2 km/h): Maximum fék
+            dynamicBrakeForce = brakeForce * 3f;
+        }
+
+        // Fék alkalmazása mind a 4 kerékre
+        frontLeftCollider.brakeTorque = dynamicBrakeForce;
+        frontRightCollider.brakeTorque = dynamicBrakeForce;
+        rearLeftCollider.brakeTorque = dynamicBrakeForce;
+        rearRightCollider.brakeTorque = dynamicBrakeForce;
+
+        // Extra: Nagyon enyhe sebesség csökkentés nagy sebességnél
+        if (currentSpeed > 50f)
+        {
+            carRigidbody.linearVelocity *= 0.995f; // Csak 0.5% lassítás
+        }
+        else if (currentSpeed > 2f)
+        {
+            carRigidbody.linearVelocity *= 0.99f; // 1% lassítás
+        }
+        else if (currentSpeed > 0.5f)
+        {
+            carRigidbody.linearVelocity *= 0.96f; // 4% lassítás lassan
+        }
+        else
+        {
+            // Ha majdnem áll, állítsuk meg teljesen
+            carRigidbody.linearVelocity = Vector3.zero;
+            carRigidbody.angularVelocity = Vector3.zero;
+        }
     }
+
     void ReleaseBrakes()
     {
         frontLeftCollider.brakeTorque = 0f; frontRightCollider.brakeTorque = 0f; 
