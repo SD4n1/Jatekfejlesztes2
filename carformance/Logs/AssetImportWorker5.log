@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-11-29T13:41:44.7659206Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-11-29T18:16:05.6534047Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-11-29T13:41:44Z
+Date: 2025-11-29T18:16:05Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-58258
+53790
 -licensingIpc
 LicenseClient-gyorf
 -job-worker-count
@@ -65,27 +65,27 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [251252]  Target information:
+Player connection [247360]  Target information:
 
-Player connection [251252]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 678274925 [EditorId] 678274925 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [247360]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 93937656 [EditorId] 93937656 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [251252] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [251252] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [247360] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [247360] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 239512, path: "D:/Programs/UnityHub/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 286912, path: "D:/Programs/UnityHub/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.3+a4e98f1
-  Session Id:              1b54601a03504b33a770c5ba998d6bbf
-  Correlation Id:          400910d556e7ad18c7b2e82db117dda7
-  External correlation Id: 3774946658945309780
+  Session Id:              9ddd457e609847ef9096363059242ea9
+  Correlation Id:          8a4809ae1405bea060c8827cd50a7db8
+  External correlation Id: 1879361344159145433
   Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.01s, handshake: 0.13s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-11-29T13:41:44.8972662Z"
-[Licensing::Module] Licensing Background thread has ended after 0.13s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.01s, validation: 0.00s, handshake: 0.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-11-29T18:16:05.8001727Z"
+[Licensing::Module] Licensing Background thread has ended after 0.15s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -93,8 +93,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 9.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 9.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.07 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance/Assets
@@ -109,45 +109,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002919 seconds.
-- Loaded All Assemblies, in  0.873 seconds
+Registered in 0.008783 seconds.
+- Loaded All Assemblies, in  1.951 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.980 seconds
-Domain Reload Profiling: 1849ms
-	BeginReloadAssembly (217ms)
+- Finished resetting the current domain, in  1.346 seconds
+Domain Reload Profiling: 3294ms
+	BeginReloadAssembly (1060ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (106ms)
-	LoadAllAssembliesAndSetupDomain (436ms)
-		LoadAssemblies (210ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (127ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (148ms)
+	LoadAllAssembliesAndSetupDomain (566ms)
+		LoadAssemblies (1052ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (428ms)
-			TypeCache.Refresh (424ms)
-				TypeCache.ScanAssembly (375ms)
-			BuildScriptInfoCaches (0ms)
+		AnalyzeDomain (559ms)
+			TypeCache.Refresh (555ms)
+				TypeCache.ScanAssembly (511ms)
+			BuildScriptInfoCaches (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (981ms)
+	FinalizeReload (1350ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (848ms)
+		SetupLoadedEditorAssemblies (1121ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (114ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (197ms)
-			ProcessInitializeOnLoadAttributes (274ms)
-			ProcessInitializeOnLoadMethodAttributes (254ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (186ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (277ms)
+			ProcessInitializeOnLoadAttributes (405ms)
+			ProcessInitializeOnLoadMethodAttributes (242ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -161,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.964 seconds
-Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.546 seconds
+Refreshing native plugins compatible for Editor in 7.77 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -172,116 +172,727 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.349 seconds
-Domain Reload Profiling: 3304ms
-	BeginReloadAssembly (436ms)
+- Finished resetting the current domain, in  3.372 seconds
+Domain Reload Profiling: 7912ms
+	BeginReloadAssembly (789ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (25ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (86ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (1315ms)
-		LoadAssemblies (749ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (228ms)
+	RebuildNativeTypeToScriptingClass (49ms)
+	initialDomainReloadingComplete (176ms)
+	LoadAllAssembliesAndSetupDomain (3292ms)
+		LoadAssemblies (1583ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (777ms)
-			TypeCache.Refresh (687ms)
-				TypeCache.ScanAssembly (648ms)
-			BuildScriptInfoCaches (66ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1349ms)
+		AnalyzeDomain (2222ms)
+			TypeCache.Refresh (1903ms)
+				TypeCache.ScanAssembly (1816ms)
+			BuildScriptInfoCaches (245ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (3378ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (994ms)
+		SetupLoadedEditorAssemblies (2555ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (256ms)
-			ProcessInitializeOnLoadAttributes (637ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (552ms)
+			ProcessInitializeOnLoadAttributes (1663ms)
+			ProcessInitializeOnLoadMethodAttributes (280ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.62 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (80ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 4.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4242 unused Assets / (1.7 MB). Loaded Objects now: 4735.
-Memory consumption went from 90.4 MB to 88.6 MB.
-Total: 14.939100 ms (FindLiveObjects: 1.223900 ms CreateObjectMapping: 1.096300 ms MarkObjects: 8.635600 ms  DeleteObjects: 3.978200 ms)
+Unloading 4243 unused Assets / (2.5 MB). Loaded Objects now: 4737.
+Memory consumption went from 91.1 MB to 88.6 MB.
+Total: 29.887100 ms (FindLiveObjects: 1.559900 ms CreateObjectMapping: 1.146000 ms MarkObjects: 18.787400 ms  DeleteObjects: 8.387900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1038398.824333 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity
+  artifactKey: Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity using Guid(5fe2257128d9401fad0790f581dc8a6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c35c60c2e45025c690a6f0cfdfda193a') in 0.26409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/Cars/Ferrari/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
+  artifactKey: Guid(f1a3030ba1c3f22439e7b0d3aee3967a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Ferrari/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png using Guid(f1a3030ba1c3f22439e7b0d3aee3967a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c5b72ad67cc33e1412a72ebd9b025dc3') in 0.5651726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity
+  artifactKey: Guid(0851605490a599b46b6ac5cb681d93ea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity using Guid(0851605490a599b46b6ac5cb681d93ea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a48621591549b073f21d236328cffa55') in 0.0328336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Cars/pngegg.png
+  artifactKey: Guid(0b7afc53e35bfdb49bd4a7158447aebd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/pngegg.png using Guid(0b7afc53e35bfdb49bd4a7158447aebd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c88c2965418ceb78e7efb3bfa45b0c7e') in 0.0507477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/PROMETEO - Car Controller/Scripts/PrometeoTouchInput.cs
+  artifactKey: Guid(4b7408ad19eb3ad44a35af48d0d2294b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PROMETEO - Car Controller/Scripts/PrometeoTouchInput.cs using Guid(4b7408ad19eb3ad44a35af48d0d2294b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a7535d22b45b5656001fb07e332b5c0e') in 0.0381434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/PROMETEO - Car Controller/Materials/PCC_ParkingZone_Mat.mat
+  artifactKey: Guid(6c7e85d89b2e5e34a93e7f83facefcaa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PROMETEO - Car Controller/Materials/PCC_ParkingZone_Mat.mat using Guid(6c7e85d89b2e5e34a93e7f83facefcaa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a519998c8e7ed0389deb9edc82a37f41') in 0.082809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Cars/Ferrari/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
+  artifactKey: Guid(3f0812c6f9dc91f4bb225470dcefa053) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Ferrari/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(3f0812c6f9dc91f4bb225470dcefa053) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '05892810c587c18567beeee8ae545753') in 0.0536325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/sajat assets/Golf4_door_R.prefab
+  artifactKey: Guid(4c6ec482c5fa21e4aa72e81239401e7e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/sajat assets/Golf4_door_R.prefab using Guid(4c6ec482c5fa21e4aa72e81239401e7e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '87abb5b370cf5a262ffd24b1e860153f') in 0.0972716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Cars/Racing Bulls/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png
+  artifactKey: Guid(974cded7409b131488a6cdf267498b25) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Racing Bulls/19345f5ab2554eb0b1622ce0f0c2d4e7_N_F2021_WHEELS_NORMAL.png using Guid(974cded7409b131488a6cdf267498b25) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dc9f4df491a7a5ab840d590b263aa029') in 0.0521798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Cars/Lamborghini/textures/488_PAINT_metallicRoughness.png
+  artifactKey: Guid(c725ab1eefadc904cb127b3709308327) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Lamborghini/textures/488_PAINT_metallicRoughness.png using Guid(c725ab1eefadc904cb127b3709308327) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c6529bcc3da8c85863b5740cac8364a3') in 0.0540328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity
+  artifactKey: Guid(eea2b7206368b444e84fbec4ec32b64a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity using Guid(eea2b7206368b444e84fbec4ec32b64a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '06f7bc249b83ff8c4f56f3776047656e') in 0.0271593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/sajat assets/Golf4_seat_FR.prefab
+  artifactKey: Guid(6e955a7d6c24c04498885cbef3336ae0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/sajat assets/Golf4_seat_FR.prefab using Guid(6e955a7d6c24c04498885cbef3336ae0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5b7c7658e5fbce0fcd7124e3fa3cf934') in 0.0293272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Cars/Ferrari/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
+  artifactKey: Guid(6c7c5dc5a351d0c4bb65eb718bfabf6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Ferrari/f5de413faf2a4f05bf44142c703545ec_RGB_FROG_4096-ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(6c7c5dc5a351d0c4bb65eb718bfabf6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '256653e35753d64237ceb16168eb4f03') in 0.0456781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Cars/Haas/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png
+  artifactKey: Guid(e74aed70650ca8447942c42a53384b8c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Haas/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png using Guid(e74aed70650ca8447942c42a53384b8c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'caff68f2f3d854ecfea8f1ad52e2bbca') in 0.0544233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Cars/Mercedes/488_WHEELS_specularf0.png
+  artifactKey: Guid(cd50b6fb7efaa0f4aab999eda1a5e292) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Mercedes/488_WHEELS_specularf0.png using Guid(cd50b6fb7efaa0f4aab999eda1a5e292) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '38d6690332863004f8e9f8322a46133b') in 0.0478234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Cars/Red Bull/442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png
+  artifactKey: Guid(db6f82ad93d861841be5db692830d181) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Red Bull/442228dff56b4a73bdf8eb9b7a61b054_RGB_F2021_WHEELS.png using Guid(db6f82ad93d861841be5db692830d181) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fbdb21fc18904c17ded5b45616f86274') in 0.0517794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Cars/Mercedes/488_WHEELS_metallicRoughness.png
+  artifactKey: Guid(85705f83989490049aca557e3695d33f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Mercedes/488_WHEELS_metallicRoughness.png using Guid(85705f83989490049aca557e3695d33f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1eff4c1e4925f44475479767aad5c99e') in 0.0451221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e2596c107e536198f6791283cc3882a3') in 0.0383405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Cars/Red Bull 1/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png
+  artifactKey: Guid(51d4c37a20a93eb45bf3f907c1bf9bcb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Red Bull 1/b02ce04b5b884f4a9a451d27b85af36f_A_F2021_STEERING_WHEEL.png using Guid(51d4c37a20a93eb45bf3f907c1bf9bcb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '97604d955bc07858712a16310b2a4d74') in 0.0528382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Cars/Ferrari/488_WHEELS_specularf0.png
+  artifactKey: Guid(f4571abb21ce18f4693049355664d6e9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Ferrari/488_WHEELS_specularf0.png using Guid(f4571abb21ce18f4693049355664d6e9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1407c260865e2d9605e6330b6cb0059f') in 0.0506409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Cars/Haas/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png
+  artifactKey: Guid(0275d8c3653d4bd46a241481fa065e39) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Haas/ff696c0e48fa4d7298ea3538eec943a7_RGB_F2021_PAINT_RS.png using Guid(0275d8c3653d4bd46a241481fa065e39) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'abb7251d3995058c9246f5e30b102863') in 0.0509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Map/Spielberg/textures/grass_2_spielberg_baseColor.png
+  artifactKey: Guid(694fca6082ef31e4391997c46a6d8010) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Map/Spielberg/textures/grass_2_spielberg_baseColor.png using Guid(694fca6082ef31e4391997c46a6d8010) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cca429c9d54c4ac84a77f8442409345d') in 0.0502335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Cars/Red Bull/sounds/f1_5500rpm.wav
+  artifactKey: Guid(41593863711b22541a0b0b948447ce7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Red Bull/sounds/f1_5500rpm.wav using Guid(41593863711b22541a0b0b948447ce7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8612c0f2fdaa6ab5d71193088ec8e885') in 0.1728187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Cars/Red Bull 1/3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png
+  artifactKey: Guid(e67eb32342993b74da30c246edc0e6ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Red Bull 1/3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png using Guid(e67eb32342993b74da30c246edc0e6ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a757fe9b9f94a150e095b1da8316f01d') in 0.0556544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Map/Hungaroring/concrate.png
+  artifactKey: Guid(3ec0a8bc3c5cdcf409bd5cfb2af8e756) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Map/Hungaroring/concrate.png using Guid(3ec0a8bc3c5cdcf409bd5cfb2af8e756) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '82df0eac731714bbe5807f3913819506') in 0.0552147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001485 seconds.
+  path: Assets/Cars/Aston Martin/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png
+  artifactKey: Guid(b1206447abfd54d439020d6a2f3fc683) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Aston Martin/03517e5c9d0f447993efadb611dac556_A_F2021_DETAILS.png using Guid(b1206447abfd54d439020d6a2f3fc683) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e80192baa2f4af2154ed879f5e98aa50') in 0.0542773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Cars/Racing Bulls/3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png
+  artifactKey: Guid(d9a528b492083834a84a329d0f351424) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Racing Bulls/3e7f8eb122474c378f75e30846703000_R_F2021_WHEELS_SMOOTH.png using Guid(d9a528b492083834a84a329d0f351424) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a5c6a0d4403b73ab679f3782e044c4cf') in 0.0462453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ad2427750996f0ec1292a9f145ed6f99') in 0.0277996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/sajat assets/Golf4_doorglass_R.prefab
+  artifactKey: Guid(527d81091b30fc842bbec432f2819289) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/sajat assets/Golf4_doorglass_R.prefab using Guid(527d81091b30fc842bbec432f2819289) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9cd92f32e3f96dd6cd68a74756976adc') in 0.0388753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Scripts/TrackData.cs
+  artifactKey: Guid(2baaec5bc0a0ef34caa273c6038655ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/TrackData.cs using Guid(2baaec5bc0a0ef34caa273c6038655ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7d373db32d696cc06ae58fdabc587c3') in 0.0326133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/Cars/Lamborghini/textures/488_SHADOW_baseColor.png
+  artifactKey: Guid(25eb886f49fcf7b45a6dc628001f8234) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Lamborghini/textures/488_SHADOW_baseColor.png using Guid(25eb886f49fcf7b45a6dc628001f8234) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5dd335edc95b855ca2c55ff2c7c735ab') in 0.1147247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Cars/ferrari_old/5e5267f4193c40fd8d22a78d67061ffb_N_FW26_WHEEL_NORMAL.png
+  artifactKey: Guid(9930d43263e8aac4db777653ae3db1a8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/ferrari_old/5e5267f4193c40fd8d22a78d67061ffb_N_FW26_WHEEL_NORMAL.png using Guid(9930d43263e8aac4db777653ae3db1a8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8fb66c1f6621a7078dcf45a6f3d711d1') in 0.1206305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000884 seconds.
+  path: Assets/Cars/Red Bull/sounds/f1_11500rpm.wav
+  artifactKey: Guid(84b7b71755cc5b449b364aa1380ba45c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cars/Red Bull/sounds/f1_11500rpm.wav using Guid(84b7b71755cc5b449b364aa1380ba45c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd1eccba8d874cb288115259ff6a97769') in 0.1440539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd
+  artifactKey: Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd using Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e7b41d74225868403926fb9d0ca1baf') in 0.071859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000640 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ade3d7f136ae2ce189cb497b3866fa4') in 0.1017634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009761 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e86593d415c018f67ede712f3747d1ed') in 0.4124132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg
+  artifactKey: Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg using Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '120c2f2444e96a0aa7b9cede54782f2d') in 0.2524068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '48dc66002fb41e97a95c2c451be6397a') in 0.0698767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Keys/Vehicle_Car_Keys_04.wav
+  artifactKey: Guid(9eda47c45ae1928479b85afa8d5140c5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Keys/Vehicle_Car_Keys_04.wav using Guid(9eda47c45ae1928479b85afa8d5140c5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '521a069fe3fc9b71c5bae3dddebcf542') in 0.1239521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs
+  artifactKey: Guid(53d91f98a2664f5cb9af11de72ac54ec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs using Guid(53d91f98a2664f5cb9af11de72ac54ec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '87dfe2a7494d6d471ad74d2881e317ea') in 0.0313514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_03.wav
+  artifactKey: Guid(6fbb53da201995549b5599d06f3319c1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_03.wav using Guid(6fbb53da201995549b5599d06f3319c1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b874040108ad34167b016ea81e2f25b') in 0.0902333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs
+  artifactKey: Guid(52ec835d14bd486f900952b77698b7eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs using Guid(52ec835d14bd486f900952b77698b7eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '82af1785d16220b17a1aec2ff286c829') in 0.0281987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Rear_Exterior_Loop.wav
+  artifactKey: Guid(3c1c130f6e1be75418d305f8e478e0f0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Rear_Exterior_Loop.wav using Guid(3c1c130f6e1be75418d305f8e478e0f0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b2ac7299536082c23b2a23a87d98f49a') in 0.116916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs
+  artifactKey: Guid(2787a46a4dc848c1b4b7b9307b614bfd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs using Guid(2787a46a4dc848c1b4b7b9307b614bfd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3de9ac0712e9bc874ade275837b6c4b9') in 0.0417888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_01.wav
+  artifactKey: Guid(880154ee893c42e4bb927527285c107d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_01.wav using Guid(880154ee893c42e4bb927527285c107d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a0ae57bc090d6ffba4fd795b1bc33d95') in 0.1281278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Closing_Exterior_01.wav
+  artifactKey: Guid(5affcdde455310c4a8b743f88287eb97) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Doors/Vehicle_Car_Door_Closing_Exterior_01.wav using Guid(5affcdde455310c4a8b743f88287eb97) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '70b7e1659ce20c764b9f0e5345ebad37') in 0.1135781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Warning/Vehicle_Car_Warning_Interior_Loop_01.wav
+  artifactKey: Guid(e40a4d91b9832b541a01f7300a5f6c9b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Warning/Vehicle_Car_Warning_Interior_Loop_01.wav using Guid(e40a4d91b9832b541a01f7300a5f6c9b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '07d3fdf2dfd0bcbbda49d8cb04db2cb8') in 0.1266933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_01.wav
+  artifactKey: Guid(18d61a7336c7b924b8b3daf2e3951a33) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_01.wav using Guid(18d61a7336c7b924b8b3daf2e3951a33) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '51484841519baaf5983e49a4e05779b2') in 0.1736218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
+  artifactKey: Guid(16177da2e3254cee91944756d5f8ddd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity using Guid(16177da2e3254cee91944756d5f8ddd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ff94e1e3449131681b9eb1922752f60b') in 0.0463281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_03.wav
+  artifactKey: Guid(517a7c4835b380649be8b85119071e12) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_03.wav using Guid(517a7c4835b380649be8b85119071e12) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7de057b0e790322b904348263fa7e11b') in 0.2202108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_12.wav
+  artifactKey: Guid(0e11a32553e46f84aabe749289f725b1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_12.wav using Guid(0e11a32553e46f84aabe749289f725b1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '16a36678699fec62032fa24cbd4296e9') in 0.1052876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_15.wav
+  artifactKey: Guid(661abfdedaa0fcb4f943201642ac1d28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_15.wav using Guid(661abfdedaa0fcb4f943201642ac1d28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e8d91b26f8e79e7b6763270996cba6a8') in 0.0948929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs
+  artifactKey: Guid(f970ea55f9f84bf79b05dab180b8c125) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs using Guid(f970ea55f9f84bf79b05dab180b8c125) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2fa3e4cf8e63366b928a9207afee09d2') in 0.0928995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001416 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Keys/Vehicle_Car_Keys_01.wav
+  artifactKey: Guid(203c89446a8e5b34f89f1b69a42da323) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Keys/Vehicle_Car_Keys_01.wav using Guid(203c89446a8e5b34f89f1b69a42da323) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e9d992964fe307b126e600b8a6eeea20') in 0.0867397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_BackDoor_Opening_Exterior_01.wav
+  artifactKey: Guid(cc234a66fcf19e2439690701eb129275) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_BackDoor_Opening_Exterior_01.wav using Guid(cc234a66fcf19e2439690701eb129275) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e907ab8e5d89c6e965fb959c14d41623') in 0.0721764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Opening_Exterior_01.wav
+  artifactKey: Guid(e5304e600d771c1409085cab31b67f6e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Opening_Exterior_01.wav using Guid(e5304e600d771c1409085cab31b67f6e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd6a316f2c2681bd5b321d63b8545dc5') in 0.0827781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Closing_Exterior_03.wav
+  artifactKey: Guid(19e9dc772efab484c9e51a4aa277b924) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Closing_Exterior_03.wav using Guid(19e9dc772efab484c9e51a4aa277b924) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0125ae8b1b8fd9098fe872b5cd227088') in 0.0858005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Opening_Exterior_04.wav
+  artifactKey: Guid(88207cd3ad2ca8f4180c3f3372cb8875) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_Door_Opening_Exterior_04.wav using Guid(88207cd3ad2ca8f4180c3f3372cb8875) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '98494bd27d2ab6cbfea1462af2b1d046') in 0.0673094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_BackDoor_Closing_Exterior_04.wav
+  artifactKey: Guid(bf8317e8730124949bd33f4cf72e0dd4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Doors/Vehicle_Van_BackDoor_Closing_Exterior_04.wav using Guid(bf8317e8730124949bd33f4cf72e0dd4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6e02eb7811f0b28549b377e1b4e7647c') in 0.0616212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_2000_RPM_Front_Exterior_Loop.wav
+  artifactKey: Guid(f33e229e82b35a44bb4113498f864db4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_2000_RPM_Front_Exterior_Loop.wav using Guid(f33e229e82b35a44bb4113498f864db4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9bb2c5e47e9ff798a135cec34a7d9c5e') in 0.1004521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_10.wav
+  artifactKey: Guid(53bc45acd3d4345478501a8dd77da238) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Buttons/Vehicle_Van_Buttons_Interior_10.wav using Guid(53bc45acd3d4345478501a8dd77da238) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90565e10375b321a954842ed8cb02d75') in 0.0760846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Close_Impact.wav
+  artifactKey: Guid(adbaafa124d405c47ae5ba367841c7db) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Close_Impact.wav using Guid(adbaafa124d405c47ae5ba367841c7db) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1d5baa7535b4ac4dc08c5ca8bc6aa61f') in 0.0678904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Drive/Vehicle_Van_Drive_Interior_Loop_01.wav
+  artifactKey: Guid(8e9508c67d0bfb44b8bd84105b7c8429) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Drive/Vehicle_Van_Drive_Interior_Loop_01.wav using Guid(8e9508c67d0bfb44b8bd84105b7c8429) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f6dfc919f746a25fe46d7402a71614bd') in 0.1757502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Drive/Vehicle_Van_Drive_Exterior_Loop_02.wav
+  artifactKey: Guid(f9f4e3f34703a5a4a86b3d8286c1bbe7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Drive/Vehicle_Van_Drive_Exterior_Loop_02.wav using Guid(f9f4e3f34703a5a4a86b3d8286c1bbe7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ebe3b103147c56e882b4cfdd9dac0705') in 0.212099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Electric_Window/Vehicle_Van_Electric_Window_Opening.wav
+  artifactKey: Guid(aaf5f6264b5c25a439e57d17ac5f091e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Electric_Window/Vehicle_Van_Electric_Window_Opening.wav using Guid(aaf5f6264b5c25a439e57d17ac5f091e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '87e78d7651fbb3df4ecd4ee67df303ba') in 0.0546408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Seat_Belt/Vehicle_Van_Seat_Belt_04.wav
+  artifactKey: Guid(a5c2820f5898ac740b3048288a95be2a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Seat_Belt/Vehicle_Van_Seat_Belt_04.wav using Guid(a5c2820f5898ac740b3048288a95be2a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6f5c6bc1f3a207217501844ba77929dd') in 0.0564261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Seat_Belt/Vehicle_Van_Seat_Belt_03.wav
+  artifactKey: Guid(4a4f008f63bbb6b468b9c6deaf74b0d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Seat_Belt/Vehicle_Van_Seat_Belt_03.wav using Guid(4a4f008f63bbb6b468b9c6deaf74b0d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b6a8e45f115eaf67c02ee9532a4d50e4') in 0.0524625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Keys/Vehicle_Van_Keys_Interior_02.wav
+  artifactKey: Guid(8cea06a32b25f5143943669ff0a2d29e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Keys/Vehicle_Van_Keys_Interior_02.wav using Guid(8cea06a32b25f5143943669ff0a2d29e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a15aef66c97212507acd100377c93a85') in 0.0465944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Horns/Vehicle_Car_Horn_Interior.wav
+  artifactKey: Guid(2577710ba2fedff49afe28b2b3710e9b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Horns/Vehicle_Car_Horn_Interior.wav using Guid(2577710ba2fedff49afe28b2b3710e9b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b674fc8b859dce298c7fa16b3619bdf') in 0.0854427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Exterior_Loop_02.wav
+  artifactKey: Guid(595e65a4e00c2f14caec4adb74d0deea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Exterior_Loop_02.wav using Guid(595e65a4e00c2f14caec4adb74d0deea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fb498ec26f1a189cef524b613d640262') in 0.0743898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg
+  artifactKey: Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg using Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f33186baff61460d929d325968218ba4') in 0.0419172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Front_Exterior_Loop.wav
+  artifactKey: Guid(7e7b0c25fa3a1bf4aa9f5e3ba907f49d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Front_Exterior_Loop.wav using Guid(7e7b0c25fa3a1bf4aa9f5e3ba907f49d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b3e7b2b8237233480009ad3abaf3e1bc') in 0.0790001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Body_Movement/Vehicle_Van_Body_Movement_Interior_03.wav
+  artifactKey: Guid(5c871a674517fd74e914672551eaaba3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Body_Movement/Vehicle_Van_Body_Movement_Interior_03.wav using Guid(5c871a674517fd74e914672551eaaba3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5afe2e49f8794c9d829d67f9f19489ff') in 0.0652709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_12.wav
+  artifactKey: Guid(65c40f6ce6b9c1342abb4192db02ac9c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_12.wav using Guid(65c40f6ce6b9c1342abb4192db02ac9c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a6a6bce0e27f45c6f2ad02bf4054ce2d') in 0.0592801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_04.wav
+  artifactKey: Guid(02ff51e3733bed64c8081674625a7e71) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_04.wav using Guid(02ff51e3733bed64c8081674625a7e71) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '352d13daf078d992cc97f2dce46b079b') in 0.0989086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_05.wav
+  artifactKey: Guid(879edc011a027c84db33c8f0064126ba) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_05.wav using Guid(879edc011a027c84db33c8f0064126ba) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '130585e57d46f70bb22b04da7ddc9f79') in 0.0978673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_09.wav
+  artifactKey: Guid(043ca231cf8c2a246b805a7e78f1f7e1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_09.wav using Guid(043ca231cf8c2a246b805a7e78f1f7e1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0a623eba47c1ea3f5aa91c17254aa5e9') in 0.0757616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_03.wav
+  artifactKey: Guid(bdaeb821e192d814db094dbcda604f2d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Opening_03.wav using Guid(bdaeb821e192d814db094dbcda604f2d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd1c8ca166f44615080e6a4d51171cb30') in 0.1363813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_06.wav
+  artifactKey: Guid(ad25af0c7fee37f468d65241b1acaa7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Vehicle_Essentials/Vehicle_Van/Vehicle_Van_Trunk/Vehicle_Van_Trunk_Closing_06.wav using Guid(ad25af0c7fee37f468d65241b1acaa7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1e079be681f231461e29d736aca2da01') in 0.0973046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.718 seconds
-Refreshing native plugins compatible for Editor in 2.24 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.662 seconds
-Domain Reload Profiling: 3384ms
-	BeginReloadAssembly (409ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (97ms)
-	RebuildCommonClasses (88ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (1137ms)
-		LoadAssemblies (781ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (540ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (496ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1664ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1335ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (422ms)
-			ProcessInitializeOnLoadAttributes (722ms)
-			ProcessInitializeOnLoadMethodAttributes (152ms)
-			AfterProcessingInitializeOnLoad (18ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 3.18 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4240 unused Assets / (1.3 MB). Loaded Objects now: 4737.
-Memory consumption went from 90.4 MB to 89.1 MB.
-Total: 18.761800 ms (FindLiveObjects: 0.994800 ms CreateObjectMapping: 1.120000 ms MarkObjects: 13.659200 ms  DeleteObjects: 2.985800 ms)
+Unloading 4234 unused Assets / (1.0 MB). Loaded Objects now: 4739.
+Memory consumption went from 90.2 MB to 89.2 MB.
+Total: 13.785500 ms (FindLiveObjects: 0.762200 ms CreateObjectMapping: 0.953900 ms MarkObjects: 10.090900 ms  DeleteObjects: 1.977300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1021934.573571 seconds.
-  path: Assets/Cars/McLaren.prefab
-  artifactKey: Guid(890c325a5aa489f4e83fffddc0cd8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/McLaren.prefab using Guid(890c325a5aa489f4e83fffddc0cd8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21f604f670e7d8b736f34b50321eccce') in 0.6837493 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 748
+  Time since last request: 1.004499 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1d1f0b31a7e829d81c66a6b5b3756a4f') in 0.0906482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat
+  artifactKey: Guid(2ddca8f46aa0838419d568affb0ca6b4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat using Guid(2ddca8f46aa0838419d568affb0ca6b4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6eb416b40ae8936a91d59464064f0964') in 0.0856756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.372538 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c5151cecf8912780ec8fb737aa0395fe') in 0.0884253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.359953 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset
+  artifactKey: Guid(fbef3c704dce48f08a44612d6c856c8d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset using Guid(fbef3c704dce48f08a44612d6c856c8d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0e6e9f3c2d915fcd1ffde25726c4fd35') in 0.0626925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.783 seconds
-Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.845 seconds
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -290,45 +901,110 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.595 seconds
-Domain Reload Profiling: 3373ms
-	BeginReloadAssembly (388ms)
+- Finished resetting the current domain, in  1.615 seconds
+Domain Reload Profiling: 3455ms
+	BeginReloadAssembly (424ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (17ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (93ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (1212ms)
-		LoadAssemblies (930ms)
+		CreateAndSetChildDomain (121ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (1214ms)
+		LoadAssemblies (831ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (484ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (447ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1596ms)
+		AnalyzeDomain (592ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (551ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1615ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1314ms)
+		SetupLoadedEditorAssemblies (1297ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (14ms)
-			BeforeProcessingInitializeOnLoad (425ms)
-			ProcessInitializeOnLoadAttributes (737ms)
-			ProcessInitializeOnLoadMethodAttributes (122ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			SetLoadedEditorAssemblies (16ms)
+			BeforeProcessingInitializeOnLoad (396ms)
+			ProcessInitializeOnLoadAttributes (719ms)
+			ProcessInitializeOnLoadMethodAttributes (147ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4240 unused Assets / (1.1 MB). Loaded Objects now: 4750.
-Memory consumption went from 95.8 MB to 94.7 MB.
-Total: 17.911000 ms (FindLiveObjects: 0.844900 ms CreateObjectMapping: 1.225900 ms MarkObjects: 12.606500 ms  DeleteObjects: 3.231700 ms)
+Unloading 4241 unused Assets / (1.3 MB). Loaded Objects now: 4741.
+Memory consumption went from 91.1 MB to 89.8 MB.
+Total: 8.832700 ms (FindLiveObjects: 0.597000 ms CreateObjectMapping: 0.682000 ms MarkObjects: 5.890500 ms  DeleteObjects: 1.661700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4234 unused Assets / (1.3 MB). Loaded Objects now: 4741.
+Memory consumption went from 91.3 MB to 90.0 MB.
+Total: 11.492500 ms (FindLiveObjects: 0.752600 ms CreateObjectMapping: 1.032600 ms MarkObjects: 7.527900 ms  DeleteObjects: 2.178000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.766 seconds
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.969 seconds
+Domain Reload Profiling: 2732ms
+	BeginReloadAssembly (468ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (113ms)
+	RebuildCommonClasses (80ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (1134ms)
+		LoadAssemblies (822ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (563ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (513ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (969ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (794ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (236ms)
+			ProcessInitializeOnLoadAttributes (464ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4241 unused Assets / (1.8 MB). Loaded Objects now: 4743.
+Memory consumption went from 91.1 MB to 89.3 MB.
+Total: 10.998500 ms (FindLiveObjects: 0.722500 ms CreateObjectMapping: 1.055300 ms MarkObjects: 6.796600 ms  DeleteObjects: 2.422500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
