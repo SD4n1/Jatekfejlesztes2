@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e9330940a580f43aa713c79a87ebc9, type: 3}
+  m_Name: Veteran
+  m_EditorClassIdentifier: Assembly-CSharp::CarData
+  categoryName: Veteran
+  categoryImage: {fileID: 0}
+  carOptions:
+  - teamName: Mini Cooper
+    prefab: {fileID: 8866185366088455793, guid: c082a71e20b1c0543ade2c5bef9f057c, type: 3}

@@ -465,9 +465,9 @@ RectTransform:
   - {fileID: 841774162}
   m_Father: {fileID: 260795276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1029.5, y: 251.40002}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 299.5, y: -159.59998}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473669287
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: eec09844e727e9e488f00625d636f498, type: 3}
+  m_Texture: {fileID: 2800000, guid: d98732c0858b06440bece17658982938, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1021,6 +1021,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3e61d7f871423e642a137b95a3e7a0d1, type: 2}
   allCars:
   - {fileID: 11400000, guid: 82f95f4bcdf88604487f1a8543934fec, type: 2}
+  - {fileID: 11400000, guid: 8e54ba0a1073d4b48b3caad5a5a94e42, type: 2}
+  - {fileID: 11400000, guid: 015395e7740a20f42b1fa913bf50d5d9, type: 2}
+  - {fileID: 11400000, guid: 1869b7407af6726488ecd9b38ee08806, type: 2}
 --- !u!4 &930114210
 Transform:
   m_ObjectHideFlags: 0
@@ -1185,7 +1188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7a9f6a777db61e445ae72aa05725e725, type: 3}
+  m_Texture: {fileID: 2800000, guid: 18f98611975dfa14a87d86f14635bb25, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1503,9 +1506,9 @@ RectTransform:
   - {fileID: 146258938}
   m_Father: {fileID: 260795276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 431.5, y: 251.40002}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -298.5, y: -158.59998}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092089424

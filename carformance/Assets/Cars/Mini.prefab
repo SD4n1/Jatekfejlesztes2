@@ -580,15 +580,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrometeoCarController
   maxSpeed: 140
   maxReverseSpeed: 30
-  accelerationMultiplier: 6
+  accelerationMultiplier: 2
   maxSteeringAngle: 12
   steeringSpeed: 0.2
-  brakeForce: 300
+  brakeForce: 200
   coastingDrag: 0.05
   handbrakeDriftMultiplier: 2
   bodyMassCenter: {x: 0, y: 0, z: 0}
-  asphaltGrip: 5
-  grassGrip: 0.7
+  asphaltGrip: 3
+  grassGrip: 1
   slipperySurfaceTag: Grass
   grassCoastingMultiplier: 1
   grassMaxSpeedMultiplier: 0.6
@@ -613,30 +613,20 @@ MonoBehaviour:
   gearText: {fileID: 0}
   useSounds: 1
   engineClips:
-  - {fileID: 8300000, guid: 786a04f779742bd40b5e6e7d54b7e42d, type: 3}
-  - {fileID: 8300000, guid: af5b5ae89e0bac34ba1a55573268e1f8, type: 3}
-  - {fileID: 8300000, guid: 460fb2ec63181744093aa744787fa907, type: 3}
-  - {fileID: 8300000, guid: 398e62ade743bd84caf5607f3d4359bc, type: 3}
-  - {fileID: 8300000, guid: 41593863711b22541a0b0b948447ce7a, type: 3}
-  - {fileID: 8300000, guid: 46fd38634f1ab7942a969bcba8cff554, type: 3}
-  - {fileID: 8300000, guid: 49a18e363f0f1e94a89cd3888db474e0, type: 3}
-  - {fileID: 8300000, guid: 6c4eb57a30edab14cb47bde11d915741, type: 3}
-  - {fileID: 8300000, guid: a8636f69b68540b4aad24e5743d591d3, type: 3}
-  - {fileID: 8300000, guid: 2b7fdcd2e7802ac4b9a4818b6a9e6b9e, type: 3}
-  - {fileID: 8300000, guid: 6fc8b605badeaa941aafaeed23e4f667, type: 3}
-  - {fileID: 8300000, guid: efd0f1344709b324aae0e2bd73237f88, type: 3}
-  - {fileID: 8300000, guid: 57f0aaa738483dd4c9d05dcf54f4a010, type: 3}
-  - {fileID: 8300000, guid: 859694840c0f01647a121207179073fc, type: 3}
-  - {fileID: 8300000, guid: fb1f9463ae0bf324e8ae16cbe10d97e1, type: 3}
-  - {fileID: 8300000, guid: 54f70ee885b31714ca6f6b4266b22fd6, type: 3}
-  - {fileID: 8300000, guid: 84b7b71755cc5b449b364aa1380ba45c, type: 3}
-  - {fileID: 8300000, guid: 6999d71871fc4214590aab6b0e594947, type: 3}
+  - {fileID: 8300000, guid: cbf39e5ecbfb57543b75e2373a643712, type: 3}
+  - {fileID: 8300000, guid: 56107581d1ba7bd48956e40f946daf2c, type: 3}
+  - {fileID: 8300000, guid: 04346cb92205a8e4c84e52bb167c4b75, type: 3}
+  - {fileID: 8300000, guid: f34619b0dd5d30743b43d6abd25647aa, type: 3}
+  - {fileID: 8300000, guid: 70d022b1e450c7047b634356c84af07a, type: 3}
+  - {fileID: 8300000, guid: 1a35f708d26f8a848b20dbfb699b3125, type: 3}
+  - {fileID: 8300000, guid: 456bc85fa82613046aa9f8b399854607, type: 3}
+  - {fileID: 8300000, guid: 72439f329e8734045856fba69ea601ce, type: 3}
   tireScreechClip: {fileID: 0}
   collisionClip: {fileID: 8300000, guid: aff75b72996ad5e4aabdd2a563d0dc66, type: 3}
   collisionVolume: 1
-  numberOfGears: 5
+  numberOfGears: 4
   revUpSpeed: 1
-  revDownSpeed: 3
+  revDownSpeed: 2
   useTouchControls: 0
   throttleButton: {fileID: 0}
   reverseButton: {fileID: 0}

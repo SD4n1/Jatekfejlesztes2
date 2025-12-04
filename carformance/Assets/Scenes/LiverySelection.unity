@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 100878401}
   - component: {fileID: 100878400}
   m_Layer: 5
-  m_Name: Vissza (1)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,10 +697,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1688264211029944980}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: SelectCarAndOpenLivery
-        m_Mode: 3
+        m_MethodName: GoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1045,13 +1045,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LoadScene
   currentPageType: 3
   nextSceneName: 
-  previousSceneName: 
+  previousSceneName: CarSelection
   nameText: {fileID: 6764125346259777161}
   allTracks:
   - {fileID: 11400000, guid: e51fd19ea45cd0c42b26362bdbc5b20b, type: 2}
   - {fileID: 11400000, guid: 3e61d7f871423e642a137b95a3e7a0d1, type: 2}
   allCars:
   - {fileID: 11400000, guid: 82f95f4bcdf88604487f1a8543934fec, type: 2}
+  - {fileID: 11400000, guid: 8e54ba0a1073d4b48b3caad5a5a94e42, type: 2}
+  - {fileID: 11400000, guid: 015395e7740a20f42b1fa913bf50d5d9, type: 2}
+  - {fileID: 11400000, guid: 1869b7407af6726488ecd9b38ee08806, type: 2}
 --- !u!222 &1693666466815959971
 CanvasRenderer:
   m_ObjectHideFlags: 0
