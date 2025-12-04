@@ -473,10 +473,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 553089889}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -712.39, y: -195.97}
-  m_SizeDelta: {x: 1473.1, y: 828.0584}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 17.609985, y: 214.03}
+  m_SizeDelta: {x: 1473.1, y: 828.05835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365386616
 MonoBehaviour:
@@ -1644,6 +1644,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3e61d7f871423e642a137b95a3e7a0d1, type: 2}
   allCars:
   - {fileID: 11400000, guid: 82f95f4bcdf88604487f1a8543934fec, type: 2}
+  - {fileID: 11400000, guid: 8e54ba0a1073d4b48b3caad5a5a94e42, type: 2}
+  - {fileID: 11400000, guid: 015395e7740a20f42b1fa913bf50d5d9, type: 2}
+  - {fileID: 11400000, guid: 1869b7407af6726488ecd9b38ee08806, type: 2}
 --- !u!114 &1933805314413073379
 MonoBehaviour:
   m_ObjectHideFlags: 0

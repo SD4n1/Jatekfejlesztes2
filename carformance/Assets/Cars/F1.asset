@@ -18,16 +18,22 @@ MonoBehaviour:
   - teamName: Aston Martin
     prefab: {fileID: 5427178599615479775, guid: 1393895e5638a0c468386a6426f409aa, type: 3}
   - teamName: Ferrari
-    prefab: {fileID: 1102799551692337919, guid: c5ae7744e0815774baa1e0b4457ae179, type: 3}
+    prefab: {fileID: 8145880875232211042, guid: ab19c861d2616874d8a60922d98e2637, type: 3}
   - teamName: McLaren
-    prefab: {fileID: 8999823947385793933, guid: 7d4512a2fdf0bf348874c21b390cd0c3, type: 3}
+    prefab: {fileID: 6781470428120381740, guid: 890c325a5aa489f4e83fffddc0cd8b7a, type: 3}
   - teamName: Mercedes
-    prefab: {fileID: 7942878873430571139, guid: 700e47bb6e8b06b419c3aece56035bd5, type: 3}
+    prefab: {fileID: 1986064629167364907, guid: 4bed59296ba5d0347a6f900511c21111, type: 3}
   - teamName: Red Bull
-    prefab: {fileID: 2533747606407199827, guid: 76b1cbb11ad98b54ea27a89a5e49f761, type: 3}
+    prefab: {fileID: 5333553092142299076, guid: a55aa66b3ff624a438c838e2d0be974a, type: 3}
   - teamName: Haas
     prefab: {fileID: 5086405087701463135, guid: f0e710c66b4141047a76ac1f04ee5a75, type: 3}
   - teamName: Racing Bulls
     prefab: {fileID: 5636885075600707867, guid: d60d3a8c5a4bf5d47ae681b9f285fef8, type: 3}
   - teamName: Williams
     prefab: {fileID: 4559660132500046611, guid: 680097894f6c17f4db57da9de713796e, type: 3}
+  - teamName: 2008 Williams
+    prefab: {fileID: 601539377381138637, guid: 785a7f24b49322b4dbb0d8dbe38793ac, type: 3}
+  - teamName: 2008 McLaren
+    prefab: {fileID: 1200621058412049996, guid: a059fe2738dd8914a90dc0cc67e7f9d8, type: 3}
+  - teamName: 2008 Ferrari
+    prefab: {fileID: 3199653505720161442, guid: 4348aad1f394d3b4e9f9ba75052148cc, type: 3}

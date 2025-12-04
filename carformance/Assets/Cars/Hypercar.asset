@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e9330940a580f43aa713c79a87ebc9, type: 3}
+  m_Name: Hypercar
+  m_EditorClassIdentifier: Assembly-CSharp::CarData
+  categoryName: Hypercar
+  categoryImage: {fileID: 0}
+  carOptions:
+  - teamName: Porsche 963
+    prefab: {fileID: 6852420851064315358, guid: 7ab8f12d605cf9445ba0af1834af8fe9, type: 3}
+  - teamName: Porsche 963 Brazil
+    prefab: {fileID: 2462127947033401046, guid: b3328774e82c88c4ebb6a55436cb8e82, type: 3}

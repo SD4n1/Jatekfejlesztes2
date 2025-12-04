@@ -10,7 +10,7 @@ public class PrometeoCarController : MonoBehaviour
     [Space(20)]
     [Range(100, 380)] public int maxSpeed = 320;
     [Range(10, 120)] public int maxReverseSpeed = 45;
-    [Range(4, 16)] public int accelerationMultiplier = 4;
+    [Range(1, 16)] public int accelerationMultiplier = 4;
     [Space(10)]
     [Range(10, 50)] public int maxSteeringAngle = 27;
     [Range(0.1f, 1f)] public float steeringSpeed = 0.5f;
