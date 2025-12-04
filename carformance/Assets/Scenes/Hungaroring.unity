@@ -2201,6 +2201,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Border
       objectReference: {fileID: 0}
+    - target: {fileID: 1686035716003682877, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 1832472358533080797, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 2185197329809144841, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 2467797769758911082, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     - target: {fileID: 2512175678543559608, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.92657
@@ -2241,10 +2257,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953382899719362823, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3781981355722547625, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 3249885573956629654, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 3429723516904322498, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     - target: {fileID: 4103546747178593537, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_Name
       value: Hungaroring
       objectReference: {fileID: 0}
+    - target: {fileID: 4982690535256748877, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 5285810627586391160, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     - target: {fileID: 6091320535744816798, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_TagString
       value: Gravel
@@ -2257,6 +2293,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Border
       objectReference: {fileID: 0}
+    - target: {fileID: 7468575401938387084, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 7646091917854035785, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9034804278882538976, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
+    - target: {fileID: 7728688559283976614, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     - target: {fileID: 8641481723068425273, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_TagString
       value: Border
@@ -2269,6 +2317,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Border
       objectReference: {fileID: 0}
+    - target: {fileID: 9018799228699158282, guid: b023bd37cf0150e48b389d944157339a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     m_RemovedComponents:
     - {fileID: 6287440378770499050, guid: b023bd37cf0150e48b389d944157339a, type: 3}
     m_RemovedGameObjects: []
