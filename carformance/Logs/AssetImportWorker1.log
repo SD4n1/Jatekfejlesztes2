@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-05T14:27:56.4863292Z"
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-05T13:42:10.4849618Z"
-Date: 2025-12-05T13:42:10Z
+Date: 2025-12-05T14:27:56Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50467
+64932
 -licensingIpc
 LicenseClient-gyorf
 -job-worker-count
@@ -65,14 +65,14 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [82116]  Target information:
+Player connection [2572]  Target information:
 
-Player connection [82116]  * "[IP] 172.20.160.1 [Port] 0 [Flags] 2 [Guid] 1226994188 [EditorId] 1226994188 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [2572]  * "[IP] 172.20.160.1 [Port] 0 [Flags] 2 [Guid] 1505873266 [EditorId] 1505873266 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [82116]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1226994188 [EditorId] 1226994188 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [2572]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1505873266 [EditorId] 1505873266 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [82116] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [82116] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2572] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2572] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -81,13 +81,13 @@ Input System module state changed to: Initialized.
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.3+a4e98f1
-  Session Id:              d67e567fe05047348db0eb3ca959ade1
+  Session Id:              50af0af9ff1a48bca4adf1f69979a7f5
   Correlation Id:          4b106fdd9286e45e15a163dfc9808989
-  External correlation Id: 8299323664650350112
+  External correlation Id: 1041989026718419541
   Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.33s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-05T13:42:10.8231829Z"
-[Licensing::Module] Licensing Background thread has ended after 0.34s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.08s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-05T14:27:56.5639307Z"
+[Licensing::Module] Licensing Background thread has ended after 0.08s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -95,7 +95,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 193.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
@@ -111,43 +111,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003550 seconds.
-- Loaded All Assemblies, in  3.403 seconds
+Registered in 0.003049 seconds.
+- Loaded All Assemblies, in  0.759 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.810 seconds
-Domain Reload Profiling: 4209ms
-	BeginReloadAssembly (812ms)
+- Finished resetting the current domain, in  0.636 seconds
+Domain Reload Profiling: 1391ms
+	BeginReloadAssembly (268ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (568ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (99ms)
-	LoadAllAssembliesAndSetupDomain (1889ms)
-		LoadAssemblies (806ms)
+	RebuildCommonClasses (71ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (262ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1883ms)
-			TypeCache.Refresh (1879ms)
-				TypeCache.ScanAssembly (1365ms)
+		AnalyzeDomain (295ms)
+			TypeCache.Refresh (293ms)
+				TypeCache.ScanAssembly (271ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (811ms)
+	FinalizeReload (637ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (712ms)
+		SetupLoadedEditorAssemblies (563ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (107ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (291ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
+			InitializePlatformSupportModulesInManaged (76ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (235ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -163,8 +163,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  4.531 seconds
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.667 seconds
+Refreshing native plugins compatible for Editor in 2.24 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -174,102 +174,197 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.355 seconds
-Domain Reload Profiling: 5878ms
-	BeginReloadAssembly (394ms)
+- Finished resetting the current domain, in  1.060 seconds
+Domain Reload Profiling: 2720ms
+	BeginReloadAssembly (311ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (87ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (94ms)
-	LoadAllAssembliesAndSetupDomain (3917ms)
-		LoadAssemblies (3277ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (1173ms)
+		LoadAssemblies (643ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (851ms)
-			TypeCache.Refresh (749ms)
-				TypeCache.ScanAssembly (713ms)
-			BuildScriptInfoCaches (79ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1356ms)
+		AnalyzeDomain (698ms)
+			TypeCache.Refresh (588ms)
+				TypeCache.ScanAssembly (552ms)
+			BuildScriptInfoCaches (87ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1060ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1108ms)
+		SetupLoadedEditorAssemblies (858ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (330ms)
-			ProcessInitializeOnLoadAttributes (664ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (223ms)
+			ProcessInitializeOnLoadAttributes (512ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 5.49 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4244 unused Assets / (1.5 MB). Loaded Objects now: 4738.
-Memory consumption went from 91.5 MB to 89.9 MB.
-Total: 11.984400 ms (FindLiveObjects: 1.048600 ms CreateObjectMapping: 1.141000 ms MarkObjects: 7.406100 ms  DeleteObjects: 2.384400 ms)
+Unloading 4244 unused Assets / (1.9 MB). Loaded Objects now: 4738.
+Memory consumption went from 91.4 MB to 89.5 MB.
+Total: 12.440300 ms (FindLiveObjects: 0.586800 ms CreateObjectMapping: 0.938300 ms MarkObjects: 8.656900 ms  DeleteObjects: 2.254800 ms)
 
 ========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.463 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.212 seconds
+Domain Reload Profiling: 2672ms
+	BeginReloadAssembly (332ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (975ms)
+		LoadAssemblies (654ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (488ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (458ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1213ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (984ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (243ms)
+			ProcessInitializeOnLoadAttributes (628ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 3.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4242 unused Assets / (1.5 MB). Loaded Objects now: 4740.
+Memory consumption went from 91.4 MB to 89.9 MB.
+Total: 16.883300 ms (FindLiveObjects: 2.179500 ms CreateObjectMapping: 3.046200 ms MarkObjects: 8.352200 ms  DeleteObjects: 3.303300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
 Received Import Request.
-  Time since last request: 345551.799251 seconds.
+  Time since last request: 348290.749330 seconds.
   path: Assets/Cars/RaceCar_GreenYellow.prefab
   artifactKey: Guid(aaaeaa1451678834da4310ce8f56eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/RaceCar_GreenYellow.prefab using Guid(aaaeaa1451678834da4310ce8f56eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb09c8043bb49df6a6f8faafc4de1731') in 0.9074766 seconds
+Start importing Assets/Cars/RaceCar_GreenYellow.prefab using Guid(aaaeaa1451678834da4310ce8f56eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e0cef8e2770aed4a8064691591ae253') in 0.5349326 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 603
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Cars/FULL PREFABS/williams_old Variant.prefab
-  artifactKey: Guid(785a7f24b49322b4dbb0d8dbe38793ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/FULL PREFABS/williams_old Variant.prefab using Guid(785a7f24b49322b4dbb0d8dbe38793ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16554ebbf72d4cd4d2c2171c8ddaaac0') in 0.2443753 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1968
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.871345 seconds.
-  path: Assets/Cars/FULL PREFABS/HypercarRed Variant.prefab
-  artifactKey: Guid(21ff68f6c1a31334796a1aa949750519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/FULL PREFABS/HypercarRed Variant.prefab using Guid(21ff68f6c1a31334796a1aa949750519) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cdfb2d8e002edf4d747f55eae2adfc6') in 0.1342953 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 919
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.959988 seconds.
-  path: Assets/Cars/Haas.prefab
-  artifactKey: Guid(f0e710c66b4141047a76ac1f04ee5a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Haas.prefab using Guid(f0e710c66b4141047a76ac1f04ee5a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afc416a007fd9bb796f305da32fd040a') in 0.1938022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 749
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
+  Time since last request: 0.000049 seconds.
   path: Assets/Cars/Williams.prefab
   artifactKey: Guid(680097894f6c17f4db57da9de713796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Williams.prefab using Guid(680097894f6c17f4db57da9de713796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87593779326c3812c20052fc8dfd0d19') in 0.1840377 seconds
+Start importing Assets/Cars/Williams.prefab using Guid(680097894f6c17f4db57da9de713796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c54125aa6125ac6120ca47ba17805b57') in 0.2708809 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 749
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Cars/Subaru.prefab
-  artifactKey: Guid(f8da542ab8f93464698ffe4c8bafb25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/Subaru.prefab using Guid(f8da542ab8f93464698ffe4c8bafb25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5492493dfd5abb4d9688de53f8ab81e4') in 0.1445506 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 662
+  Time since last request: 0.000045 seconds.
+  path: Assets/Cars/McLaren.prefab
+  artifactKey: Guid(890c325a5aa489f4e83fffddc0cd8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/McLaren.prefab using Guid(890c325a5aa489f4e83fffddc0cd8b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5424249e25b6fa4d903855a89d9cdcf') in 0.1936373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 748
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Cars/ferrari_old.prefab
+  artifactKey: Guid(ca61dfd311870ba468dba5c1c0c17d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/ferrari_old.prefab using Guid(ca61dfd311870ba468dba5c1c0c17d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ed9c6bf4e0ccfb86507c82de549888d') in 0.1836225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1315
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Cars/Mini.prefab
+  artifactKey: Guid(5e4110f3b6000714790a74c2e68bb06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Mini.prefab using Guid(5e4110f3b6000714790a74c2e68bb06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e52f3115bfc784e456a5d8c60bd15dc') in 0.0513353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 365
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Cars/RaceCar_RedWhite.prefab
+  artifactKey: Guid(df22c835874d44940909070a1145af00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/RaceCar_RedWhite.prefab using Guid(df22c835874d44940909070a1145af00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1deb7be5790c31dfa98bdab04e1d23c1') in 0.1001479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 600
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
   path: Assets/Cars/williams_old.prefab
   artifactKey: Guid(09d0729634a6c5c4c923d9b6d26056b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/williams_old.prefab using Guid(09d0729634a6c5c4c923d9b6d26056b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfb0584d685edc326245fcdf9bc547cb') in 0.1826837 seconds
+Start importing Assets/Cars/williams_old.prefab using Guid(09d0729634a6c5c4c923d9b6d26056b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2be487d81b12ff153c6594d3b22a27f') in 0.1768738 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1318
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Cars/Racing Bulls.prefab
+  artifactKey: Guid(d60d3a8c5a4bf5d47ae681b9f285fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/Racing Bulls.prefab using Guid(d60d3a8c5a4bf5d47ae681b9f285fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95259ae933385bb86250868e3f299259') in 0.1563846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 749
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.108885 seconds.
+  path: Assets/Cars/FULL PREFABS/Hypercar.prefab
+  artifactKey: Guid(91ced73ecf7bb0a44a18f9a7393e9882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/FULL PREFABS/Hypercar.prefab using Guid(91ced73ecf7bb0a44a18f9a7393e9882) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8729277f492a4516d3560b810df4939a') in 0.1232711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 398
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Cars/FULL PREFABS/Mini.prefab
+  artifactKey: Guid(61b27a22d1eb41145af3dcff38109625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/FULL PREFABS/Mini.prefab using Guid(61b27a22d1eb41145af3dcff38109625) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c34a80db54344f1395583540a2786498') in 0.0706348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Cars/FULL PREFABS/HypercarRed.prefab
+  artifactKey: Guid(e5303e09a5a609f44aa5bac2095a44f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/FULL PREFABS/HypercarRed.prefab using Guid(e5303e09a5a609f44aa5bac2095a44f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5258f1a9bf4692b1d2899ffe3c6f5f50') in 0.1341302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Cars/FULL PREFABS/Subaru.prefab
+  artifactKey: Guid(39f98b9d1f3afab4f90a936d68ffd0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/FULL PREFABS/Subaru.prefab using Guid(39f98b9d1f3afab4f90a936d68ffd0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1916c6ea017faad5eab88a3eb917e504') in 0.1382851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 424
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
