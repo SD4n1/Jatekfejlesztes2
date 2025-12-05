@@ -16,6 +16,6 @@ MonoBehaviour:
   categoryImage: {fileID: 0}
   carOptions:
   - teamName: Porsche 963
-    prefab: {fileID: 6852420851064315358, guid: 7ab8f12d605cf9445ba0af1834af8fe9, type: 3}
+    prefab: {fileID: 6080636436867743875, guid: e5303e09a5a609f44aa5bac2095a44f2, type: 3}
   - teamName: Porsche 963 Brazil
-    prefab: {fileID: 2462127947033401046, guid: b3328774e82c88c4ebb6a55436cb8e82, type: 3}
+    prefab: {fileID: 3294622775101211311, guid: 91ced73ecf7bb0a44a18f9a7393e9882, type: 3}

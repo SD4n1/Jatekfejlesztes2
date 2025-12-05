@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\gyorf\\documents\\jatekfejlesztes2\\carformance\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|c:\\users\\gyorf\\documents\\jatekfejlesztes2\\carformance\\assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD66E977-D347-542B-D970-9E44BF521E3E}|Assembly-CSharp.csproj|solutionrelative:assets\\prometeo - car controller\\scripts\\prometeocarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CameraFollow.cs",
-              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
-              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAwwH8AAAAAAAAAAAAAAA==",
+              "Title": "PrometeoCarController.cs",
+              "DocumentMoniker": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ToolTip": "C:\\Users\\gyorf\\Documents\\Jatekfejlesztes2\\carformance\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:18:13.682Z",
+              "WhenOpened": "2025-12-05T13:18:51.859Z",
               "EditorCaption": ""
             },
             {
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "ViewState": "AgIAAFICAAAAAAAAAAAiwIsCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:17:59.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T20:17:59.729Z"
             },
             {
               "$type": "Document",
