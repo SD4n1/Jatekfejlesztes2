@@ -16,4 +16,4 @@ MonoBehaviour:
   categoryImage: {fileID: 0}
   carOptions:
   - teamName: Subaru Impreza
-    prefab: {fileID: 4349911491262981598, guid: f073b4abb255ada4fa8b7557e5888168, type: 3}
+    prefab: {fileID: 4286422982377402526, guid: 39f98b9d1f3afab4f90a936d68ffd0cd, type: 3}

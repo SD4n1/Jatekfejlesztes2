@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using AudioController;
+ using AudioController;
 
 public class PrometeoCarController : MonoBehaviour
 {
@@ -16,7 +16,6 @@ public class PrometeoCarController : MonoBehaviour
     [Range(0.1f, 1f)] public float steeringSpeed = 0.5f;
     [Space(10)]
     [Range(100, 1000)] public int brakeForce = 350;
-
 
     [Tooltip("Mennyire lassuljon gázelvételnél (Kisebb szám = hosszabb kigurulás)")]
     [Range(0.01f, 1f)] public float coastingDrag = 0.05f;
@@ -57,6 +56,13 @@ public class PrometeoCarController : MonoBehaviour
     public GameObject rearLeftMesh; public WheelCollider rearLeftCollider;
     public GameObject rearRightMesh; public WheelCollider rearRightCollider;
 
+    // --- ÚJ: FÉKLÁMPA BEÁLLÍTÁSOK ---
+    [Header("LIGHTS")]
+    [Tooltip("Húzd ide a bal hátsó féklámpa objektumot (pl. Point Light vagy Emissive Mesh)")]
+    public GameObject rearLeftBrakeLight;
+    [Tooltip("Húzd ide a jobb hátsó féklámpa objektumot")]
+    public GameObject rearRightBrakeLight;
+
     // --- EFFECTS ---
     public bool useEffects = false;
     public ParticleSystem RLWParticleSystem; public ParticleSystem RRWParticleSystem;
@@ -65,7 +71,6 @@ public class PrometeoCarController : MonoBehaviour
     // --- UI ---
     public bool useUI = false;
     public Text carSpeedText;
-    // NEW: gear UI text (similar to carSpeedText)
     [Tooltip("Optional UI Text to display current gear (1..N).")]
     public Text gearText;
 
@@ -112,8 +117,7 @@ public class PrometeoCarController : MonoBehaviour
 
     // Súrlódási görbék tárolása
     WheelFrictionCurve FL_Sideways, FR_Sideways, RL_Sideways, RR_Sideways;
-    float defaultSlip; // Az eredeti csúszási érték (referencia)
-    // Eredeti beállítások visszaállításához
+    float defaultSlip;
     float defaultCoastingDrag;
     int defaultMaxSpeed;
 
@@ -122,7 +126,9 @@ public class PrometeoCarController : MonoBehaviour
         carRigidbody = gameObject.GetComponent<Rigidbody>();
         carRigidbody.centerOfMass = bodyMassCenter;
 
-        carRigidbody.linearDamping = 0f;
+        // Unity verziótól függően (Unity 6-ban linearDamping, régebben drag)
+        // carRigidbody.drag = 0f; // Régi Unityhez
+        carRigidbody.linearDamping = 0f; // Új Unityhez
         carRigidbody.angularDamping = 0.1f;
 
         SaveDefaultFriction();
@@ -130,6 +136,9 @@ public class PrometeoCarController : MonoBehaviour
 
         defaultCoastingDrag = coastingDrag;
         defaultMaxSpeed = maxSpeed;
+
+        // --- ÚJ: FÉKLÁMPÁK KIKAPCSOLÁSA INDULÁSKOR ---
+        ToggleBrakeLights(false);
 
         if (useSounds && AudioManager.Instance != null)
         {
@@ -150,7 +159,6 @@ public class PrometeoCarController : MonoBehaviour
         if (!useEffects) StopEffects();
         SetupTouchControls();
 
-        // Forward Friction növelése a jobb fékezéshez
         WheelFrictionCurve forwardFriction;
 
         forwardFriction = frontLeftCollider.forwardFriction;
@@ -183,16 +191,20 @@ public class PrometeoCarController : MonoBehaviour
 
         HandleInput();
         AnimateWheelMeshes();
-
         CheckSurfaceAndApplyGrip();
 
         if (useSounds) UpdateEngineAudio();
     }
 
-    // --- TAPADÁS ÉS FELÜLET LOGIKA ---
+    // --- ÚJ: SEGÉDFÜGGVÉNY A FÉKLÁMPÁKHOZ ---
+    void ToggleBrakeLights(bool state)
+    {
+        if (rearLeftBrakeLight != null) rearLeftBrakeLight.SetActive(state);
+        if (rearRightBrakeLight != null) rearRightBrakeLight.SetActive(state);
+    }
+
     void CheckSurfaceAndApplyGrip()
     {
-
         WheelHit hit;
         float currentGripMultiplier = asphaltGrip;
         bool onGravel = false;
@@ -240,7 +252,6 @@ public class PrometeoCarController : MonoBehaviour
 
     void ApplyFrictionToWheels(float stiffnessMultiplier)
     {
-
         ModifyWheelStiffness(frontLeftCollider, ref FL_Sideways, stiffnessMultiplier);
         ModifyWheelStiffness(frontRightCollider, ref FR_Sideways, stiffnessMultiplier);
         ModifyWheelStiffness(rearLeftCollider, ref RL_Sideways, stiffnessMultiplier);
@@ -263,7 +274,6 @@ public class PrometeoCarController : MonoBehaviour
         defaultSlip = FL_Sideways.extremumSlip;
     }
 
-    // --- HANG LOGIKA ---
     void UpdateEngineAudio()
     {
         if (engineSources == null || engineClips.Length == 0) return;
@@ -342,7 +352,6 @@ public class PrometeoCarController : MonoBehaviour
         gearSpeeds = new float[numberOfGears]; for (int i = 0; i < numberOfGears; i++) { float t = (float)(i + 1) / numberOfGears; gearSpeeds[i] = Mathf.Lerp(0, maxSpeed, Mathf.Pow(t, 0.7f)); }
     }
 
-    // --- INPUT KEZELÉS: Billentyűzet VS Kontroller szétválasztva ---
     void HandleInput()
     {
         bool isKeyboardSteering = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow);
@@ -359,7 +368,6 @@ public class PrometeoCarController : MonoBehaviour
         }
 
         ApplySteering(rawSteeringInput, !isKeyboardSteering);
-
 
         float gasTrigger = Input.GetAxis("RT_Gas");
         float brakeTrigger = Input.GetAxis("LT_Brake");
@@ -398,7 +406,6 @@ public class PrometeoCarController : MonoBehaviour
         else if (Input.GetButtonUp("Jump")) RecoverTraction();
     }
 
-
     void ApplySteering(float input, bool isGamepad)
     {
         float targetInput = input;
@@ -407,9 +414,7 @@ public class PrometeoCarController : MonoBehaviour
         if (isGamepad)
         {
             targetInput = Mathf.Pow(Mathf.Abs(input), 1.5f) * Mathf.Sign(input);
-
             currentSpeed = steeringSpeed * 0.5f;
-
             float speedFactor = Mathf.InverseLerp(10f, 150f, Mathf.Abs(carSpeed));
             float maxAngleMultiplier = Mathf.Lerp(1f, 0.5f, speedFactor);
             targetInput *= maxAngleMultiplier;
@@ -427,46 +432,53 @@ public class PrometeoCarController : MonoBehaviour
         frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, angle, currentSpeed);
     }
 
-    public void GoForward() { UpdateDriftState(); 
-    if (localVelocityZ < -1f) 
-    { 
-        throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f); 
-        Brakes(); 
-    } 
-    else 
-    { 
-        ReleaseBrakes();
-        throttleAxis = Mathf.MoveTowards(throttleAxis, 1f, Time.deltaTime * 3f); 
-        ApplyDrive(1f); 
-    } 
-}
-    public void GoReverse() { UpdateDriftState(); 
-    if (localVelocityZ > 1f) 
-    { 
-        throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f); 
-        Brakes(); 
-    } 
-    else 
-    { 
-        ReleaseBrakes();
-        throttleAxis = Mathf.MoveTowards(throttleAxis, -1f, Time.deltaTime * 3f); 
-        ApplyDrive(-1f); 
-    } 
-}
+    public void GoForward()
+    {
+        UpdateDriftState();
+        if (localVelocityZ < -1f)
+        {
+            throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f);
+            Brakes();
+        }
+        else
+        {
+            ReleaseBrakes();
+            throttleAxis = Mathf.MoveTowards(throttleAxis, 1f, Time.deltaTime * 3f);
+            ApplyDrive(1f);
+        }
+    }
+    public void GoReverse()
+    {
+        UpdateDriftState();
+        if (localVelocityZ > 1f)
+        {
+            throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f);
+            Brakes();
+        }
+        else
+        {
+            ReleaseBrakes();
+            throttleAxis = Mathf.MoveTowards(throttleAxis, -1f, Time.deltaTime * 3f);
+            ApplyDrive(-1f);
+        }
+    }
 
     public void DecelerateCar()
     {
         UpdateDriftState();
         throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f);
-
         carRigidbody.linearVelocity *= (1f / (1f + coastingDrag));
-
         ApplyTorque(0);
+        // Kigurulásnál nem világít a fék, kivéve ha nagyon lassan gurul (opcionális)
+        // ToggleBrakeLights(false); 
         if (carRigidbody.linearVelocity.magnitude < 0.25f) { carRigidbody.linearVelocity = Vector3.zero; CancelInvoke("DecelerateCar"); }
     }
 
     public void Brakes()
     {
+        // --- ÚJ: FÉKLÁMPA BE ---
+        ToggleBrakeLights(true);
+
         frontLeftCollider.motorTorque = 0f;
         frontRightCollider.motorTorque = 0f;
         rearLeftCollider.motorTorque = 0f;
@@ -475,60 +487,36 @@ public class PrometeoCarController : MonoBehaviour
         float currentSpeed = Mathf.Abs(carSpeed);
         float dynamicBrakeForce;
 
-        if (currentSpeed > 120f)
-        {
-            dynamicBrakeForce = brakeForce * 0.8f;
-        }
-        else if (currentSpeed > 80f)
-        {
-            dynamicBrakeForce = brakeForce * 1.0f;
-        }
-        else if (currentSpeed > 40f)
-        {
-            dynamicBrakeForce = brakeForce * 1.2f;
-        }
-        else if (currentSpeed > 10f)
-        {
-            dynamicBrakeForce = brakeForce * 1.5f;
-        }
-        else if (currentSpeed > 2f)
-        {
-            dynamicBrakeForce = brakeForce * 2f;
-        }
-        else
-        {
-            dynamicBrakeForce = brakeForce * 3f;
-        }
+        if (currentSpeed > 120f) dynamicBrakeForce = brakeForce * 0.8f;
+        else if (currentSpeed > 80f) dynamicBrakeForce = brakeForce * 1.0f;
+        else if (currentSpeed > 40f) dynamicBrakeForce = brakeForce * 1.2f;
+        else if (currentSpeed > 10f) dynamicBrakeForce = brakeForce * 1.5f;
+        else if (currentSpeed > 2f) dynamicBrakeForce = brakeForce * 2f;
+        else dynamicBrakeForce = brakeForce * 3f;
 
         frontLeftCollider.brakeTorque = dynamicBrakeForce;
         frontRightCollider.brakeTorque = dynamicBrakeForce;
         rearLeftCollider.brakeTorque = dynamicBrakeForce;
         rearRightCollider.brakeTorque = dynamicBrakeForce;
 
-        if (currentSpeed > 50f)
-        {
-            carRigidbody.linearVelocity *= 0.995f;
-        }
-        else if (currentSpeed > 2f)
-        {
-            carRigidbody.linearVelocity *= 0.99f;
-        }
-        else if (currentSpeed > 0.5f)
-        {
-            carRigidbody.linearVelocity *= 0.96f;
-        }
-        else
-        {
-            carRigidbody.linearVelocity = Vector3.zero;
-            carRigidbody.angularVelocity = Vector3.zero;
-        }
+        if (currentSpeed > 50f) carRigidbody.linearVelocity *= 0.995f;
+        else if (currentSpeed > 2f) carRigidbody.linearVelocity *= 0.99f;
+        else if (currentSpeed > 0.5f) carRigidbody.linearVelocity *= 0.96f;
+        else { carRigidbody.linearVelocity = Vector3.zero; carRigidbody.angularVelocity = Vector3.zero; }
     }
 
     void ReleaseBrakes()
     {
-        frontLeftCollider.brakeTorque = 0f; frontRightCollider.brakeTorque = 0f; 
+        // --- ÚJ: FÉKLÁMPA KI (csak ha nincs behúzva a kézifék) ---
+        if (!Input.GetButton("Jump"))
+        {
+            ToggleBrakeLights(false);
+        }
+
+        frontLeftCollider.brakeTorque = 0f; frontRightCollider.brakeTorque = 0f;
         rearLeftCollider.brakeTorque = 0f; rearRightCollider.brakeTorque = 0f;
     }
+
     public void ThrottleOff() { ApplyTorque(0); }
     void ApplyDrive(float direction) { float currentMax = direction > 0 ? maxSpeed : maxReverseSpeed; if (Mathf.Abs(carSpeed) < currentMax) { ReleaseBrakes(); ApplyTorque((accelerationMultiplier * 50f) * throttleAxis); } else ApplyTorque(0); }
     void ApplyTorque(float torque) { frontLeftCollider.motorTorque = torque; frontRightCollider.motorTorque = torque; rearLeftCollider.motorTorque = torque; rearRightCollider.motorTorque = torque; }
@@ -566,6 +554,9 @@ public class PrometeoCarController : MonoBehaviour
     // --- KÉZIFÉK LOGIKA ---
     public void Handbrake()
     {
+        // --- ÚJ: FÉKLÁMPA BE ---
+        ToggleBrakeLights(true);
+
         CancelInvoke("RecoverTraction");
         driftingAxis = Mathf.MoveTowards(driftingAxis, 1f, Time.deltaTime);
         isTractionLocked = true;
@@ -574,6 +565,9 @@ public class PrometeoCarController : MonoBehaviour
     }
     public void RecoverTraction()
     {
+        // --- ÚJ: FÉKLÁMPA KI ---
+        ToggleBrakeLights(false);
+
         isTractionLocked = false;
         driftingAxis = Mathf.MoveTowards(driftingAxis, 0f, Time.deltaTime / 1.5f);
         if (driftingAxis > 0) Invoke("RecoverTraction", Time.deltaTime);
@@ -612,7 +606,6 @@ public class PrometeoCarController : MonoBehaviour
 
         if (useUI && gearText != null)
         {
-
             gearText.text = currentGear.ToString();
         }
     }
