@@ -54,8 +54,8 @@ public class LapTimer : MonoBehaviour
             lapCounter++;
             currentLapTime = 0f;
 
-            if (lapCounter == 0) Debug.Log("Box elhagyva -> Out Lap (idõmérés áll)");
-            if (lapCounter == 1) Debug.Log("Célvonal átlépve -> IDÕMÉRÉS INDUL!");
+            if (lapCounter == 0) Debug.Log("Box elhagyva -> Out Lap (idï¿½mï¿½rï¿½s ï¿½ll)");
+            if (lapCounter == 1) Debug.Log("Cï¿½lvonal ï¿½tlï¿½pve -> IDï¿½Mï¿½Rï¿½S INDUL!");
 
             return;
         }
