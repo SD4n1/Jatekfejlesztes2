@@ -8,6 +8,7 @@ TagManager:
   - Gravel
   - FinishLine
   - Border
+  - Track
   layers:
   - Default
   - TransparentFX
