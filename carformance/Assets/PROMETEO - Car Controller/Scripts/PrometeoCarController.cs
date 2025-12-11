@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
- using AudioController;
+using AudioController;
 
 public class PrometeoCarController : MonoBehaviour
 {
@@ -56,7 +56,7 @@ public class PrometeoCarController : MonoBehaviour
     public GameObject rearLeftMesh; public WheelCollider rearLeftCollider;
     public GameObject rearRightMesh; public WheelCollider rearRightCollider;
 
-    // --- ÚJ: FÉKLÁMPA BEÁLLÍTÁSOK ---
+
     [Header("LIGHTS")]
     [Tooltip("Húzd ide a bal hátsó féklámpa objektumot (pl. Point Light vagy Emissive Mesh)")]
     public GameObject rearLeftBrakeLight;
@@ -126,9 +126,7 @@ public class PrometeoCarController : MonoBehaviour
         carRigidbody = gameObject.GetComponent<Rigidbody>();
         carRigidbody.centerOfMass = bodyMassCenter;
 
-        // Unity verziótól függően (Unity 6-ban linearDamping, régebben drag)
-        // carRigidbody.drag = 0f; // Régi Unityhez
-        carRigidbody.linearDamping = 0f; // Új Unityhez
+        carRigidbody.linearDamping = 0f;
         carRigidbody.angularDamping = 0.1f;
 
         SaveDefaultFriction();
@@ -137,7 +135,6 @@ public class PrometeoCarController : MonoBehaviour
         defaultCoastingDrag = coastingDrag;
         defaultMaxSpeed = maxSpeed;
 
-        // --- ÚJ: FÉKLÁMPÁK KIKAPCSOLÁSA INDULÁSKOR ---
         ToggleBrakeLights(false);
 
         if (useSounds && AudioManager.Instance != null)
@@ -196,7 +193,6 @@ public class PrometeoCarController : MonoBehaviour
         if (useSounds) UpdateEngineAudio();
     }
 
-    // --- ÚJ: SEGÉDFÜGGVÉNY A FÉKLÁMPÁKHOZ ---
     void ToggleBrakeLights(bool state)
     {
         if (rearLeftBrakeLight != null) rearLeftBrakeLight.SetActive(state);
@@ -280,11 +276,19 @@ public class PrometeoCarController : MonoBehaviour
         float absSpeed = Mathf.Abs(carSpeed);
         bool isGasPedalPressed = Mathf.Abs(throttleAxis) > 0.1f;
 
+        // Fokozat meghatározása
         for (int i = 0; i < gearSpeeds.Length; i++) { if (absSpeed < gearSpeeds[i]) { currentGear = i + 1; break; } }
         float minGearSpeed = (currentGear == 1) ? 0 : gearSpeeds[currentGear - 2];
         float maxGearSpeed = gearSpeeds[currentGear - 1];
         float gearPercent = Mathf.InverseLerp(minGearSpeed, maxGearSpeed, absSpeed);
-        float speedBasedRPM = Mathf.Lerp(MIN_IDLE_RPM, 1.0f, gearPercent);
+
+
+        float speedRatio = Mathf.Clamp01(absSpeed / maxSpeed);
+
+        float speedBasedMinRPM = Mathf.Lerp(MIN_IDLE_RPM, 0.80f, Mathf.Pow(speedRatio, 0.5f));
+
+        float gearMinRPM = Mathf.Lerp(0.60f, 0.75f, speedRatio);
+        float speedBasedRPM = Mathf.Lerp(gearMinRPM, 1.0f, gearPercent);
 
         if (isGasPedalPressed)
         {
@@ -293,14 +297,23 @@ public class PrometeoCarController : MonoBehaviour
         }
         else
         {
-            targetRPM = Mathf.Max(speedBasedRPM * 0.6f, MIN_IDLE_RPM);
-            engineLoad = Mathf.Lerp(engineLoad, 0.0f, Time.deltaTime * 3f);
+            float coastingRPM = speedBasedRPM * 0.95f;
+            targetRPM = Mathf.Max(coastingRPM, speedBasedMinRPM);
+            engineLoad = Mathf.Lerp(engineLoad, 0.4f, Time.deltaTime * 1.5f);
         }
-        if (absSpeed < 2f) targetRPM = MIN_IDLE_RPM;
 
-        float inertia = isGasPedalPressed ? revUpSpeed : revDownSpeed;
+        if (absSpeed < 5f) targetRPM = Mathf.Lerp(MIN_IDLE_RPM, speedBasedMinRPM, absSpeed / 5f);
+
+        float actualRevDownSpeed = revDownSpeed;
+        if (absSpeed > 10f)
+        {
+            actualRevDownSpeed = revDownSpeed * 0.2f;
+        }
+
+        float inertia = isGasPedalPressed ? revUpSpeed : actualRevDownSpeed;
         engineRPM = Mathf.Lerp(engineRPM, targetRPM, Time.deltaTime * inertia);
-        engineRPM = Mathf.Max(engineRPM, MIN_IDLE_RPM);
+
+        engineRPM = Mathf.Max(engineRPM, speedBasedMinRPM);
 
         float adjustedRPM = (engineRPM - MIN_IDLE_RPM) / (1.0f - MIN_IDLE_RPM);
         if (adjustedRPM < 0) adjustedRPM = 0;
@@ -312,9 +325,9 @@ public class PrometeoCarController : MonoBehaviour
         AudioSource sourceB = GetSourceForClip(indexB);
 
         float blend = exactIndex - indexA;
-        float loadPitchFactor = Mathf.Lerp(0.85f, 1.0f, engineLoad);
-        float loadVolFactor = Mathf.Lerp(0.5f, 1.0f, engineLoad);
-        float rpmVolCurve = Mathf.Lerp(0.4f, 1.0f, adjustedRPM);
+        float loadPitchFactor = Mathf.Lerp(0.96f, 1.0f, engineLoad);
+        float loadVolFactor = Mathf.Lerp(0.75f, 1.0f, engineLoad);
+        float rpmVolCurve = Mathf.Lerp(0.6f, 1.0f, adjustedRPM);
         float masterVol = rpmVolCurve * loadVolFactor;
 
         if (sourceA != null)
@@ -476,7 +489,6 @@ public class PrometeoCarController : MonoBehaviour
 
     public void Brakes()
     {
-        // --- ÚJ: FÉKLÁMPA BE ---
         ToggleBrakeLights(true);
 
         frontLeftCollider.motorTorque = 0f;
@@ -507,7 +519,6 @@ public class PrometeoCarController : MonoBehaviour
 
     void ReleaseBrakes()
     {
-        // --- ÚJ: FÉKLÁMPA KI (csak ha nincs behúzva a kézifék) ---
         if (!Input.GetButton("Jump"))
         {
             ToggleBrakeLights(false);
@@ -554,7 +565,6 @@ public class PrometeoCarController : MonoBehaviour
     // --- KÉZIFÉK LOGIKA ---
     public void Handbrake()
     {
-        // --- ÚJ: FÉKLÁMPA BE ---
         ToggleBrakeLights(true);
 
         CancelInvoke("RecoverTraction");
@@ -565,7 +575,6 @@ public class PrometeoCarController : MonoBehaviour
     }
     public void RecoverTraction()
     {
-        // --- ÚJ: FÉKLÁMPA KI ---
         ToggleBrakeLights(false);
 
         isTractionLocked = false;
@@ -643,3 +652,4 @@ public class PrometeoCarController : MonoBehaviour
         mesh.transform.rotation = r;
     }
 }
+
