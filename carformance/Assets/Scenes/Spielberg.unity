@@ -257,6 +257,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 3336687187222645018, guid: 61b27a22d1eb41145af3dcff38109625, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3647296360830663554, guid: 61b27a22d1eb41145af3dcff38109625, type: 3}
       propertyPath: m_Name
       value: Mini
@@ -302,6 +306,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 2794021776090254224, guid: 4bed59296ba5d0347a6f900511c21111, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6930999021727995995, guid: 4bed59296ba5d0347a6f900511c21111, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -819,6 +827,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 617370758888670452, guid: 39f98b9d1f3afab4f90a936d68ffd0cd, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2712919695547645435, guid: 39f98b9d1f3afab4f90a936d68ffd0cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -3922,6 +3934,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 1460774396538596926, guid: 91ced73ecf7bb0a44a18f9a7393e9882, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3294622775101211311, guid: 91ced73ecf7bb0a44a18f9a7393e9882, type: 3}
       propertyPath: m_Name
       value: Hypercar
@@ -4140,6 +4156,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 3029277413000576699, guid: e5303e09a5a609f44aa5bac2095a44f2, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6080636436867743875, guid: e5303e09a5a609f44aa5bac2095a44f2, type: 3}
       propertyPath: m_Name
       value: HypercarRed
@@ -4436,6 +4456,10 @@ PrefabInstance:
     - target: {fileID: 5427178599615479775, guid: 1393895e5638a0c468386a6426f409aa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509693813453975396, guid: 1393895e5638a0c468386a6426f409aa, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5450,7 +5474,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
     - target: {fileID: 4741480340550318270, guid: 890c325a5aa489f4e83fffddc0cd8b7a, type: 3}
       propertyPath: curbVolume
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4741480340550318270, guid: 890c325a5aa489f4e83fffddc0cd8b7a, type: 3}
       propertyPath: collisionVolume
@@ -5629,6 +5653,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 1277858411252381085, guid: 680097894f6c17f4db57da9de713796e, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4559660132500046611, guid: 680097894f6c17f4db57da9de713796e, type: 3}
       propertyPath: m_Name
       value: Williams
@@ -7289,6 +7317,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9052571180193411914, guid: ab19c861d2616874d8a60922d98e2637, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8013,6 +8045,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 6553494564377173610, guid: f0e710c66b4141047a76ac1f04ee5a75, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -9124,6 +9160,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 8596563573763614591, guid: a55aa66b3ff624a438c838e2d0be974a, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10105,6 +10145,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 8768081212283196998, guid: d60d3a8c5a4bf5d47ae681b9f285fef8, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -13364,6 +13408,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 7286334741975585315, guid: 4348aad1f394d3b4e9f9ba75052148cc, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14968,6 +15016,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 6570952079674597459, guid: a059fe2738dd8914a90dc0cc67e7f9d8, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6994376076952455764, guid: a059fe2738dd8914a90dc0cc67e7f9d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -19385,6 +19437,10 @@ PrefabInstance:
       propertyPath: curbClip
       value: 
       objectReference: {fileID: 8300000, guid: a730262ffebdbcc4a9d01c718e7c525b, type: 3}
+    - target: {fileID: 8858827504892441930, guid: 785a7f24b49322b4dbb0d8dbe38793ac, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
