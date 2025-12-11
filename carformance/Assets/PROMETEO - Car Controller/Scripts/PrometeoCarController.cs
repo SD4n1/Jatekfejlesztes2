@@ -137,9 +137,8 @@ public class PrometeoCarController : MonoBehaviour
         carRigidbody = gameObject.GetComponent<Rigidbody>();
         carRigidbody.centerOfMass = bodyMassCenter;
 
-        // Unity verziótól függően (Unity 6-ban linearDamping, régebben drag)
-        // carRigidbody.drag = 0f; // Régi Unityhez
-        carRigidbody.linearDamping = 0f; // Új Unityhez
+
+        carRigidbody.linearDamping = 0f;
         carRigidbody.angularDamping = 0.1f;
 
         SaveDefaultFriction();
@@ -148,7 +147,6 @@ public class PrometeoCarController : MonoBehaviour
         defaultCoastingDrag = coastingDrag;
         defaultMaxSpeed = maxSpeed;
 
-        // --- ÚJ: FÉKLÁMPÁK KIKAPCSOLÁSA INDULÁSKOR ---
         ToggleBrakeLights(false);
 
         if (useSounds && AudioManager.Instance != null)
@@ -208,7 +206,6 @@ public class PrometeoCarController : MonoBehaviour
         if (useSounds) UpdateEngineAudio();
     }
 
-    // --- ÚJ: SEGÉDFÜGGVÉNY A FÉKLÁMPÁKHOZ ---
     void ToggleBrakeLights(bool state)
     {
         if (rearLeftBrakeLight != null) rearLeftBrakeLight.SetActive(state);
@@ -286,33 +283,22 @@ public class PrometeoCarController : MonoBehaviour
         defaultSlip = FL_Sideways.extremumSlip;
     }
 
-    // ========================================
-    // JAVÍTOTT MOTOR AUDIO RENDSZER
-    // - Valósághűbb RPM viselkedés menet közben
-    // - Sebesség-alapú minimum RPM (nem esik túl mélyre)
-    // - Lassabb RPM esés gázelvételnél
-    // - Simább váltások
-    // ========================================
     void UpdateEngineAudio()
     {
         if (engineSources == null || engineClips.Length == 0) return;
         float absSpeed = Mathf.Abs(carSpeed);
         bool isGasPedalPressed = Mathf.Abs(throttleAxis) > 0.1f;
 
-        // Fokozat meghatározása
+
         for (int i = 0; i < gearSpeeds.Length; i++) { if (absSpeed < gearSpeeds[i]) { currentGear = i + 1; break; } }
         float minGearSpeed = (currentGear == 1) ? 0 : gearSpeeds[currentGear - 2];
         float maxGearSpeed = gearSpeeds[currentGear - 1];
         float gearPercent = Mathf.InverseLerp(minGearSpeed, maxGearSpeed, absSpeed);
 
-        // F1/HYPERCAR STÍLUS: Az RPM szinte végig magasan marad
-        // Sebesség-alapú minimum RPM - már kis sebességnél is magasan tart
         float speedRatio = Mathf.Clamp01(absSpeed / maxSpeed);
 
-        // Nagyon magas padló: 20 km/h-nál már 50%, max sebességnél 80%!
         float speedBasedMinRPM = Mathf.Lerp(MIN_IDLE_RPM, 0.80f, Mathf.Pow(speedRatio, 0.5f));
 
-        // Fokozaton belül is magasról indul (60-75%)
         float gearMinRPM = Mathf.Lerp(0.60f, 0.75f, speedRatio);
         float speedBasedRPM = Mathf.Lerp(gearMinRPM, 1.0f, gearPercent);
 
@@ -323,27 +309,22 @@ public class PrometeoCarController : MonoBehaviour
         }
         else
         {
-            // F1 stílus: gázelvételnél ALIG esik (csak 5%)
             float coastingRPM = speedBasedRPM * 0.95f;
             targetRPM = Mathf.Max(coastingRPM, speedBasedMinRPM);
-            engineLoad = Mathf.Lerp(engineLoad, 0.4f, Time.deltaTime * 1.5f); // Magas load marad
+            engineLoad = Mathf.Lerp(engineLoad, 0.4f, Time.deltaTime * 1.5f);
         }
 
-        // Csak álló helyzetben mehet vissza alapjáratra
         if (absSpeed < 5f) targetRPM = Mathf.Lerp(MIN_IDLE_RPM, speedBasedMinRPM, absSpeed / 5f);
 
-        // Extrém lassú RPM esés menet közben
         float actualRevDownSpeed = revDownSpeed;
         if (absSpeed > 10f)
         {
-            // Menet közben szinte alig esik (20%-os sebesség)
             actualRevDownSpeed = revDownSpeed * 0.2f;
         }
 
         float inertia = isGasPedalPressed ? revUpSpeed : actualRevDownSpeed;
         engineRPM = Mathf.Lerp(engineRPM, targetRPM, Time.deltaTime * inertia);
 
-        // ÚJ: Menet közben az RPM soha nem mehet a sebesség-alapú minimum alá
         engineRPM = Mathf.Max(engineRPM, speedBasedMinRPM);
 
         float adjustedRPM = (engineRPM - MIN_IDLE_RPM) / (1.0f - MIN_IDLE_RPM);
@@ -356,7 +337,6 @@ public class PrometeoCarController : MonoBehaviour
         AudioSource sourceB = GetSourceForClip(indexB);
 
         float blend = exactIndex - indexA;
-        // F1/HYPERCAR: Minimális pitch és volume változás gázelvételnél
         float loadPitchFactor = Mathf.Lerp(0.96f, 1.0f, engineLoad);
         float loadVolFactor = Mathf.Lerp(0.75f, 1.0f, engineLoad);
         float rpmVolCurve = Mathf.Lerp(0.6f, 1.0f, adjustedRPM);
@@ -521,7 +501,6 @@ public class PrometeoCarController : MonoBehaviour
 
     public void Brakes()
     {
-        // --- ÚJ: FÉKLÁMPA BE ---
         ToggleBrakeLights(true);
 
         frontLeftCollider.motorTorque = 0f;
@@ -552,7 +531,6 @@ public class PrometeoCarController : MonoBehaviour
 
     void ReleaseBrakes()
     {
-        // --- ÚJ: FÉKLÁMPA KI (csak ha nincs behúzva a kézifék) ---
         if (!Input.GetButton("Jump"))
         {
             ToggleBrakeLights(false);
@@ -601,7 +579,6 @@ public class PrometeoCarController : MonoBehaviour
     // --- KÉZIFÉK LOGIKA ---
     public void Handbrake()
     {
-        // --- ÚJ: FÉKLÁMPA BE ---
         ToggleBrakeLights(true);
 
         CancelInvoke("RecoverTraction");
@@ -612,7 +589,6 @@ public class PrometeoCarController : MonoBehaviour
     }
     public void RecoverTraction()
     {
-        // --- ÚJ: FÉKLÁMPA KI ---
         ToggleBrakeLights(false);
 
         isTractionLocked = false;
@@ -640,7 +616,6 @@ public class PrometeoCarController : MonoBehaviour
 
     void SetupWheelCurbDetectors()
     {
-        // Minden WheelCollider-re rárakjuk a detector scriptet
         if (frontLeftCollider != null) AddCurbDetector(frontLeftCollider.gameObject);
         if (frontRightCollider != null) AddCurbDetector(frontRightCollider.gameObject);
         if (rearLeftCollider != null) AddCurbDetector(rearLeftCollider.gameObject);
@@ -649,11 +624,9 @@ public class PrometeoCarController : MonoBehaviour
 
     void AddCurbDetector(GameObject wheelObj)
     {
-        // Sphere trigger collider hozzáadása a WheelCollider mellé
         SphereCollider trigger = wheelObj.AddComponent<SphereCollider>();
         trigger.isTrigger = true;
 
-        // A WheelCollider méretéhez igazítjuk
         WheelCollider wc = wheelObj.GetComponent<WheelCollider>();
         if (wc != null)
         {
@@ -665,7 +638,6 @@ public class PrometeoCarController : MonoBehaviour
             trigger.radius = 0.35f;
         }
 
-        // Detector script hozzáadása
         WheelCurbDetector detector = wheelObj.GetComponent<WheelCurbDetector>();
         if (detector == null)
         {
@@ -674,32 +646,26 @@ public class PrometeoCarController : MonoBehaviour
         detector.carController = this;
     }
 
-    // Ezt hívják meg a kerék detectorok
     public void OnWheelHitCurb(Vector3 position)
     {
         if (curbClip == null) return;
 
         float absSpeed = Mathf.Abs(carSpeed);
-        if (absSpeed < 3f) return; // Túl lassú
+        if (absSpeed < 3f) return;
 
-        if (Time.time - lastCurbSoundTime < curbSoundCooldown) return;
+        float speedFactor = Mathf.InverseLerp(10f, 180f, absSpeed);
+        float currentCooldown = Mathf.Lerp(0.08f, 0.03f, speedFactor);
+
+        if (Time.time - lastCurbSoundTime < currentCooldown) return;
         lastCurbSoundTime = Time.time;
 
-        // Pitch: lassúnál = 0.6, gyorsnál = 1.6
-        float speedFactor = Mathf.InverseLerp(10f, 180f, absSpeed);
         float pitch = Mathf.Lerp(0.6f, 1.6f, speedFactor);
 
-        // Hangerő is nő sebességgel
         float dynamicVolume = Mathf.Lerp(0.3f, 1f, speedFactor) * curbVolume;
 
-        // Több kerék = kicsit hangosabb
         float wheelMultiplier = Mathf.Lerp(1f, 1.3f, (wheelsOnCurb - 1) / 3f);
         dynamicVolume *= wheelMultiplier;
 
-        // Cooldown is gyorsabb nagy sebességnél (sűrűbb "BRRRR")
-        curbSoundCooldown = Mathf.Lerp(0.08f, 0.03f, speedFactor);
-
-        // Mindig saját AudioSource-al játsszuk le a pitch miatt
         GameObject tempGO = new GameObject("CurbSound");
         tempGO.transform.position = position;
         AudioSource tempSource = tempGO.AddComponent<AudioSource>();

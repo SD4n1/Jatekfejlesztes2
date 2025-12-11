@@ -10,20 +10,20 @@ public class LapTimer : MonoBehaviour
 
     private float currentLapTime = 0f;
     private bool isRacing = false;
-
-
     private int lapCounter = -1;
-
     private List<string> lapRecords = new List<string>();
+
+    private float lastFinishTime = -10f;
+    private float finishCooldown = 4f;
 
     void Start()
     {
         currentLapTime = 0f;
         lapCounter = -1;
         isRacing = true;
-
         historyText.text = "";
         lapRecords.Clear();
+        lastFinishTime = -10f;
     }
 
     void Update()
@@ -34,7 +34,6 @@ public class LapTimer : MonoBehaviour
             {
                 currentLapTime += Time.deltaTime;
             }
-
             UpdateTimerUI();
         }
     }
@@ -43,7 +42,12 @@ public class LapTimer : MonoBehaviour
     {
         if (other.CompareTag("FinishLine"))
         {
-            FinishLap();
+            // Csak ha elég idő telt el az utolsó áthaladás óta
+            if (Time.time - lastFinishTime > finishCooldown)
+            {
+                lastFinishTime = Time.time;
+                FinishLap();
+            }
         }
     }
 
@@ -53,13 +57,10 @@ public class LapTimer : MonoBehaviour
         {
             lapCounter++;
             currentLapTime = 0f;
-
-            if (lapCounter == 0) Debug.Log("Box elhagyva -> Out Lap (id�m�r�s �ll)");
-            if (lapCounter == 1) Debug.Log("C�lvonal �tl�pve -> ID�M�R�S INDUL!");
-
+            if (lapCounter == 0) Debug.Log("Box elhagyva -> Out Lap (időmérés áll)");
+            if (lapCounter == 1) Debug.Log("Célvonal átlépve -> IDŐMÉRÉS INDUL!");
             return;
         }
-
 
         float minutes = Mathf.FloorToInt(currentLapTime / 60);
         float seconds = Mathf.FloorToInt(currentLapTime % 60);
@@ -75,7 +76,6 @@ public class LapTimer : MonoBehaviour
         }
 
         UpdateHistoryUI();
-
         lapCounter++;
         currentLapTime = 0f;
     }
@@ -95,7 +95,6 @@ public class LapTimer : MonoBehaviour
             float minutes = Mathf.FloorToInt(currentLapTime / 60);
             float seconds = Mathf.FloorToInt(currentLapTime % 60);
             float milliseconds = (currentLapTime % 1) * 1000;
-
             timerDisplay.text = string.Format("{0:00}:{1:00}.{2:000}", minutes, seconds, milliseconds);
         }
     }
