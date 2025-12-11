@@ -9,6 +9,7 @@ TagManager:
   - FinishLine
   - Border
   - Track
+  - Curb
   layers:
   - Default
   - TransparentFX
