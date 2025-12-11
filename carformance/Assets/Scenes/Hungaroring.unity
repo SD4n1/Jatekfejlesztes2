@@ -28005,7 +28005,7 @@ PrefabInstance:
       objectReference: {fileID: 5190951904804321598, guid: 8d2ead6b36565cd4e845c744447863b8, type: 3}
     - target: {fileID: 2142346102506511274, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: m_TagString
-      value: Track
+      value: Curb
       objectReference: {fileID: 0}
     - target: {fileID: 2185197329809144841, guid: b023bd37cf0150e48b389d944157339a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
