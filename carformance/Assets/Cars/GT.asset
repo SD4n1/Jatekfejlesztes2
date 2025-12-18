@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e9330940a580f43aa713c79a87ebc9, type: 3}
+  m_Name: GT
+  m_EditorClassIdentifier: Assembly-CSharp::CarData
+  categoryName: GT
+  categoryImage: {fileID: 0}
+  carOptions:
+  - teamName: Porsche 911 GT
+    prefab: {fileID: 5206326421890265837, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}

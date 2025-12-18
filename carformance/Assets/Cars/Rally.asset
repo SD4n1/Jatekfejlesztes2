@@ -17,3 +17,5 @@ MonoBehaviour:
   carOptions:
   - teamName: Subaru Impreza
     prefab: {fileID: 4286422982377402526, guid: 39f98b9d1f3afab4f90a936d68ffd0cd, type: 3}
+  - teamName: Citroen WRC
+    prefab: {fileID: 8247668148216721452, guid: 5bfd96356300d674e9673224609c3a14, type: 3}
