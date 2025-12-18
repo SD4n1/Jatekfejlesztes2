@@ -22323,6 +22323,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2884146256596302480, guid: 5bfd96356300d674e9673224609c3a14, type: 3}
+      propertyPath: curbVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8247668148216721452, guid: 5bfd96356300d674e9673224609c3a14, type: 3}
       propertyPath: m_Name
       value: Citroen WRC
