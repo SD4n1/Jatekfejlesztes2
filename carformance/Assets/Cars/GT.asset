@@ -17,3 +17,7 @@ MonoBehaviour:
   carOptions:
   - teamName: Porsche 911 GT
     prefab: {fileID: 5206326421890265837, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+  - teamName: Audi R8 V10
+    prefab: {fileID: 4420929430550901685, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+  - teamName: Ferrari 488
+    prefab: {fileID: 3690060752638623857, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
