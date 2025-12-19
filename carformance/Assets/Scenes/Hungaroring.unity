@@ -8416,6 +8416,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339313531}
   m_CullTransparentMesh: 1
+--- !u!1 &1358102452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4420929430550901685, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+  m_PrefabInstance: {fileID: 5718427101533334199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1377832700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13287,6 +13292,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 126096458295928684, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99991435
+      objectReference: {fileID: 0}
+    - target: {fileID: 126096458295928684, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126096458295928684, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126096458295928684, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.013089582
+      objectReference: {fileID: 0}
+    - target: {fileID: 126096458295928684, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779354949965625204, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99984777
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779354949965625204, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779354949965625204, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779354949965625204, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.01745245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779354949965625204, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5206326421890265837, guid: 9e170fd2b61b57c4ba1a2db5e3cf6d83, type: 3}
       propertyPath: m_Name
       value: PorscheGT
@@ -20998,6 +21043,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3906144531499791700}
   m_CullTransparentMesh: 1
+--- !u!1001 &5718427101533334199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103215189735111166, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420929430550901685, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_Name
+      value: Audi R8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420929430550901685, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86be1e51f9f8e8c41bea63a71b4c2ae5, type: 3}
 --- !u!114 &5735872006211270864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23647,6 +23753,67 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &6512065360544635562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034866515857373239, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690060752638623857, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_Name
+      value: Ferrari 488
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690060752638623857, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
 --- !u!114 &6542444555407799735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24969,7 +25136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.size
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[14].name
@@ -24982,6 +25149,14 @@ PrefabInstance:
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[16].name
       value: Porsche 911 GT
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[17].name
+      value: Audi R8 V10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[18].name
+      value: Ferrari 488
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[0].carObject
@@ -25072,6 +25247,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 358098390917715871}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[17].carObject
+      value: 
+      objectReference: {fileID: 1358102452}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[17].teamIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[18].carObject
+      value: 
+      objectReference: {fileID: 8677306986573555064}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[18].teamIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[12].categoryData
       value: 
       objectReference: {fileID: 11400000, guid: 8e54ba0a1073d4b48b3caad5a5a94e42, type: 2}
@@ -25085,6 +25276,14 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1869b7407af6726488ecd9b38ee08806, type: 2}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[16].categoryData
+      value: 
+      objectReference: {fileID: 11400000, guid: bcea55f02f827614f8165a2f764f8c58, type: 2}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[17].categoryData
+      value: 
+      objectReference: {fileID: 11400000, guid: bcea55f02f827614f8165a2f764f8c58, type: 2}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[18].categoryData
       value: 
       objectReference: {fileID: 11400000, guid: bcea55f02f827614f8165a2f764f8c58, type: 2}
     - target: {fileID: 3986330599014232405, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
@@ -28084,6 +28283,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &8677306986573555064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3690060752638623857, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+  m_PrefabInstance: {fileID: 6512065360544635562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8734145186521950715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29052,3 +29256,5 @@ SceneRoots:
   - {fileID: 5858585506353230889}
   - {fileID: 6543175077256271499}
   - {fileID: 358098390917715870}
+  - {fileID: 5718427101533334199}
+  - {fileID: 6512065360544635562}
