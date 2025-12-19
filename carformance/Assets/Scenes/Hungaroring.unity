@@ -23805,6 +23805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ferrari 488
       objectReference: {fileID: 0}
+    - target: {fileID: 3690060752638623857, guid: ea037f20a9983fd4592a00771a4daf31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25256,7 +25260,7 @@ PrefabInstance:
       objectReference: {fileID: 8677306986573555064}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[18].teamIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[12].categoryData
