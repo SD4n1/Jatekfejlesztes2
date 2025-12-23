@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-21T19:41:58.5177366Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-23T20:06:46.1949645Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-12-21T19:41:58Z
+Date: 2025-12-23T20:06:46Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64877
+53456
 -licensingIpc
 LicenseClient-gyorf
 -job-worker-count
@@ -65,27 +65,27 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [34020]  Target information:
+Player connection [63432]  Target information:
 
-Player connection [34020]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1700137414 [EditorId] 1700137414 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [63432]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 2499373338 [EditorId] 2499373338 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [34020] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [34020] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [63432] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [63432] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 25288, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 63844, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              56f6b436963344e1b73d9ac40a4fa14f
-  Correlation Id:          40b31bd7d4f8a5f3c5fed4d457504f33
-  External correlation Id: 6010402590507793225
+  Session Id:              19f384a61e9e4288b20f0abf75c626ff
+  Correlation Id:          e9cdce12cf2b0f2a412b3f28b3e69db3
+  External correlation Id: 583272960468256304
   Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.11s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-21T19:41:58.6314793Z"
-[Licensing::Module] Licensing Background thread has ended after 0.11s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-23T20:06:46.2599979Z"
+[Licensing::Module] Licensing Background thread has ended after 0.07s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -93,7 +93,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
@@ -109,43 +109,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002529 seconds.
-- Loaded All Assemblies, in  0.638 seconds
+Registered in 0.003374 seconds.
+- Loaded All Assemblies, in  0.705 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.584 seconds
-Domain Reload Profiling: 1218ms
-	BeginReloadAssembly (240ms)
+- Finished resetting the current domain, in  1.075 seconds
+Domain Reload Profiling: 1777ms
+	BeginReloadAssembly (226ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (245ms)
-		LoadAssemblies (233ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (223ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (241ms)
-			TypeCache.Refresh (239ms)
-				TypeCache.ScanAssembly (220ms)
+		AnalyzeDomain (297ms)
+			TypeCache.Refresh (295ms)
+				TypeCache.ScanAssembly (273ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (584ms)
+	FinalizeReload (1076ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (534ms)
+		SetupLoadedEditorAssemblies (1013ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (80ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (223ms)
-			ProcessInitializeOnLoadMethodAttributes (98ms)
+			InitializePlatformSupportModulesInManaged (140ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (322ms)
+			ProcessInitializeOnLoadAttributes (409ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -161,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.606 seconds
-Refreshing native plugins compatible for Editor in 3.46 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.808 seconds
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -172,221 +172,77 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.140 seconds
-Domain Reload Profiling: 2740ms
-	BeginReloadAssembly (330ms)
+- Finished resetting the current domain, in  1.264 seconds
+Domain Reload Profiling: 3064ms
+	BeginReloadAssembly (327ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (1109ms)
-		LoadAssemblies (712ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1293ms)
+		LoadAssemblies (750ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (587ms)
-			TypeCache.Refresh (503ms)
-				TypeCache.ScanAssembly (471ms)
-			BuildScriptInfoCaches (65ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1141ms)
+		AnalyzeDomain (719ms)
+			TypeCache.Refresh (621ms)
+				TypeCache.ScanAssembly (589ms)
+			BuildScriptInfoCaches (77ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1264ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (900ms)
+		SetupLoadedEditorAssemblies (1025ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (221ms)
-			ProcessInitializeOnLoadAttributes (567ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (271ms)
+			ProcessInitializeOnLoadAttributes (613ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
 			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4248 unused Assets / (1.6 MB). Loaded Objects now: 4746.
-Memory consumption went from 91.9 MB to 90.3 MB.
-Total: 13.060900 ms (FindLiveObjects: 0.618700 ms CreateObjectMapping: 0.680800 ms MarkObjects: 9.082600 ms  DeleteObjects: 2.674900 ms)
+Unloading 4248 unused Assets / (1.9 MB). Loaded Objects now: 4748.
+Memory consumption went from 92.1 MB to 90.2 MB.
+Total: 10.014500 ms (FindLiveObjects: 0.573800 ms CreateObjectMapping: 0.663500 ms MarkObjects: 6.449100 ms  DeleteObjects: 2.324600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 188520.236989 seconds.
-  path: Assets/Cars/DRIFT/Honda S2000
-  artifactKey: Guid(d2490be7fc90bff4e826d4a703817dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/Honda S2000 using Guid(d2490be7fc90bff4e826d4a703817dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a69d2f43f129a11e4567ad45cbe79f6') in 0.0065903 seconds
+  Time since last request: 362807.894063 seconds.
+  path: Assets/Cars/RALLY/Citroen WRC RALLY MAP.prefab
+  artifactKey: Guid(850a7472ff8b8cd4084dcc6b56af484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars/RALLY/Citroen WRC RALLY MAP.prefab using Guid(850a7472ff8b8cd4084dcc6b56af484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '488f6cf1824efaf46d0ebd7051799bf1') in 0.4104423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 824
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.092006 seconds.
+  path: Assets/Scripts/RallyCarController.cs
+  artifactKey: Guid(307d27e8aabf5c54098ce60de96503aa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/RallyCarController.cs using Guid(307d27e8aabf5c54098ce60de96503aa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '32011afaa3be1dc21b81663d016da85b') in 0.1912531 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.015669 seconds.
-  path: Assets/Scripts/DriftCameraController.cs
-  artifactKey: Guid(589774d3dc3a63a4caad998d3352797f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/DriftCameraController.cs using Guid(589774d3dc3a63a4caad998d3352797f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '832cb44f87aa5c32aa55eb324359122a') in 0.1504509 seconds
+  Time since last request: 0.000139 seconds.
+  path: Assets/Scripts/LapTimer.cs
+  artifactKey: Guid(2de80807eef9e894889f2bc88e0f0bf4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/LapTimer.cs using Guid(2de80807eef9e894889f2bc88e0f0bf4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '62301f472e3de97b44ed7e131afffbab') in 0.0315866 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Scripts/DriftCarController.cs
-  artifactKey: Guid(7fe5169ed6b6a5a41a77a736f4ee69cd) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/DriftCarController.cs using Guid(7fe5169ed6b6a5a41a77a736f4ee69cd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c597f4a7bee3ab64f4ed05946885d2dd') in 0.0180996 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.937564 seconds.
-  path: Assets/Cars/DRIFT/Honda S2000/2013_top_fuel_voltex_s2000.glb
-  artifactKey: Guid(dbc978b89085f4449b75401d9b8ee401) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/Honda S2000/2013_top_fuel_voltex_s2000.glb using Guid(dbc978b89085f4449b75401d9b8ee401) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7eda6a7588507fddd28e395e4bf82a9e') in 0.5345504 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1690
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.984758 seconds.
-  path: Assets/Cars/DRIFT/Honda S2000
-  artifactKey: Guid(d2490be7fc90bff4e826d4a703817dcb) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/Honda S2000 using Guid(d2490be7fc90bff4e826d4a703817dcb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c9ef1435d3e75426c498a74203f23bd6') in 0.0175378 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.039792 seconds.
-  path: Assets/Cars/DRIFT/h_2000.mp3
-  artifactKey: Guid(bbd939317af6ecf49ba0c1123e0cfed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_2000.mp3 using Guid(bbd939317af6ecf49ba0c1123e0cfed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce5a3f552cbda6c32e8d2a9de798131b') in 0.2356382 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Cars/DRIFT/h_7000.mp3
-  artifactKey: Guid(1559bf4f712dbb44d8df5166d736c05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_7000.mp3 using Guid(1559bf4f712dbb44d8df5166d736c05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '770880e7fa3caf9fae848a613a8f75c8') in 0.0315297 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Cars/DRIFT/h_3500.mp3
-  artifactKey: Guid(74066e04b23b06d44a4c5dae5d51b3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_3500.mp3 using Guid(74066e04b23b06d44a4c5dae5d51b3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffd172528d10abc4a47fdf24358af999') in 0.0302351 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Cars/DRIFT/h_6500.mp3
-  artifactKey: Guid(f070d68b141a4424ca9af238812298c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_6500.mp3 using Guid(f070d68b141a4424ca9af238812298c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '658e432394eb7c5cc85202c6f80e0437') in 0.0321561 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Cars/DRIFT/h_4500.mp3
-  artifactKey: Guid(d12df1c3758efff4ba489f4b5c333e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_4500.mp3 using Guid(d12df1c3758efff4ba489f4b5c333e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7502594b8a926b7e3041a21ad835203b') in 0.0244703 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Cars/DRIFT/h_8000.mp3
-  artifactKey: Guid(335439e2ec14c72448f55472924c4f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_8000.mp3 using Guid(335439e2ec14c72448f55472924c4f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4893cb076fce6dc0b1c72ee2391c668c') in 0.0261722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Cars/DRIFT/h_base.mp3
-  artifactKey: Guid(50b2427623cc92043b824187399872ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_base.mp3 using Guid(50b2427623cc92043b824187399872ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '325735383d7501210df73b60d3414888') in 0.0261228 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Cars/DRIFT/h_6000.mp3
-  artifactKey: Guid(fa23073d36f1a854983da6d1a6baa54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_6000.mp3 using Guid(fa23073d36f1a854983da6d1a6baa54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b23df435907430597bbaf0b654d7c6be') in 0.0248372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Cars/DRIFT/h_8500.mp3
-  artifactKey: Guid(8686fab69b4509a4fbb7af960d188a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/DRIFT/h_8500.mp3 using Guid(8686fab69b4509a4fbb7af960d188a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21bee98720078b96bb8a9cd32c0ea195') in 0.0252253 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.640071 seconds.
-  path: Assets/Cars/DRIFT/h_7000.mp3
-  artifactKey: Guid(1559bf4f712dbb44d8df5166d736c05e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_7000.mp3 using Guid(1559bf4f712dbb44d8df5166d736c05e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7d951909facbb5926600f77ba7badbad') in 0.0461544 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Cars/DRIFT/h_2000.mp3
-  artifactKey: Guid(bbd939317af6ecf49ba0c1123e0cfed4) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_2000.mp3 using Guid(bbd939317af6ecf49ba0c1123e0cfed4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '20f07cb739bef140695f9091fafa2c49') in 0.0578184 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Cars/DRIFT/h_3500.mp3
-  artifactKey: Guid(74066e04b23b06d44a4c5dae5d51b3b6) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_3500.mp3 using Guid(74066e04b23b06d44a4c5dae5d51b3b6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '16975d50edcba0763c4293fa08f82212') in 0.0657412 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Cars/DRIFT/h_8500.mp3
-  artifactKey: Guid(8686fab69b4509a4fbb7af960d188a48) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_8500.mp3 using Guid(8686fab69b4509a4fbb7af960d188a48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ed02e6fa09eff1133c74cfc7be1f06aa') in 0.0537446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/Cars/DRIFT/h_2500.mp3
-  artifactKey: Guid(014e694b019c4f44f8caa5b99c745dd0) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_2500.mp3 using Guid(014e694b019c4f44f8caa5b99c745dd0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4b5cafc5a9e6d6393d059e0de36be12f') in 0.0601466 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Cars/DRIFT/h_base.mp3
-  artifactKey: Guid(50b2427623cc92043b824187399872ec) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_base.mp3 using Guid(50b2427623cc92043b824187399872ec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f0c8c874bbe8a315d12bd7510e493b9c') in 0.0687833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Cars/DRIFT/h_5500.mp3
-  artifactKey: Guid(4d4c04082003243418433bcb03fcc633) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_5500.mp3 using Guid(4d4c04082003243418433bcb03fcc633) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c88aea1cc662b2e8d31b7d360e6f083f') in 0.0543004 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Cars/DRIFT/h_7500.mp3
-  artifactKey: Guid(051cc7347b521b94a9be6ccd2314f4cc) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/DRIFT/h_7500.mp3 using Guid(051cc7347b521b94a9be6ccd2314f4cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9249d421467b3c7ed1cf5c6dd2cfa838') in 0.0489527 seconds
+  Time since last request: 0.000309 seconds.
+  path: Assets/Map/Rally1/rubber-tire-screech-7-202580.mp3
+  artifactKey: Guid(87e08de62b47f404ab2daf0b34dbe5c0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Map/Rally1/rubber-tire-screech-7-202580.mp3 using Guid(87e08de62b47f404ab2daf0b34dbe5c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '79b238046f915486e9f810b807a53275') in 0.1226615 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
