@@ -1053,6 +1053,72 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2614841275753585107, guid: 54a0fa9770eea9240b8c6b12bec3b746, type: 3}
+--- !u!1001 &228889117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8898525918605351531, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_Name
+      value: Drift Honda S2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898525918605351531, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139542728860733472, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+--- !u!1 &228889118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8898525918605351531, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}
+  m_PrefabInstance: {fileID: 228889117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &238068539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3645699219964499182, guid: 3385327944b86df459d45e7ccc6740dd, type: 3}
@@ -1170,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.size
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[14].name
@@ -1191,6 +1257,10 @@ PrefabInstance:
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[18].name
       value: Ferrari 488
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[19].name
+      value: Drift Honda S2000
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[0].carObject
@@ -1289,6 +1359,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[19].carObject
+      value: 
+      objectReference: {fileID: 228889118}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[19].teamIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: carsInScene.Array.data[15].categoryData
       value: 
       objectReference: {fileID: 11400000, guid: 015395e7740a20f42b1fa913bf50d5d9, type: 2}
@@ -1304,6 +1382,10 @@ PrefabInstance:
       propertyPath: carsInScene.Array.data[18].categoryData
       value: 
       objectReference: {fileID: 11400000, guid: bcea55f02f827614f8165a2f764f8c58, type: 2}
+    - target: {fileID: 2935623725735489878, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
+      propertyPath: carsInScene.Array.data[19].categoryData
+      value: 
+      objectReference: {fileID: 11400000, guid: 28d0a19efb075d74296b5159f09127ba, type: 2}
     - target: {fileID: 3986330599014232405, guid: 4bf9d242ab141c444be7e280bd843975, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.05522
@@ -2869,6 +2951,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3912638408036287072, guid: 3385327944b86df459d45e7ccc6740dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1940154982}
+    - targetCorrespondingSourceObject: {fileID: 4833772760356603714, guid: 3385327944b86df459d45e7ccc6740dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1436108245}
     - targetCorrespondingSourceObject: {fileID: 3007516957913117739, guid: 3385327944b86df459d45e7ccc6740dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1996953661}
@@ -7844,6 +7929,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1434587560074706412, guid: 54a0fa9770eea9240b8c6b12bec3b746, type: 3}
+--- !u!1 &1436108244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4833772760356603714, guid: 3385327944b86df459d45e7ccc6740dd, type: 3}
+  m_PrefabInstance: {fileID: 506368616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1436108245
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436108244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5350965533813377931, guid: 54a0fa9770eea9240b8c6b12bec3b746, type: 3}
 --- !u!4 &1439357779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 557687481007352075, guid: 34016f0d78587c94dbad866a9fa74df3, type: 3}
@@ -25578,3 +25690,4 @@ SceneRoots:
   - {fileID: 52270653}
   - {fileID: 1490986828}
   - {fileID: 1880443913}
+  - {fileID: 228889117}
