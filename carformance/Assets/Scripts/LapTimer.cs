@@ -34,7 +34,6 @@ public class LapTimer : MonoBehaviour
             {
                 currentLapTime += Time.deltaTime;
             }
-            UpdateTimerUI();
         }
     }
 
@@ -80,24 +79,6 @@ public class LapTimer : MonoBehaviour
         currentLapTime = 0f;
     }
 
-    void UpdateTimerUI()
-    {
-        if (lapCounter == -1)
-        {
-            timerDisplay.text = "PIT LANE";
-        }
-        else if (lapCounter == 0)
-        {
-            timerDisplay.text = "OUT LAP";
-        }
-        else
-        {
-            float minutes = Mathf.FloorToInt(currentLapTime / 60);
-            float seconds = Mathf.FloorToInt(currentLapTime % 60);
-            float milliseconds = (currentLapTime % 1) * 1000;
-            timerDisplay.text = string.Format("{0:00}:{1:00}.{2:000}", minutes, seconds, milliseconds);
-        }
-    }
 
     void UpdateHistoryUI()
     {

@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-19T12:01:07.1519949Z"
 Built from '6000.2/respin/6000.2.8f1-e4064264ae96' branch; Version is '6000.2.8f1 (c9992ac36c34) revision 13211946'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf" at "2025-12-23T20:06:46.8972762Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'hu' Physical Memory: 16276 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-12-19T12:01:07Z
+Date: 2025-12-23T20:06:46Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityEngine\6000.2.8f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54841
+53456
 -licensingIpc
 LicenseClient-gyorf
 -job-worker-count
@@ -65,27 +65,27 @@ C:/Users/gyorf/Documents/Jatekfejlesztes2/carformance
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [108940]  Target information:
+Player connection [76632]  Target information:
 
-Player connection [108940]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 2696940062 [EditorId] 2696940062 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [76632]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 1898736922 [EditorId] 1898736922 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UL3FLM1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [108940] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [108940] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [76632] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [76632] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 100812, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 63844, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              bd36e5bc1ca64bf9bde12719f8b0bb12
-  Correlation Id:          f13e12f943a5e757ef269102c2517465
-  External correlation Id: 4613822633498939653
+  Session Id:              3d181fbd590640338ee16fdbf37d1049
+  Correlation Id:          e9cdce12cf2b0f2a412b3f28b3e69db3
+  External correlation Id: 1344067396961726337
   Machine Id:              XonrmZSX8T9gyPwxQZyyR4Cmz5w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.22s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-19T12:01:07.3747129Z"
-[Licensing::Module] Licensing Background thread has ended after 0.22s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gyorf" (connect: 0.00s, validation: 0.00s, handshake: 0.07s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gyorf-notifications" at "2025-12-23T20:06:46.967562Z"
+[Licensing::Module] Licensing Background thread has ended after 0.07s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -93,7 +93,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 228.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.8f1 (c9992ac36c34)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Resources/UnitySubsystems
@@ -109,43 +109,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEngine/6000.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.296766 seconds.
-- Loaded All Assemblies, in  6.846 seconds
+Registered in 0.004328 seconds.
+- Loaded All Assemblies, in  1.223 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.313 seconds
-Domain Reload Profiling: 8155ms
-	BeginReloadAssembly (1382ms)
+- Finished resetting the current domain, in  0.686 seconds
+Domain Reload Profiling: 1903ms
+	BeginReloadAssembly (454ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (1429ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (416ms)
-	LoadAllAssembliesAndSetupDomain (3582ms)
-		LoadAssemblies (1374ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (164ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (154ms)
+	LoadAllAssembliesAndSetupDomain (398ms)
+		LoadAssemblies (446ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3577ms)
-			TypeCache.Refresh (3572ms)
-				TypeCache.ScanAssembly (2289ms)
+		AnalyzeDomain (392ms)
+			TypeCache.Refresh (389ms)
+				TypeCache.ScanAssembly (356ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1315ms)
+	FinalizeReload (686ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1156ms)
+		SetupLoadedEditorAssemblies (610ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (235ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (308ms)
-			ProcessInitializeOnLoadAttributes (430ms)
-			ProcessInitializeOnLoadMethodAttributes (172ms)
+			InitializePlatformSupportModulesInManaged (100ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (264ms)
+			ProcessInitializeOnLoadMethodAttributes (100ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -161,8 +161,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 21.939 seconds
-Refreshing native plugins compatible for Editor in 4.33 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.850 seconds
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -172,136 +172,60 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.874 seconds
-Domain Reload Profiling: 23806ms
-	BeginReloadAssembly (521ms)
+- Finished resetting the current domain, in  1.149 seconds
+Domain Reload Profiling: 2988ms
+	BeginReloadAssembly (405ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (27ms)
+		DisableScriptedObjects (21ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (111ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (21177ms)
-		LoadAssemblies (19417ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (1240ms)
+		LoadAssemblies (742ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2034ms)
-			TypeCache.Refresh (1900ms)
-				TypeCache.ScanAssembly (1853ms)
-			BuildScriptInfoCaches (107ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1876ms)
+		AnalyzeDomain (719ms)
+			TypeCache.Refresh (615ms)
+				TypeCache.ScanAssembly (574ms)
+			BuildScriptInfoCaches (79ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1150ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1520ms)
+		SetupLoadedEditorAssemblies (913ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (16ms)
-			BeforeProcessingInitializeOnLoad (406ms)
-			ProcessInitializeOnLoadAttributes (967ms)
-			ProcessInitializeOnLoadMethodAttributes (114ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (220ms)
+			ProcessInitializeOnLoadAttributes (568ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.47 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4247 unused Assets / (1.4 MB). Loaded Objects now: 4745.
-Memory consumption went from 91.9 MB to 90.5 MB.
-Total: 10.901200 ms (FindLiveObjects: 0.688900 ms CreateObjectMapping: 0.726000 ms MarkObjects: 6.858800 ms  DeleteObjects: 2.623600 ms)
+Unloading 4248 unused Assets / (1.4 MB). Loaded Objects now: 4748.
+Memory consumption went from 92.2 MB to 90.7 MB.
+Total: 7.987500 ms (FindLiveObjects: 0.529200 ms CreateObjectMapping: 0.580300 ms MarkObjects: 5.374400 ms  DeleteObjects: 1.500700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 529402.845669 seconds.
-  path: Assets/Cars/AudiGT/agt_6000.mp3
-  artifactKey: Guid(866f8ff86cca7b841a0244a66490d312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_6000.mp3 using Guid(866f8ff86cca7b841a0244a66490d312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35069efd4b7a8d6ceee78aae81964927') in 0.2729935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Scenes/Hungaroring.unity
-  artifactKey: Guid(98ccc901fc3183249af0cab076570493) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scenes/Hungaroring.unity using Guid(98ccc901fc3183249af0cab076570493) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '705c69529f38dd1e0a15c923fce1318e') in 0.1989408 seconds
+  Time since last request: 362830.405774 seconds.
+  path: Assets/Scenes/Rally1.unity
+  artifactKey: Guid(29efe8c46c696514c9f81f7c2f48060b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/Rally1.unity using Guid(29efe8c46c696514c9f81f7c2f48060b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c9e77018a30813a50f759780948e7adb') in 0.1654937 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Cars/AudiGT/agt_2000.mp3
-  artifactKey: Guid(0202f8266b4a88a4187c84047120d71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_2000.mp3 using Guid(0202f8266b4a88a4187c84047120d71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ada3d2a8ae3c5260af061bee457616f') in 0.0368165 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/Cars/AudiGT/agt_3000.mp3
-  artifactKey: Guid(b0ad7f774b01b2a47925c0ac55eb7e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_3000.mp3 using Guid(b0ad7f774b01b2a47925c0ac55eb7e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a83c55d24c72fba40bb80862a1c84b5') in 0.0309408 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Cars/AudiGT/agt_5000.mp3
-  artifactKey: Guid(0942b493eff5e0647ba9b194870c160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_5000.mp3 using Guid(0942b493eff5e0647ba9b194870c160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fab973fe34bf11cd1b45bc25e0b1506') in 0.0296635 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Cars/AudiGT/agt_4500.mp3
-  artifactKey: Guid(36447643636ed0c468be5b0b7be5301c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_4500.mp3 using Guid(36447643636ed0c468be5b0b7be5301c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd78ee6eab26ac9513079e9dc3e644fee') in 0.0263939 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/Cars/AudiGT/agt_1500.mp3
-  artifactKey: Guid(971db1b747ee4d24cb4b3345fb3aa80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cars/AudiGT/agt_1500.mp3 using Guid(971db1b747ee4d24cb4b3345fb3aa80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a33566242c3e744f808f166b44c58a3') in 0.0242242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.775935 seconds.
-  path: Assets/Cars/AudiGT/agt_3500.mp3
-  artifactKey: Guid(7b710beaf77c18f45b572e151708af72) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/AudiGT/agt_3500.mp3 using Guid(7b710beaf77c18f45b572e151708af72) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '617ce6ffe175b5852e6022f79d00e8a9') in 0.1771134 seconds
+  Time since last request: 0.000035 seconds.
+  path: Assets/Map/Rally1/rock.mp3
+  artifactKey: Guid(2603bc16d417c3340a63a019df35f72d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Map/Rally1/rock.mp3 using Guid(2603bc16d417c3340a63a019df35f72d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1167cf9501b42efc418f6be6b58487e7') in 0.1856896 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Cars/AudiGT/agt_5000.mp3
-  artifactKey: Guid(0942b493eff5e0647ba9b194870c160f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/AudiGT/agt_5000.mp3 using Guid(0942b493eff5e0647ba9b194870c160f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd4cede02f0b0db5504d6e8768a189b8f') in 0.0835804 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Cars/AudiGT/agt_2500.mp3
-  artifactKey: Guid(29d30430530cae14f8090053baaafd1a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/AudiGT/agt_2500.mp3 using Guid(29d30430530cae14f8090053baaafd1a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1b7f76debfc8184bf838f216d8863c2') in 0.0897878 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Cars/AudiGT/agt_4500.mp3
-  artifactKey: Guid(36447643636ed0c468be5b0b7be5301c) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Cars/AudiGT/agt_4500.mp3 using Guid(36447643636ed0c468be5b0b7be5301c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7b8eeaeda697cd07fd386908960eb3e3') in 0.0876822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

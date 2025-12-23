@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e9330940a580f43aa713c79a87ebc9, type: 3}
+  m_Name: Drift
+  m_EditorClassIdentifier: Assembly-CSharp::CarData
+  categoryName: Drift
+  categoryImage: {fileID: 0}
+  carOptions:
+  - teamName: Honda S2000
+    prefab: {fileID: 8898525918605351531, guid: 0f593e161c0898c43903a391f76f4bf9, type: 3}

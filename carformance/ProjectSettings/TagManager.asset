@@ -10,6 +10,8 @@ TagManager:
   - Border
   - Track
   - Curb
+  - Dirt
+  - Asphalt
   layers:
   - Default
   - TransparentFX
